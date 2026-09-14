@@ -1719,10 +1719,20 @@
   }
   function renderClickableText(el, text){
     var tokens = tokenizeText(text);
-    var html = tokens.map(function(tok){
+    var html = tokens.map(function(tok, i){
       if (/^[A-Za-z]/.test(tok)){
         var clean = tok.toLowerCase();
-        return '<span class="reader-word cursor-pointer underline decoration-dotted decoration-slate-300 dark:decoration-slate-700 underline-offset-4 active:bg-indigo-100 dark:active:bg-indigo-500/20 rounded" data-word="' + escapeHtml(clean) + '">' + escapeHtml(tok) + '</span>';
+        // Келесі нақты сөзді алдын ала анықтап қоямыз (data-next) — сөйлем
+        // аяқталмаған болса (нүкте/леп/сұрақ белгісі/үтірлі нүкте жоқ болса)
+        // ғана, осылайша "led to" сияқты тіркестерді дұрыс табамыз, ал
+        // "led. The" сияқты сөйлем шекарасында қате тіркес жасалмайды.
+        var nextWord = '';
+        var sep = tokens[i + 1];
+        var nxt = tokens[i + 2];
+        if ((!sep || !/[.!?;]/.test(sep)) && nxt && /^[A-Za-z]/.test(nxt)){
+          nextWord = nxt.toLowerCase();
+        }
+        return '<span class="reader-word cursor-pointer underline decoration-dotted decoration-slate-300 dark:decoration-slate-700 underline-offset-4 active:bg-indigo-100 dark:active:bg-indigo-500/20 rounded" data-word="' + escapeHtml(clean) + '" data-next="' + escapeHtml(nextWord) + '">' + escapeHtml(tok) + '</span>';
       }
       return escapeHtml(tok);
     }).join('');
@@ -1880,6 +1890,29 @@
     return null;
   }
 
+  // Тұрақсыз (irregular) етістіктердің өткен шақ/passive формаларын негізгі
+  // түрге түрлендіреді: led→lead, gave→give, went→go және т.б. — collocations/
+  // phrasal verbs тіркестерін кітап мәтінінен дәл табу үшін керек.
+  var IRREGULAR_VERB_LEMMA = {
+    broke:'break', broken:'break', brought:'bring', began:'begin', begun:'begin',
+    bought:'buy', came:'come', caught:'catch', chose:'choose', chosen:'choose',
+    did:'do', done:'do', drank:'drink', drunk:'drink', drove:'drive', driven:'drive',
+    ate:'eat', eaten:'eat', fell:'fall', fallen:'fall', felt:'feel', flew:'fly',
+    flown:'fly', forgot:'forget', forgotten:'forget', found:'find', froze:'freeze',
+    frozen:'freeze', gave:'give', given:'give', got:'get', gotten:'get', went:'go',
+    gone:'go', grew:'grow', grown:'grow', heard:'hear', held:'hold', hung:'hang',
+    kept:'keep', knew:'know', known:'know', led:'lead', left:'leave', lent:'lend',
+    lost:'lose', made:'make', meant:'mean', met:'meet', paid:'pay', rode:'ride',
+    ridden:'ride', rose:'rise', risen:'rise', ran:'run', said:'say', sang:'sing',
+    sung:'sing', sat:'sit', sold:'sell', sent:'send', shook:'shake', shaken:'shake',
+    showed:'show', shown:'show', slept:'sleep', sought:'seek', spoke:'speak',
+    spoken:'speak', spent:'spend', stole:'steal', stolen:'steal', stood:'stand',
+    swam:'swim', swum:'swim', took:'take', taken:'take', taught:'teach',
+    thought:'think', threw:'throw', thrown:'throw', told:'tell', understood:'understand',
+    woke:'wake', woken:'wake', wore:'wear', worn:'wear', won:'win', wrote:'write',
+    written:'write'
+  };
+
   // Сөздің жеңіл морфологиялық нұсқаларын шығарады (led→lead, depends→depend,
   // consisting→consist және т.б.) — тек collocations негізгі етістігін табу үшін,
   // негізгі сөздік дәл сәйкестік конвенциясын өзгертпейді.
@@ -1892,7 +1925,25 @@
     if (/es$/.test(w)) variants.push(w.slice(0, -2));
     if (/ed$/.test(w)) { variants.push(w.slice(0, -2)); variants.push(w.slice(0, -1)); }
     if (/s$/.test(w) && w.length > 3) variants.push(w.slice(0, -1));
+    if (IRREGULAR_VERB_LEMMA[w]) variants.push(IRREGULAR_VERB_LEMMA[w]);
     return variants;
+  }
+
+  // Оқырманда/квизде екі сөзден тұратын collocation немесе phrasal verb дәл
+  // сол ретпен (мыс. "led" + "to") кездессе, оны жеке сөз ретінде емес,
+  // тұтас тіркес ретінде анықтайды — "led" басқанда "led to" болып шығады.
+  function lookupPhraseMatch(word, nextWord){
+    if (!word || !nextWord) return null;
+    var heads = [word.toLowerCase()].concat(wordFormVariants(word));
+    function search(list){
+      for (var i = 0; i < list.length; i++){
+        var parts = (list[i].phrase || '').toLowerCase().split(' ');
+        if (parts.length !== 2 || parts[1] !== nextWord) continue;
+        if (heads.indexOf(parts[0]) !== -1) return list[i];
+      }
+      return null;
+    }
+    return search(phrasalVerbs) || search(collocations);
   }
 
   // Reader/Сөздік үшін collocations.json ішінен негізгі етістігі бойынша іздейді
@@ -1931,20 +1982,62 @@
     return null;
   }
 
+  // Жергілікті деректерден (сөздік/кітаптар/nuance/collocations) анықтама
+  // табылмаса, ашық тұрған тегін сөздік API-інен (интернет болса) іздейміз —
+  // осылайша кітаптағы кез келген сөзді басқанда мағынасы шығып, сөздік
+  // қорға қосуға болады. Әр басу wordLookupToken-ді арттырады, сол арқылы
+  // пайдаланушы басқа сөзге тез өтіп кетсе, ескірген нәтиже тоолтипке
+  // жазылып қалмайды.
+  var wordLookupToken = 0;
+  function fetchExternalDefinition(word, myToken){
+    fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word.toLowerCase()))
+      .then(function(res){ if (!res.ok) throw new Error('not found'); return res.json(); })
+      .then(function(data){
+        if (myToken !== wordLookupToken) return;
+        var entry = data && data[0];
+        var meanings = (entry && entry.meanings) || [];
+        var defObj = null;
+        for (var i = 0; i < meanings.length && !defObj; i++){
+          defObj = (meanings[i].definitions && meanings[i].definitions[0]) || null;
+        }
+        if (!defObj || !defObj.definition) throw new Error('no definition');
+        currentTooltipDefinition = defObj.definition;
+        $('#tooltipDefinition').textContent = defObj.definition + ' (сыртқы сөздіктен)';
+        $('#tooltipAddBtn').classList.remove('hidden');
+        $('#tooltipManualAddBtn').classList.add('hidden');
+      })
+      .catch(function(){
+        if (myToken !== wordLookupToken) return;
+        $('#tooltipDefinition').textContent = 'Бұл сөзге дайын анықтама жоқ. Сөздікке қолмен қосуға болады.';
+        $('#tooltipAddBtn').classList.add('hidden');
+        $('#tooltipManualAddBtn').classList.remove('hidden');
+      });
+  }
+
   function onWordClick(e){
+    wordLookupToken++;
+    var myToken = wordLookupToken;
     var word = e.currentTarget.getAttribute('data-word');
-    currentTooltipWord = word;
-    var def = lookupDefinition(word);
+    var nextWord = e.currentTarget.getAttribute('data-next') || '';
+    // Алдымен "led to" сияқты екі сөзден тұратын тіркес пе, соны тексереміз —
+    // табылса, жеке "led" емес, тұтас "lead to" тіркесінің мағынасы көрсетіледі.
+    var phraseMatch = lookupPhraseMatch(word, nextWord);
+    var def = phraseMatch
+      ? ('"' + phraseMatch.phrase + '" — ' + phraseMatch.meaning + ' E.g., "' + phraseMatch.example.replace('___', phraseMatch.particle) + '"')
+      : lookupDefinition(word);
+    var displayWord = phraseMatch ? phraseMatch.phrase : word;
+    currentTooltipWord = displayWord;
     currentTooltipDefinition = def;
-    $('#tooltipWord').textContent = word;
+    $('#tooltipWord').textContent = displayWord;
     if (def){
       $('#tooltipDefinition').textContent = def;
       $('#tooltipAddBtn').classList.remove('hidden');
       $('#tooltipManualAddBtn').classList.add('hidden');
     } else {
-      $('#tooltipDefinition').textContent = 'Бұл сөзге дайын анықтама жоқ. Сөздікке қолмен қосуға болады.';
+      $('#tooltipDefinition').textContent = 'Ізделуде...';
       $('#tooltipAddBtn').classList.add('hidden');
-      $('#tooltipManualAddBtn').classList.remove('hidden');
+      $('#tooltipManualAddBtn').classList.add('hidden');
+      fetchExternalDefinition(word, myToken);
     }
 
     // Reader ашық болса (яғни осы сөз кітап мәтінінен басылса), сол кітаптағы
