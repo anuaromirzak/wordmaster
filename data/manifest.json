@@ -1,0 +1,9 @@
+{
+  "levels": [
+    { "code": "TOP1000", "label": "Top 1000 (A1–A2)", "short": "1K", "file": "words/TOP1000.json" },
+    { "code": "B1", "label": "Top 2000 (B1)", "short": "2K", "file": "words/B1.json" },
+    { "code": "B2", "label": "Top 3000 (B2)", "short": "3K", "file": "words/B2.json" },
+    { "code": "C1", "label": "Top 5000 (C1)", "short": "5K", "file": "words/C1.json" },
+    { "code": "ML", "label": "Machine Learning", "short": "ML", "file": "words/ML.json" }
+  ]
+}

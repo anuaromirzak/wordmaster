@@ -1,0 +1,719 @@
+{
+  "phrasalVerbs": [
+    {
+      "id": "pv_give_up",
+      "phrase": "give up",
+      "particle": "up",
+      "meaning": "To stop trying to do something, or to quit a habit.",
+      "example": "He decided to give ___ smoking after years of trying.",
+      "options": [
+        "up",
+        "down",
+        "off",
+        "away"
+      ]
+    },
+    {
+      "id": "pv_look_after",
+      "phrase": "look after",
+      "particle": "after",
+      "meaning": "To take care of someone or something.",
+      "example": "She has to look ___ her little brother while their parents are away.",
+      "options": [
+        "after",
+        "for",
+        "into",
+        "up"
+      ]
+    },
+    {
+      "id": "pv_run_into",
+      "phrase": "run into",
+      "particle": "into",
+      "meaning": "To meet someone unexpectedly, or to encounter a problem.",
+      "example": "I ran ___ an old classmate at the supermarket yesterday.",
+      "options": [
+        "into",
+        "over",
+        "through",
+        "across"
+      ]
+    },
+    {
+      "id": "pv_carry_out",
+      "phrase": "carry out",
+      "particle": "out",
+      "meaning": "To perform or complete a task, plan, or experiment.",
+      "example": "The scientists carried ___ several experiments before publishing the results.",
+      "options": [
+        "out",
+        "on",
+        "up",
+        "through"
+      ]
+    },
+    {
+      "id": "pv_come_across",
+      "phrase": "come across",
+      "particle": "across",
+      "meaning": "To find or meet something or someone by chance.",
+      "example": "While cleaning the attic, she came ___ some old family photographs.",
+      "options": [
+        "across",
+        "into",
+        "over",
+        "through"
+      ]
+    },
+    {
+      "id": "pv_put_off",
+      "phrase": "put off",
+      "particle": "off",
+      "meaning": "To postpone or delay something.",
+      "example": "They decided to put ___ the meeting until next week.",
+      "options": [
+        "off",
+        "on",
+        "out",
+        "away"
+      ]
+    },
+    {
+      "id": "pv_turn_down",
+      "phrase": "turn down",
+      "particle": "down",
+      "meaning": "To reject an offer or request, or to lower the volume.",
+      "example": "She turned ___ the job offer because the salary was too low.",
+      "options": [
+        "down",
+        "up",
+        "off",
+        "out"
+      ]
+    },
+    {
+      "id": "pv_show_up",
+      "phrase": "show up",
+      "particle": "up",
+      "meaning": "To arrive somewhere, especially unexpectedly or late.",
+      "example": "He didn't show ___ for the meeting and never explained why.",
+      "options": [
+        "up",
+        "off",
+        "out",
+        "in"
+      ]
+    },
+    {
+      "id": "pv_break_down",
+      "phrase": "break down",
+      "particle": "down",
+      "meaning": "To stop functioning, or to lose emotional control.",
+      "example": "Her car broke ___ on the highway during the storm.",
+      "options": [
+        "down",
+        "up",
+        "off",
+        "out"
+      ]
+    },
+    {
+      "id": "pv_break_up",
+      "phrase": "break up",
+      "particle": "up",
+      "meaning": "To end a romantic relationship, or to separate into pieces.",
+      "example": "They broke ___ after being together for three years.",
+      "options": [
+        "up",
+        "down",
+        "off",
+        "apart"
+      ]
+    },
+    {
+      "id": "pv_bring_up",
+      "phrase": "bring up",
+      "particle": "up",
+      "meaning": "To mention a topic, or to raise a child.",
+      "example": "I didn't want to bring ___ the subject of money at dinner.",
+      "options": [
+        "up",
+        "on",
+        "about",
+        "forward"
+      ]
+    },
+    {
+      "id": "pv_call_off",
+      "phrase": "call off",
+      "particle": "off",
+      "meaning": "To cancel a planned event.",
+      "example": "The organizers had to call ___ the outdoor concert due to rain.",
+      "options": [
+        "off",
+        "down",
+        "out",
+        "up"
+      ]
+    },
+    {
+      "id": "pv_carry_on",
+      "phrase": "carry on",
+      "particle": "on",
+      "meaning": "To continue doing something.",
+      "example": "Despite the interruption, the teacher carried ___ with the lesson.",
+      "options": [
+        "on",
+        "out",
+        "up",
+        "through"
+      ]
+    },
+    {
+      "id": "pv_check_in",
+      "phrase": "check in",
+      "particle": "in",
+      "meaning": "To register your arrival at a hotel or airport.",
+      "example": "We need to check ___ at the airport two hours before the flight.",
+      "options": [
+        "in",
+        "on",
+        "up",
+        "out"
+      ]
+    },
+    {
+      "id": "pv_check_out",
+      "phrase": "check out",
+      "particle": "out",
+      "meaning": "To leave a hotel after paying, or to examine something.",
+      "example": "Guests must check ___ of the hotel by eleven in the morning.",
+      "options": [
+        "out",
+        "in",
+        "up",
+        "off"
+      ]
+    },
+    {
+      "id": "pv_drop_off",
+      "phrase": "drop off",
+      "particle": "off",
+      "meaning": "To deliver someone or something, or to fall asleep.",
+      "example": "Can you drop ___ these documents at the office on your way home?",
+      "options": [
+        "off",
+        "out",
+        "down",
+        "in"
+      ]
+    },
+    {
+      "id": "pv_fall_apart",
+      "phrase": "fall apart",
+      "particle": "apart",
+      "meaning": "To break into pieces, or to become very upset or disorganized.",
+      "example": "The old chair finally fell ___ after years of use.",
+      "options": [
+        "apart",
+        "down",
+        "off",
+        "out"
+      ]
+    },
+    {
+      "id": "pv_figure_out",
+      "phrase": "figure out",
+      "particle": "out",
+      "meaning": "To understand or solve something after thinking about it.",
+      "example": "It took her a while to figure ___ how the new software worked.",
+      "options": [
+        "out",
+        "up",
+        "in",
+        "on"
+      ]
+    },
+    {
+      "id": "pv_find_out",
+      "phrase": "find out",
+      "particle": "out",
+      "meaning": "To discover a piece of information.",
+      "example": "She was shocked to find ___ that the store had closed permanently.",
+      "options": [
+        "out",
+        "up",
+        "in",
+        "off"
+      ]
+    },
+    {
+      "id": "pv_get_away",
+      "phrase": "get away",
+      "particle": "away",
+      "meaning": "To escape or leave a place, especially for a vacation.",
+      "example": "They wanted to get ___ from the city for the weekend.",
+      "options": [
+        "away",
+        "off",
+        "out",
+        "up"
+      ]
+    },
+    {
+      "id": "pv_get_over",
+      "phrase": "get over",
+      "particle": "over",
+      "meaning": "To recover from an illness, disappointment, or difficult experience.",
+      "example": "It took him months to get ___ the loss of his job.",
+      "options": [
+        "over",
+        "through",
+        "off",
+        "up"
+      ]
+    },
+    {
+      "id": "pv_give_away",
+      "phrase": "give away",
+      "particle": "away",
+      "meaning": "To give something for free, or to reveal a secret.",
+      "example": "She decided to give ___ her old clothes to charity.",
+      "options": [
+        "away",
+        "up",
+        "off",
+        "out"
+      ]
+    },
+    {
+      "id": "pv_give_back",
+      "phrase": "give back",
+      "particle": "back",
+      "meaning": "To return something to its owner.",
+      "example": "He forgot to give ___ the book he borrowed from the library.",
+      "options": [
+        "back",
+        "up",
+        "off",
+        "over"
+      ]
+    },
+    {
+      "id": "pv_go_on",
+      "phrase": "go on",
+      "particle": "on",
+      "meaning": "To continue, or to happen.",
+      "example": "The argument went ___ for almost an hour before they calmed down.",
+      "options": [
+        "on",
+        "over",
+        "through",
+        "up"
+      ]
+    },
+    {
+      "id": "pv_grow_up",
+      "phrase": "grow up",
+      "particle": "up",
+      "meaning": "To become an adult; to mature.",
+      "example": "She grew ___ in a small village near the mountains.",
+      "options": [
+        "up",
+        "on",
+        "out",
+        "into"
+      ]
+    },
+    {
+      "id": "pv_hand_in",
+      "phrase": "hand in",
+      "particle": "in",
+      "meaning": "To submit a piece of work or a document.",
+      "example": "Students must hand ___ their essays by Friday afternoon.",
+      "options": [
+        "in",
+        "out",
+        "over",
+        "up"
+      ]
+    },
+    {
+      "id": "pv_hang_out",
+      "phrase": "hang out",
+      "particle": "out",
+      "meaning": "To spend time relaxing or socializing.",
+      "example": "We usually hang ___ at the cafe after school.",
+      "options": [
+        "out",
+        "up",
+        "in",
+        "on"
+      ]
+    },
+    {
+      "id": "pv_hold_on",
+      "phrase": "hold on",
+      "particle": "on",
+      "meaning": "To wait for a short time.",
+      "example": "Could you hold ___ for a moment while I check the schedule?",
+      "options": [
+        "on",
+        "up",
+        "off",
+        "out"
+      ]
+    },
+    {
+      "id": "pv_keep_up",
+      "phrase": "keep up",
+      "particle": "up",
+      "meaning": "To maintain the same pace or standard as someone or something else.",
+      "example": "She had to run fast to keep ___ with the rest of the group.",
+      "options": [
+        "up",
+        "on",
+        "off",
+        "out"
+      ]
+    },
+    {
+      "id": "pv_let_down",
+      "phrase": "let down",
+      "particle": "down",
+      "meaning": "To disappoint someone by failing to do what was expected.",
+      "example": "He felt terrible for letting ___ his teammates during the final game.",
+      "options": [
+        "down",
+        "up",
+        "off",
+        "out"
+      ]
+    },
+    {
+      "id": "pv_log_in",
+      "phrase": "log in",
+      "particle": "in",
+      "meaning": "To access a computer system or account using a password.",
+      "example": "You need to log ___ before you can view your account details.",
+      "options": [
+        "in",
+        "on",
+        "up",
+        "out"
+      ]
+    },
+    {
+      "id": "pv_look_into",
+      "phrase": "look into",
+      "particle": "into",
+      "meaning": "To investigate or examine something carefully.",
+      "example": "The police agreed to look ___ the strange disappearance.",
+      "options": [
+        "into",
+        "after",
+        "up",
+        "through"
+      ]
+    },
+    {
+      "id": "pv_look_up",
+      "phrase": "look up",
+      "particle": "up",
+      "meaning": "To search for information, especially in a reference source.",
+      "example": "She looked ___ the meaning of the word in a dictionary.",
+      "options": [
+        "up",
+        "after",
+        "into",
+        "on"
+      ]
+    },
+    {
+      "id": "pv_make_up",
+      "phrase": "make up",
+      "particle": "up",
+      "meaning": "To invent a story or excuse, or to reconcile after an argument.",
+      "example": "He made ___ an excuse for being late to work.",
+      "options": [
+        "up",
+        "out",
+        "over",
+        "on"
+      ]
+    },
+    {
+      "id": "pv_move_in",
+      "phrase": "move in",
+      "particle": "in",
+      "meaning": "To begin living in a new home.",
+      "example": "They plan to move ___ to their new apartment next month.",
+      "options": [
+        "in",
+        "on",
+        "up",
+        "out"
+      ]
+    },
+    {
+      "id": "pv_move_on",
+      "phrase": "move on",
+      "particle": "on",
+      "meaning": "To proceed to a new activity or stage after finishing another.",
+      "example": "It's time to move ___ and stop dwelling on the past.",
+      "options": [
+        "on",
+        "up",
+        "over",
+        "out"
+      ]
+    },
+    {
+      "id": "pv_pass_out",
+      "phrase": "pass out",
+      "particle": "out",
+      "meaning": "To lose consciousness; to faint.",
+      "example": "The heat was so intense that one of the runners passed ___.",
+      "options": [
+        "out",
+        "away",
+        "off",
+        "up"
+      ]
+    },
+    {
+      "id": "pv_pick_up",
+      "phrase": "pick up",
+      "particle": "up",
+      "meaning": "To collect someone or something, or to learn a skill casually.",
+      "example": "Can you pick ___ some milk on your way home?",
+      "options": [
+        "up",
+        "out",
+        "on",
+        "over"
+      ]
+    },
+    {
+      "id": "pv_point_out",
+      "phrase": "point out",
+      "particle": "out",
+      "meaning": "To indicate or draw attention to something.",
+      "example": "The guide pointed ___ several interesting landmarks along the tour.",
+      "options": [
+        "out",
+        "up",
+        "at",
+        "on"
+      ]
+    },
+    {
+      "id": "pv_put_away",
+      "phrase": "put away",
+      "particle": "away",
+      "meaning": "To place something in its proper storage location.",
+      "example": "Please put ___ your toys before dinner.",
+      "options": [
+        "away",
+        "up",
+        "out",
+        "back"
+      ]
+    },
+    {
+      "id": "pv_run_out",
+      "phrase": "run out",
+      "particle": "out",
+      "meaning": "To use up a supply of something completely.",
+      "example": "They ran ___ of coffee halfway through the meeting.",
+      "options": [
+        "out",
+        "away",
+        "up",
+        "off"
+      ]
+    },
+    {
+      "id": "pv_set_up",
+      "phrase": "set up",
+      "particle": "up",
+      "meaning": "To establish or arrange something, such as a business or event.",
+      "example": "It took them a year to set ___ the new charity.",
+      "options": [
+        "up",
+        "on",
+        "out",
+        "off"
+      ]
+    },
+    {
+      "id": "pv_settle_down",
+      "phrase": "settle down",
+      "particle": "down",
+      "meaning": "To become calm, or to start living a stable life.",
+      "example": "After years of traveling, she finally settled ___ in a small town.",
+      "options": [
+        "down",
+        "up",
+        "in",
+        "into"
+      ]
+    },
+    {
+      "id": "pv_show_off",
+      "phrase": "show off",
+      "particle": "off",
+      "meaning": "To display something proudly in order to impress others.",
+      "example": "He loves to show ___ his new car to everyone he meets.",
+      "options": [
+        "off",
+        "up",
+        "out",
+        "on"
+      ]
+    },
+    {
+      "id": "pv_sort_out",
+      "phrase": "sort out",
+      "particle": "out",
+      "meaning": "To resolve a problem or organize something properly.",
+      "example": "It took the team all day to sort ___ the scheduling conflict.",
+      "options": [
+        "out",
+        "up",
+        "on",
+        "off"
+      ]
+    },
+    {
+      "id": "pv_speak_up",
+      "phrase": "speak up",
+      "particle": "up",
+      "meaning": "To talk more loudly, or to express an opinion confidently.",
+      "example": "She finally spoke ___ about the unfair treatment at work.",
+      "options": [
+        "up",
+        "out",
+        "on",
+        "off"
+      ]
+    },
+    {
+      "id": "pv_stand_out",
+      "phrase": "stand out",
+      "particle": "out",
+      "meaning": "To be noticeably different from or better than others.",
+      "example": "Her unique design really made the poster stand ___.",
+      "options": [
+        "out",
+        "up",
+        "off",
+        "apart"
+      ]
+    },
+    {
+      "id": "pv_take_after",
+      "phrase": "take after",
+      "particle": "after",
+      "meaning": "To resemble a parent or relative in appearance or character.",
+      "example": "Everyone says she takes ___ her grandmother.",
+      "options": [
+        "after",
+        "on",
+        "up",
+        "over"
+      ]
+    },
+    {
+      "id": "pv_take_off",
+      "phrase": "take off",
+      "particle": "off",
+      "meaning": "To remove clothing, or for a plane to leave the ground.",
+      "example": "The plane will take ___ in about twenty minutes.",
+      "options": [
+        "off",
+        "up",
+        "out",
+        "away"
+      ]
+    },
+    {
+      "id": "pv_take_over",
+      "phrase": "take over",
+      "particle": "over",
+      "meaning": "To assume control of something.",
+      "example": "The new manager will take ___ the department next month.",
+      "options": [
+        "over",
+        "on",
+        "up",
+        "out"
+      ]
+    },
+    {
+      "id": "pv_throw_away",
+      "phrase": "throw away",
+      "particle": "away",
+      "meaning": "To discard something as rubbish.",
+      "example": "She threw ___ the broken umbrella after the storm.",
+      "options": [
+        "away",
+        "up",
+        "out",
+        "off"
+      ]
+    },
+    {
+      "id": "pv_turn_into",
+      "phrase": "turn into",
+      "particle": "into",
+      "meaning": "To become or change into something different.",
+      "example": "The old warehouse was turned ___ a modern art gallery.",
+      "options": [
+        "into",
+        "on",
+        "over",
+        "up"
+      ]
+    },
+    {
+      "id": "pv_wake_up",
+      "phrase": "wake up",
+      "particle": "up",
+      "meaning": "To stop sleeping and become conscious.",
+      "example": "He woke ___ early to catch the first train.",
+      "options": [
+        "up",
+        "on",
+        "out",
+        "off"
+      ]
+    },
+    {
+      "id": "pv_work_out",
+      "phrase": "work out",
+      "particle": "out",
+      "meaning": "To exercise, or to solve or succeed in the end.",
+      "example": "She works ___ at the gym three times a week.",
+      "options": [
+        "out",
+        "up",
+        "on",
+        "off"
+      ]
+    },
+    {
+      "id": "pv_write_down",
+      "phrase": "write down",
+      "particle": "down",
+      "meaning": "To record information in written form.",
+      "example": "Please write ___ your phone number before you leave.",
+      "options": [
+        "down",
+        "up",
+        "out",
+        "off"
+      ]
+    }
+  ]
+}

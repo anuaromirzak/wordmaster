@@ -1,0 +1,1222 @@
+{
+  "sets": [
+    {
+      "id": "cw_goal_aim_target_objective",
+      "topic": "goal · aim · target · objective",
+      "words": [
+        {
+          "word": "goal",
+          "nuance": "A result you personally want to achieve, often long-term or life-related — the broadest and most everyday of these four words.",
+          "example": "Her ___ is to become a fully qualified doctor.",
+          "whenToUse": "Use for personal ambitions, life plans, or general things someone wants to accomplish."
+        },
+        {
+          "word": "aim",
+          "nuance": "The specific purpose behind an action — often the stated intention of a plan, essay, or short project.",
+          "example": "The ___ of this study is to test a new teaching method.",
+          "whenToUse": "Use when explaining the specific purpose of a plan, study, or piece of writing."
+        },
+        {
+          "word": "target",
+          "nuance": "A specific, often numerical result to reach by a set deadline — common in business, sales, and sport.",
+          "example": "The sales team missed its ___ for the third month in a row.",
+          "whenToUse": "Use for measurable, often numeric goals with a deadline, like sales figures or scores."
+        },
+        {
+          "word": "objective",
+          "nuance": "A precise, usually short-term step that supports a bigger goal — common in formal, business, or military language.",
+          "example": "Our main ___ this quarter is to reduce customer complaints by 20%.",
+          "whenToUse": "Use in formal or business contexts for a specific milestone within a larger plan."
+        }
+      ]
+    },
+    {
+      "id": "cw_affect_effect",
+      "topic": "affect vs effect",
+      "words": [
+        {
+          "word": "affect",
+          "nuance": "To influence or change something — almost always used as a verb.",
+          "example": "Loud noise can ___ your ability to concentrate.",
+          "whenToUse": "Use as a verb meaning 'to influence' (Loud noise affects concentration)."
+        },
+        {
+          "word": "effect",
+          "nuance": "A result or consequence caused by something — almost always used as a noun.",
+          "example": "Doctors are still studying the ___ of the new drug.",
+          "whenToUse": "Use as a noun meaning 'a result' (the effect of the drug). Rarely a verb meaning 'to bring about'."
+        }
+      ]
+    },
+    {
+      "id": "cw_see_look_watch",
+      "topic": "see · look · watch",
+      "words": [
+        {
+          "word": "see",
+          "nuance": "To notice something with your eyes without deliberate effort — often unintentional perception.",
+          "example": "I ___ a bird sitting on the fence.",
+          "whenToUse": "Use for things that simply enter your field of vision, without you trying to look."
+        },
+        {
+          "word": "look",
+          "nuance": "To deliberately direct your eyes toward something for a moment.",
+          "example": "___ at the board, please.",
+          "whenToUse": "Use for a brief, intentional glance, or when giving an instruction to direct someone's attention."
+        },
+        {
+          "word": "watch",
+          "nuance": "To look at something moving or changing for a period of time, with sustained attention.",
+          "example": "We ___ a movie every Friday night.",
+          "whenToUse": "Use for something in motion or that unfolds over time, like TV, sport, or a performance."
+        }
+      ]
+    },
+    {
+      "id": "cw_say_tell_speak_talk",
+      "topic": "say · tell · speak · talk",
+      "words": [
+        {
+          "word": "say",
+          "nuance": "To produce words — the focus is on the words themselves, not who they were said to.",
+          "example": "She didn't ___ a word during the meeting.",
+          "whenToUse": "Use when focusing on the words spoken, usually without naming a listener (say something)."
+        },
+        {
+          "word": "tell",
+          "nuance": "To give information to a specific person — this verb almost always needs a listener as its object.",
+          "example": "Can you ___ me the way to the station?",
+          "whenToUse": "Use when you name who receives the information: tell + person (tell me, tell him)."
+        },
+        {
+          "word": "speak",
+          "nuance": "To use your voice to communicate, often about language ability or formal, one-way communication.",
+          "example": "She can ___ three languages fluently.",
+          "whenToUse": "Use for language ability, or more formal communication such as speaking in public."
+        },
+        {
+          "word": "talk",
+          "nuance": "To have a conversation with someone — usually informal and two-directional.",
+          "example": "We ___ on the phone every evening.",
+          "whenToUse": "Use for informal, back-and-forth conversations between two or more people."
+        }
+      ]
+    },
+    {
+      "id": "cw_borrow_lend",
+      "topic": "borrow vs lend",
+      "words": [
+        {
+          "word": "borrow",
+          "nuance": "To take something temporarily from someone else, intending to return it.",
+          "example": "Can I ___ your pen for a second?",
+          "whenToUse": "Use when you are the one receiving the item temporarily (I borrow from you)."
+        },
+        {
+          "word": "lend",
+          "nuance": "To give something to someone else temporarily, expecting it back.",
+          "example": "Could you ___ me some money until Friday?",
+          "whenToUse": "Use when you are the one giving the item temporarily (you lend to me)."
+        }
+      ]
+    },
+    {
+      "id": "cw_make_do",
+      "topic": "make vs do",
+      "words": [
+        {
+          "word": "make",
+          "nuance": "To create or produce something physical, new, or creative.",
+          "example": "My grandmother used to ___ her own bread.",
+          "whenToUse": "Use when the result is a new object, product, or creation (make bread, make a plan)."
+        },
+        {
+          "word": "do",
+          "nuance": "To perform an action, task, or activity — especially general, routine, or unspecified ones.",
+          "example": "I need to ___ my homework before dinner.",
+          "whenToUse": "Use for actions, chores, and tasks that don't create a new physical thing (do homework, do the dishes)."
+        }
+      ]
+    },
+    {
+      "id": "cw_bring_take",
+      "topic": "bring vs take",
+      "words": [
+        {
+          "word": "bring",
+          "nuance": "To carry something toward the speaker's current location, or toward the place being discussed.",
+          "example": "Please ___ your umbrella when you come over tonight.",
+          "whenToUse": "Use when the movement is toward the speaker or toward the place being talked about."
+        },
+        {
+          "word": "take",
+          "nuance": "To carry something away from the speaker's current location, toward another place.",
+          "example": "Don't forget to ___ your keys when you leave.",
+          "whenToUse": "Use when the movement is away from the speaker, toward a different place."
+        }
+      ]
+    },
+    {
+      "id": "cw_economic_economical",
+      "topic": "economic vs economical",
+      "words": [
+        {
+          "word": "economic",
+          "nuance": "Relating to the economy, trade, or the study of economics in general.",
+          "example": "The government announced new ___ reforms.",
+          "whenToUse": "Use for topics about a country's economy, finance, or economics as a subject."
+        },
+        {
+          "word": "economical",
+          "nuance": "Careful with money or resources; not wasteful.",
+          "example": "This small car is very ___ on fuel.",
+          "whenToUse": "Use to describe something, or someone, that saves money or avoids waste."
+        }
+      ]
+    },
+    {
+      "id": "cw_historic_historical",
+      "topic": "historic vs historical",
+      "words": [
+        {
+          "word": "historic",
+          "nuance": "Famous or important in history — describes a genuinely significant, remarkable event.",
+          "example": "The signing of the treaty was a truly ___ moment.",
+          "whenToUse": "Use for events of great importance that are likely to be remembered."
+        },
+        {
+          "word": "historical",
+          "nuance": "Simply relating to history or the past, whether important or not.",
+          "example": "She's writing a ___ novel set in the 1800s.",
+          "whenToUse": "Use for anything related to the past or to history as a subject in general."
+        }
+      ]
+    },
+    {
+      "id": "cw_salary_wage_income",
+      "topic": "salary vs wage vs income",
+      "words": [
+        {
+          "word": "salary",
+          "nuance": "A fixed regular payment, usually paid monthly or yearly, typically for professional or office work.",
+          "example": "Her ___ is paid directly into her bank account every month.",
+          "whenToUse": "Use for fixed, regular pay tied to a job title or contract, usually skilled or office work."
+        },
+        {
+          "word": "wage",
+          "nuance": "Payment calculated by the hour or by the amount of work done, common in manual or part-time jobs.",
+          "example": "The factory workers are paid an hourly ___.",
+          "whenToUse": "Use for pay calculated by hours worked or output, often in manual or casual jobs."
+        },
+        {
+          "word": "income",
+          "nuance": "The broadest term — all the money a person or household receives from any source, not just a job.",
+          "example": "Their household ___ includes both salaries and rental payments.",
+          "whenToUse": "Use as the general, umbrella term covering all money received (salary, wages, investments, etc.)."
+        }
+      ]
+    },
+    {
+      "id": "cw_custom_habit",
+      "topic": "custom vs habit",
+      "words": [
+        {
+          "word": "custom",
+          "nuance": "A traditional practice shared by a whole group, community, or culture.",
+          "example": "It's a local ___ to remove your shoes before entering a house.",
+          "whenToUse": "Use for shared traditions belonging to a culture, country, or community."
+        },
+        {
+          "word": "habit",
+          "nuance": "A repeated behavior belonging to one individual person, often done automatically.",
+          "example": "Biting your nails is a hard ___ to break.",
+          "whenToUse": "Use for a personal, repeated behavior that one individual has, not a shared tradition."
+        }
+      ]
+    },
+    {
+      "id": "cw_ensure_assure_insure",
+      "topic": "ensure vs assure vs insure",
+      "words": [
+        {
+          "word": "ensure",
+          "nuance": "To make certain that something happens or is the case.",
+          "example": "Please ___ that all doors are locked before you leave.",
+          "whenToUse": "Use when making an action or outcome certain (ensure a result)."
+        },
+        {
+          "word": "assure",
+          "nuance": "To tell someone confidently that something is true, in order to remove their doubts.",
+          "example": "The doctor ___d the patient that the surgery was low-risk.",
+          "whenToUse": "Use when reassuring a person, always followed by the person being reassured (assure someone)."
+        },
+        {
+          "word": "insure",
+          "nuance": "To arrange financial compensation in case of loss, damage, illness, or death, usually via an insurance company.",
+          "example": "It's wise to ___ your car against theft and accidents.",
+          "whenToUse": "Use only in the financial/insurance sense, for property, health, or life protection."
+        }
+      ]
+    },
+    {
+      "id": "cw_classic_classical",
+      "topic": "classic vs classical",
+      "words": [
+        {
+          "word": "classic",
+          "nuance": "Widely recognized as being of the highest quality, or a typical, well-known example of something.",
+          "example": "This film is a ___ example of 1980s adventure cinema.",
+          "whenToUse": "Use for something outstanding, timeless, or a perfect typical example of its kind."
+        },
+        {
+          "word": "classical",
+          "nuance": "Relating to ancient Greek/Roman culture, or to a traditional, formal style — especially in music and art.",
+          "example": "She studied ___ music at the conservatory for ten years.",
+          "whenToUse": "Use for traditional Western art music, or anything connected to ancient Greece and Rome."
+        }
+      ]
+    },
+    {
+      "id": "cw_sensible_sensitive",
+      "topic": "sensible vs sensitive",
+      "words": [
+        {
+          "word": "sensible",
+          "nuance": "Showing good, practical judgment — making wise, reasonable decisions.",
+          "example": "It was ___ of her to save some money every month.",
+          "whenToUse": "Use for practical, wise, reasonable decisions or behavior."
+        },
+        {
+          "word": "sensitive",
+          "nuance": "Easily affected by, or quick to notice and react to, feelings, situations, or physical stimuli.",
+          "example": "He's quite ___ about comments regarding his work.",
+          "whenToUse": "Use for emotional delicacy, or physical/topical things that need careful, gentle handling."
+        }
+      ]
+    },
+    {
+      "id": "cw_lose_loose",
+      "topic": "lose vs loose",
+      "words": [
+        {
+          "word": "lose",
+          "nuance": "A verb meaning to no longer have something, or to fail to win.",
+          "example": "If you don't back up your files, you might ___ all your data.",
+          "whenToUse": "Use as a verb for losing an object, a game, or an ability (lose keys, lose a match)."
+        },
+        {
+          "word": "loose",
+          "nuance": "An adjective describing something not tightly fixed, fitted, or attached.",
+          "example": "These trousers are too ___ around the waist.",
+          "whenToUse": "Use as an adjective describing clothing, screws, knots, or anything not firmly attached."
+        }
+      ]
+    },
+    {
+      "id": "cw_principal_principle",
+      "topic": "principal vs principle",
+      "words": [
+        {
+          "word": "principal",
+          "nuance": "The most important thing or person, or the head of a school (noun/adjective).",
+          "example": "The ___ reason for the delay was bad weather.",
+          "whenToUse": "Use for 'main/most important' or for the head of a school (remember: pal = principal)."
+        },
+        {
+          "word": "principle",
+          "nuance": "A fundamental rule, belief, or truth that guides behavior or a system.",
+          "example": "Honesty is one of her most important ___s.",
+          "whenToUse": "Use for a moral rule, scientific law, or fundamental belief."
+        }
+      ]
+    },
+    {
+      "id": "cw_stationary_stationery",
+      "topic": "stationary vs stationery",
+      "words": [
+        {
+          "word": "stationary",
+          "nuance": "Not moving; staying in one place.",
+          "example": "The traffic was completely ___ for almost an hour.",
+          "whenToUse": "Use as an adjective meaning 'not moving' (a stationary vehicle, a stationary bike)."
+        },
+        {
+          "word": "stationery",
+          "nuance": "Writing materials such as paper, pens, and envelopes.",
+          "example": "She bought some new ___ for the office: pens, paper, and folders.",
+          "whenToUse": "Use as a noun for paper, pens, and other writing/office supplies (remember: -ery like 'letters')."
+        }
+      ]
+    },
+    {
+      "id": "cw_complement_compliment",
+      "topic": "complement vs compliment",
+      "words": [
+        {
+          "word": "complement",
+          "nuance": "Something that completes or perfectly goes together with something else, making it better.",
+          "example": "This wine is a perfect ___ to the fish dish.",
+          "whenToUse": "Use when one thing completes or enhances another (a complementary pair)."
+        },
+        {
+          "word": "compliment",
+          "nuance": "A polite expression of praise or admiration for someone.",
+          "example": "He paid her a nice ___ on her new haircut.",
+          "whenToUse": "Use for praise or an admiring remark given to a person."
+        }
+      ]
+    },
+    {
+      "id": "cw_continual_continuous",
+      "topic": "continual vs continuous",
+      "words": [
+        {
+          "word": "continual",
+          "nuance": "Happening again and again, frequently repeated, but with pauses or breaks in between.",
+          "example": "The meeting was interrupted by ___ phone calls.",
+          "whenToUse": "Use for something repeated often, with gaps or interruptions in between occurrences."
+        },
+        {
+          "word": "continuous",
+          "nuance": "Happening without any interruption or break, going on non-stop.",
+          "example": "The machine has been running ___ly for 12 hours straight.",
+          "whenToUse": "Use for something that never stops or pauses, an unbroken process."
+        }
+      ]
+    },
+    {
+      "id": "cw_imply_infer",
+      "topic": "imply vs infer",
+      "words": [
+        {
+          "word": "imply",
+          "nuance": "To suggest something indirectly without stating it openly — done by the speaker/writer.",
+          "example": "Her tone seemed to ___ that she disagreed with the plan.",
+          "whenToUse": "Use for the person making the suggestion (the speaker implies)."
+        },
+        {
+          "word": "infer",
+          "nuance": "To reach a conclusion based on evidence or reasoning — done by the listener/reader.",
+          "example": "From his silence, we could ___ that something was wrong.",
+          "whenToUse": "Use for the person drawing the conclusion (the listener infers)."
+        }
+      ]
+    },
+    {
+      "id": "cw_adapt_adopt",
+      "topic": "adapt vs adopt",
+      "words": [
+        {
+          "word": "adapt",
+          "nuance": "To change something, or yourself, to suit new conditions.",
+          "example": "It took the new employee a few weeks to ___ to the company culture.",
+          "whenToUse": "Use when something or someone changes to fit a new situation."
+        },
+        {
+          "word": "adopt",
+          "nuance": "To choose to take up or start using something (a plan, a method, a child) as your own, without changing it.",
+          "example": "The company decided to ___ a new marketing strategy.",
+          "whenToUse": "Use when choosing or accepting something as your own, unchanged (adopt a policy, adopt a child)."
+        }
+      ]
+    },
+    {
+      "id": "cw_rise_raise",
+      "topic": "rise vs raise",
+      "words": [
+        {
+          "word": "rise",
+          "nuance": "An intransitive verb — something goes up by itself, with no object.",
+          "example": "Prices tend to ___ during the holiday season.",
+          "whenToUse": "Use when the subject itself moves upward, with no direct object (prices rise, the sun rises)."
+        },
+        {
+          "word": "raise",
+          "nuance": "A transitive verb — someone lifts or increases something else; always needs an object.",
+          "example": "The company decided to ___ salaries by five percent.",
+          "whenToUse": "Use when someone/something acts on an object to lift or increase it (raise your hand, raise prices)."
+        }
+      ]
+    },
+    {
+      "id": "cw_amount_number",
+      "topic": "amount vs number",
+      "words": [
+        {
+          "word": "amount",
+          "nuance": "Used with uncountable nouns, referring to a quantity of something that isn't counted in individual units.",
+          "example": "A large ___ of water was wasted during the leak.",
+          "whenToUse": "Use before uncountable nouns (an amount of water, money, time, information)."
+        },
+        {
+          "word": "number",
+          "nuance": "Used with countable nouns, referring to individual, separately countable items.",
+          "example": "A growing ___ of students are choosing online courses.",
+          "whenToUse": "Use before countable, plural nouns (a number of students, cars, ideas)."
+        }
+      ]
+    },
+    {
+      "id": "cw_fewer_less",
+      "topic": "fewer vs less",
+      "words": [
+        {
+          "word": "fewer",
+          "nuance": "Used with plural, countable nouns to mean 'a smaller number of'.",
+          "example": "There are ___ mistakes in this report than in the last one.",
+          "whenToUse": "Use before countable plural nouns (fewer mistakes, fewer people, fewer cars)."
+        },
+        {
+          "word": "less",
+          "nuance": "Used with uncountable, singular nouns to mean 'a smaller amount of'.",
+          "example": "I try to eat ___ sugar than I used to.",
+          "whenToUse": "Use before uncountable or singular nouns (less sugar, less time, less money)."
+        }
+      ]
+    },
+    {
+      "id": "cw_remember_remind",
+      "topic": "remember vs remind",
+      "words": [
+        {
+          "word": "remember",
+          "nuance": "To recall information from your own memory, without anyone's help.",
+          "example": "I can't ___ where I put my keys this morning.",
+          "whenToUse": "Use when someone recalls something themselves, from their own memory."
+        },
+        {
+          "word": "remind",
+          "nuance": "To make someone else remember something, or to cause a memory to come back — always involves another person or trigger.",
+          "example": "Can you ___ me to call the dentist tomorrow?",
+          "whenToUse": "Use when one person/thing causes another person to remember (remind someone of/to do something)."
+        }
+      ]
+    },
+    {
+      "id": "cw_happy_glad_joyful",
+      "topic": "happy · glad · joyful",
+      "words": [
+        {
+          "word": "happy",
+          "nuance": "The general, everyday word for feeling good — works in almost any situation.",
+          "example": "She felt ___ when she got the job.",
+          "whenToUse": "Use as your default word for feeling good; it fits nearly every context."
+        },
+        {
+          "word": "glad",
+          "nuance": "A milder, more specific feeling, usually about one particular thing, and often followed by 'that' or 'to'.",
+          "example": "I'm ___ you could come to the party.",
+          "whenToUse": "Use for relief or satisfaction about a specific fact, often with 'that' or 'to + verb'."
+        },
+        {
+          "word": "joyful",
+          "nuance": "A stronger, more intense and often more formal or literary feeling of happiness.",
+          "example": "The wedding was a truly ___ occasion.",
+          "whenToUse": "Use for deep, visible happiness, especially describing events, occasions, or music."
+        }
+      ]
+    },
+    {
+      "id": "cw_hungry_starving",
+      "topic": "hungry vs starving",
+      "words": [
+        {
+          "word": "hungry",
+          "nuance": "The normal, everyday word for wanting food.",
+          "example": "I'm a little ___, let's get lunch.",
+          "whenToUse": "Use for the ordinary feeling of needing to eat."
+        },
+        {
+          "word": "starving",
+          "nuance": "An exaggerated, informal way of saying you are extremely hungry — rarely literal.",
+          "example": "Feed me now, I'm absolutely ___!",
+          "whenToUse": "Use informally to emphasize how hungry you feel, not actual starvation."
+        }
+      ]
+    },
+    {
+      "id": "cw_quiet_silent",
+      "topic": "quiet vs silent",
+      "words": [
+        {
+          "word": "quiet",
+          "nuance": "Low in noise but not completely without sound — a relative, everyday word.",
+          "example": "Please keep the classroom ___ during the test.",
+          "whenToUse": "Use for low noise levels in everyday situations like rooms, streets, or people."
+        },
+        {
+          "word": "silent",
+          "nuance": "Completely without sound — a stronger, more absolute word.",
+          "example": "The whole audience went ___ when the music stopped.",
+          "whenToUse": "Use for total absence of sound, or for someone who says nothing at all."
+        }
+      ]
+    },
+    {
+      "id": "cw_difficult_hard_tough",
+      "topic": "difficult · hard · tough",
+      "words": [
+        {
+          "word": "difficult",
+          "nuance": "A neutral, slightly more formal word for something that requires effort or skill.",
+          "example": "This math problem is quite ___.",
+          "whenToUse": "Use in neutral or formal contexts, especially for tasks, questions, or decisions."
+        },
+        {
+          "word": "hard",
+          "nuance": "The everyday, informal word — also used for physical firmness, unlike the other two.",
+          "example": "Learning a new language is ___ at first.",
+          "whenToUse": "Use in casual speech; note 'hard' can also mean physically solid, unlike 'difficult'."
+        },
+        {
+          "word": "tough",
+          "nuance": "Suggests a difficulty that also demands endurance or emotional strength.",
+          "example": "Losing her job was a ___ time for the whole family.",
+          "whenToUse": "Use for challenges involving hardship, resilience, or emotional strain."
+        }
+      ]
+    },
+    {
+      "id": "cw_journey_trip",
+      "topic": "journey vs trip",
+      "words": [
+        {
+          "word": "journey",
+          "nuance": "Focuses on the act of traveling itself, often long or significant, sometimes metaphorical.",
+          "example": "The ___ across the country took three days by train.",
+          "whenToUse": "Use for the travel process itself, especially if it's long, hard, or meaningful."
+        },
+        {
+          "word": "trip",
+          "nuance": "Focuses on the whole excursion, including arrival and purpose — usually shorter and more casual.",
+          "example": "We're planning a weekend ___ to the mountains.",
+          "whenToUse": "Use for a short outing or vacation, including what you do once you arrive."
+        }
+      ]
+    },
+    {
+      "id": "cw_big_large_huge",
+      "topic": "big · large · huge",
+      "words": [
+        {
+          "word": "big",
+          "nuance": "The most common, informal word for size — works for almost anything.",
+          "example": "They just bought a ___ house near the lake.",
+          "whenToUse": "Use as your everyday, casual word for size."
+        },
+        {
+          "word": "large",
+          "nuance": "A more formal, neutral synonym often used in writing, menus, or measurements.",
+          "example": "Could I get a ___ coffee, please?",
+          "whenToUse": "Use in formal or precise contexts, such as sizes, quantities, or written descriptions."
+        },
+        {
+          "word": "huge",
+          "nuance": "An intensified word for something far bigger than expected or normal.",
+          "example": "The company made a ___ profit this year.",
+          "whenToUse": "Use to emphasize an impressively or surprisingly large size or amount."
+        }
+      ]
+    },
+    {
+      "id": "cw_small_little_tiny",
+      "topic": "small · little · tiny",
+      "words": [
+        {
+          "word": "small",
+          "nuance": "The plain, neutral word for size, with no extra emotion attached.",
+          "example": "They live in a ___ apartment downtown.",
+          "whenToUse": "Use as the default, objective word for describing size."
+        },
+        {
+          "word": "little",
+          "nuance": "Often adds affection, sympathy, or emotional coloring, not just size.",
+          "example": "She has a sweet ___ dog that follows her everywhere.",
+          "whenToUse": "Use when your description also carries feeling, not just measurement."
+        },
+        {
+          "word": "tiny",
+          "nuance": "An intensified word for something extremely small.",
+          "example": "The apartment had only a ___ kitchen.",
+          "whenToUse": "Use to emphasize just how small something is, more strongly than 'small'."
+        }
+      ]
+    },
+    {
+      "id": "cw_angry_mad_furious",
+      "topic": "angry · mad · furious",
+      "words": [
+        {
+          "word": "angry",
+          "nuance": "The standard, neutral word for the emotion, appropriate in any register.",
+          "example": "He was ___ about the delayed flight.",
+          "whenToUse": "Use as your default, safe word for anger in speech or writing."
+        },
+        {
+          "word": "mad",
+          "nuance": "A very informal, mainly American synonym for angry; in British English it usually means crazy.",
+          "example": "Don't be ___ at me, it wasn't my fault.",
+          "whenToUse": "Use casually, especially in American English; be careful in British English where it can mean 'crazy'."
+        },
+        {
+          "word": "furious",
+          "nuance": "A much stronger word for extreme, intense anger.",
+          "example": "She was ___ when she found out about the lie.",
+          "whenToUse": "Use for very intense anger, stronger than everyday 'angry'."
+        }
+      ]
+    },
+    {
+      "id": "cw_afraid_scared_frightened",
+      "topic": "afraid · scared · frightened",
+      "words": [
+        {
+          "word": "afraid",
+          "nuance": "A common, slightly more formal word, often used with 'of' or 'that'.",
+          "example": "I'm ___ of spiders.",
+          "whenToUse": "Use in general contexts, including polite or written English, with 'of' or 'that'."
+        },
+        {
+          "word": "scared",
+          "nuance": "A more casual, everyday synonym often used in spoken English, especially by or about children.",
+          "example": "The little boy was ___ of the dark.",
+          "whenToUse": "Use in informal, spoken contexts, especially with children or casual topics."
+        },
+        {
+          "word": "frightened",
+          "nuance": "Suggests a sudden, sharper fear caused by something specific happening.",
+          "example": "The loud noise ___ everyone in the room.",
+          "whenToUse": "Use for fear triggered by a sudden event, often as a passive verb form too."
+        }
+      ]
+    },
+    {
+      "id": "cw_brave_courageous_bold",
+      "topic": "brave · courageous · bold",
+      "words": [
+        {
+          "word": "brave",
+          "nuance": "The everyday word for facing danger or difficulty without fear.",
+          "example": "It was ___ of her to speak up in the meeting.",
+          "whenToUse": "Use as your default, natural word for courage in daily situations."
+        },
+        {
+          "word": "courageous",
+          "nuance": "A more formal, literary synonym, often used for serious or public acts of bravery.",
+          "example": "The soldiers were praised for their ___ actions.",
+          "whenToUse": "Use in formal writing or speeches, especially about serious or heroic acts."
+        },
+        {
+          "word": "bold",
+          "nuance": "Focuses on confidence and willingness to take risks, not necessarily danger.",
+          "example": "She made a ___ decision to quit her job and travel.",
+          "whenToUse": "Use for confident, daring choices or actions, even without physical danger."
+        }
+      ]
+    },
+    {
+      "id": "cw_fast_quick_rapid",
+      "topic": "fast · quick · rapid",
+      "words": [
+        {
+          "word": "fast",
+          "nuance": "Describes high speed, often of moving things — the most common of the three.",
+          "example": "He drives a very ___ car.",
+          "whenToUse": "Use for speed of movement; it's the natural choice in everyday speech."
+        },
+        {
+          "word": "quick",
+          "nuance": "Focuses more on short duration than speed of movement.",
+          "example": "Let's have a ___ chat before the meeting.",
+          "whenToUse": "Use when something takes little time, even if movement isn't involved."
+        },
+        {
+          "word": "rapid",
+          "nuance": "A more formal word, often used for processes, changes, or growth rather than physical movement.",
+          "example": "The city has seen ___ growth over the last decade.",
+          "whenToUse": "Use in formal or technical contexts for fast change, growth, or development."
+        }
+      ]
+    },
+    {
+      "id": "cw_shop_store",
+      "topic": "shop vs store",
+      "words": [
+        {
+          "word": "shop",
+          "nuance": "The usual British English word for a place that sells goods, often small.",
+          "example": "There's a little ___ on the corner that sells bread.",
+          "whenToUse": "Use in British English, especially for smaller, local businesses."
+        },
+        {
+          "word": "store",
+          "nuance": "The usual American English word, and in British English often implies something larger.",
+          "example": "We need to go to the ___ to buy groceries.",
+          "whenToUse": "Use in American English generally, or in British English for larger shops."
+        }
+      ]
+    },
+    {
+      "id": "cw_car_automobile_vehicle",
+      "topic": "car · automobile · vehicle",
+      "words": [
+        {
+          "word": "car",
+          "nuance": "The everyday, universal word used in daily conversation.",
+          "example": "He parked his ___ outside the house.",
+          "whenToUse": "Use as your normal, default word in speech and writing."
+        },
+        {
+          "word": "automobile",
+          "nuance": "A formal, mainly American English word, common in official or technical writing.",
+          "example": "The company manufactures parts for the ___ industry.",
+          "whenToUse": "Use in formal American English contexts, like industry or legal writing."
+        },
+        {
+          "word": "vehicle",
+          "nuance": "A broader, formal word covering cars, trucks, buses, and more.",
+          "example": "All ___s must stop at the checkpoint.",
+          "whenToUse": "Use in formal or official contexts, or when referring to any kind of transport, not just cars."
+        }
+      ]
+    },
+    {
+      "id": "cw_cold_chilly_cool",
+      "topic": "cold · chilly · cool",
+      "words": [
+        {
+          "word": "cold",
+          "nuance": "The standard word for a low temperature, of any strength.",
+          "example": "It's really ___ outside today.",
+          "whenToUse": "Use as your general, everyday word for low temperature."
+        },
+        {
+          "word": "chilly",
+          "nuance": "A milder word than cold, often describing a slightly uncomfortable temperature.",
+          "example": "Bring a jacket, it might get ___ later.",
+          "whenToUse": "Use for mild coldness, weaker than 'cold' itself."
+        },
+        {
+          "word": "cool",
+          "nuance": "A pleasant, mild coldness — often seen as refreshing rather than uncomfortable.",
+          "example": "The evening air felt ___ after the hot day.",
+          "whenToUse": "Use for a pleasant, refreshing temperature, not real discomfort."
+        }
+      ]
+    },
+    {
+      "id": "cw_sick_ill",
+      "topic": "sick vs ill",
+      "words": [
+        {
+          "word": "sick",
+          "nuance": "Common in American English for general illness; in British English it can specifically mean vomiting.",
+          "example": "He stayed home because he felt ___.",
+          "whenToUse": "Use freely in American English; in British English, be aware it can imply vomiting."
+        },
+        {
+          "word": "ill",
+          "nuance": "The more common word for illness in British English, and slightly more formal overall.",
+          "example": "She has been ___ with the flu all week.",
+          "whenToUse": "Use in British English as the standard word, or in formal writing generally."
+        }
+      ]
+    },
+    {
+      "id": "cw_rude_impolite",
+      "topic": "rude vs impolite",
+      "words": [
+        {
+          "word": "rude",
+          "nuance": "A strong, direct word implying someone deliberately disrespects others.",
+          "example": "It was ___ of him to interrupt the speaker.",
+          "whenToUse": "Use for clearly offensive or disrespectful behavior."
+        },
+        {
+          "word": "impolite",
+          "nuance": "A softer, more formal word, describing a lack of good manners rather than real disrespect.",
+          "example": "It's considered ___ to speak with your mouth full.",
+          "whenToUse": "Use in more formal or polite contexts for minor breaches of manners."
+        }
+      ]
+    },
+    {
+      "id": "cw_shy_timid",
+      "topic": "shy vs timid",
+      "words": [
+        {
+          "word": "shy",
+          "nuance": "Describes discomfort in social situations, especially meeting new people.",
+          "example": "She was too ___ to introduce herself at the party.",
+          "whenToUse": "Use for social nervousness, especially around unfamiliar people."
+        },
+        {
+          "word": "timid",
+          "nuance": "Describes a more general lack of confidence or fear, not only in social settings.",
+          "example": "The ___ kitten hid under the sofa.",
+          "whenToUse": "Use for general fearfulness or lack of boldness, including in animals or actions."
+        }
+      ]
+    },
+    {
+      "id": "cw_lonely_alone",
+      "topic": "lonely vs alone",
+      "words": [
+        {
+          "word": "lonely",
+          "nuance": "Describes the unhappy feeling of being isolated, whether or not other people are present.",
+          "example": "He felt ___ after moving to a new city.",
+          "whenToUse": "Use to describe the emotional state of feeling isolated."
+        },
+        {
+          "word": "alone",
+          "nuance": "Simply means being physically by yourself, with no emotion implied.",
+          "example": "I like spending time ___ on weekends.",
+          "whenToUse": "Use as a neutral fact about being by yourself, positive or negative."
+        }
+      ]
+    },
+    {
+      "id": "cw_near_close",
+      "topic": "near vs close",
+      "words": [
+        {
+          "word": "near",
+          "nuance": "A neutral word for short physical distance.",
+          "example": "The hotel is ___ the train station.",
+          "whenToUse": "Use for plain physical distance, in a neutral tone."
+        },
+        {
+          "word": "close",
+          "nuance": "Can describe short distance too, but also emotional intimacy, unlike 'near'.",
+          "example": "They have been ___ friends since childhood.",
+          "whenToUse": "Use for emotional closeness, or distance when you want to emphasize nearness more strongly."
+        }
+      ]
+    },
+    {
+      "id": "cw_begin_start",
+      "topic": "begin vs start",
+      "words": [
+        {
+          "word": "begin",
+          "nuance": "A slightly more formal word, common in writing and set phrases.",
+          "example": "The meeting will ___ at nine o'clock.",
+          "whenToUse": "Use in more formal writing, speeches, or fixed expressions."
+        },
+        {
+          "word": "start",
+          "nuance": "The more common, everyday word, and also used for starting machines or engines.",
+          "example": "Can you ___ the car, please?",
+          "whenToUse": "Use in everyday speech, and always for machines, engines, or systems."
+        }
+      ]
+    },
+    {
+      "id": "cw_stop_halt",
+      "topic": "stop vs halt",
+      "words": [
+        {
+          "word": "stop",
+          "nuance": "The everyday, general word for ending movement or an activity.",
+          "example": "Please ___ the car here.",
+          "whenToUse": "Use as your normal, default word in almost any situation."
+        },
+        {
+          "word": "halt",
+          "nuance": "A formal or dramatic word, often for sudden or official stopping.",
+          "example": "The soldiers were ordered to ___ immediately.",
+          "whenToUse": "Use in formal, military, or dramatic contexts for a sudden, complete stop."
+        }
+      ]
+    },
+    {
+      "id": "cw_buy_purchase",
+      "topic": "buy vs purchase",
+      "words": [
+        {
+          "word": "buy",
+          "nuance": "The everyday, informal word used in ordinary conversation.",
+          "example": "I need to ___ some new shoes.",
+          "whenToUse": "Use in daily conversation and informal writing."
+        },
+        {
+          "word": "purchase",
+          "nuance": "A formal word, typical of business, legal, or written contexts.",
+          "example": "Customers can ___ the product online.",
+          "whenToUse": "Use in formal, business, or official writing."
+        }
+      ]
+    },
+    {
+      "id": "cw_hot_warm",
+      "topic": "hot vs warm",
+      "words": [
+        {
+          "word": "hot",
+          "nuance": "Describes a high, often uncomfortable temperature.",
+          "example": "Be careful, the soup is very ___.",
+          "whenToUse": "Use for high temperatures, especially when it could be uncomfortable or dangerous."
+        },
+        {
+          "word": "warm",
+          "nuance": "Describes a pleasant, moderate temperature, usually comfortable.",
+          "example": "It was a ___ afternoon, perfect for a walk.",
+          "whenToUse": "Use for a mild, comfortable temperature, weaker than 'hot'."
+        }
+      ]
+    },
+    {
+      "id": "cw_funny_amusing_hilarious",
+      "topic": "funny · amusing · hilarious",
+      "words": [
+        {
+          "word": "funny",
+          "nuance": "The everyday, general word for something that makes you laugh.",
+          "example": "That was a really ___ joke.",
+          "whenToUse": "Use as your default, casual word for humor."
+        },
+        {
+          "word": "amusing",
+          "nuance": "A milder, more formal word, suggesting light entertainment rather than big laughs.",
+          "example": "The story was mildly ___, though not laugh-out-loud funny.",
+          "whenToUse": "Use in more formal writing, or for gentle, light humor."
+        },
+        {
+          "word": "hilarious",
+          "nuance": "An intensified word for something extremely funny.",
+          "example": "The comedian's new show was absolutely ___.",
+          "whenToUse": "Use to emphasize very strong humor, stronger than plain 'funny'."
+        }
+      ]
+    },
+    {
+      "id": "cw_crowded_packed_busy",
+      "topic": "crowded · packed · busy",
+      "words": [
+        {
+          "word": "crowded",
+          "nuance": "Describes a place with an uncomfortable number of people.",
+          "example": "The train was so ___ we had to stand.",
+          "whenToUse": "Use for places that feel too full of people."
+        },
+        {
+          "word": "packed",
+          "nuance": "An intensified, informal word for extremely crowded — no room left.",
+          "example": "The concert venue was completely ___.",
+          "whenToUse": "Use informally to emphasize a place is totally full, stronger than 'crowded'."
+        },
+        {
+          "word": "busy",
+          "nuance": "Describes a place with a lot of activity or people, without necessarily being uncomfortable.",
+          "example": "The restaurant is always ___ on Friday nights.",
+          "whenToUse": "Use for a lively, active place, even if it's not literally overcrowded."
+        }
+      ]
+    },
+    {
+      "id": "cw_strong_powerful",
+      "topic": "strong vs powerful",
+      "words": [
+        {
+          "word": "strong",
+          "nuance": "Usually describes physical strength or general intensity.",
+          "example": "He is ___ enough to lift heavy boxes all day.",
+          "whenToUse": "Use for physical strength, or general intensity like strong coffee or a strong smell."
+        },
+        {
+          "word": "powerful",
+          "nuance": "Emphasizes force, influence, or effect, often beyond just physical strength.",
+          "example": "The new engine is much more ___ than the old one.",
+          "whenToUse": "Use for machines, effects, influence, or force rather than plain muscle strength."
+        }
+      ]
+    },
+    {
+      "id": "cw_polite_courteous",
+      "topic": "polite vs courteous",
+      "words": [
+        {
+          "word": "polite",
+          "nuance": "The everyday word for good manners and respectful behavior.",
+          "example": "It's ___ to say thank you.",
+          "whenToUse": "Use in everyday situations as your default word for manners."
+        },
+        {
+          "word": "courteous",
+          "nuance": "A more formal word, often used to describe professional or ceremonial politeness.",
+          "example": "The staff were extremely ___ to every guest.",
+          "whenToUse": "Use in formal writing, especially about service, hospitality, or professional behavior."
+        }
+      ]
+    },
+    {
+      "id": "cw_honest_truthful",
+      "topic": "honest vs truthful",
+      "words": [
+        {
+          "word": "honest",
+          "nuance": "Describes a person's overall character of being sincere and not deceiving others.",
+          "example": "She gave an ___ answer, even though it was hard to hear.",
+          "whenToUse": "Use to describe a person's general character or sincerity."
+        },
+        {
+          "word": "truthful",
+          "nuance": "Focuses specifically on telling the truth, in a particular statement or moment.",
+          "example": "Try to be ___ when the teacher asks what happened.",
+          "whenToUse": "Use to focus narrowly on whether specific words or statements are true."
+        }
+      ]
+    },
+    {
+      "id": "cw_friendly_kind",
+      "topic": "friendly vs kind",
+      "words": [
+        {
+          "word": "friendly",
+          "nuance": "Describes someone who is warm, open, and easy to talk to.",
+          "example": "Our new neighbor is very ___ and always says hello.",
+          "whenToUse": "Use for someone approachable and sociable in everyday interactions."
+        },
+        {
+          "word": "kind",
+          "nuance": "Describes someone who acts with genuine care or generosity toward others.",
+          "example": "It was ___ of you to help me carry the bags.",
+          "whenToUse": "Use to praise caring, generous actions rather than just a friendly manner."
+        }
+      ]
+    },
+    {
+      "id": "cw_bright_shining_brilliant",
+      "topic": "bright · shining · brilliant",
+      "words": [
+        {
+          "word": "bright",
+          "nuance": "The everyday word for strong or clear light or color.",
+          "example": "The classroom has ___ lights above every desk.",
+          "whenToUse": "Use as your default, general word for strong light or vivid color."
+        },
+        {
+          "word": "shining",
+          "nuance": "Describes light actively being given off, often reflecting off a surface.",
+          "example": "The sun was ___ on the water.",
+          "whenToUse": "Use for light that is actively being emitted or reflected, often in motion or a scene."
+        },
+        {
+          "word": "brilliant",
+          "nuance": "An intensified word for extremely bright light, or, informally, for excellent quality or intelligence.",
+          "example": "The stars were unusually ___ that night.",
+          "whenToUse": "Use for very strong light, or informally to mean excellent or very clever."
+        }
+      ]
+    },
+    {
+      "id": "cw_relax_rest",
+      "topic": "relax vs rest",
+      "words": [
+        {
+          "word": "relax",
+          "nuance": "Focuses on reducing stress or tension, mentally or physically.",
+          "example": "After work, I like to ___ with a cup of tea.",
+          "whenToUse": "Use when the goal is to reduce stress or tension."
+        },
+        {
+          "word": "rest",
+          "nuance": "Focuses on stopping activity to recover energy, often involving sleep or lying down.",
+          "example": "You should ___ after such a long journey.",
+          "whenToUse": "Use when the goal is physical recovery or sleep, not just reducing stress."
+        }
+      ]
+    },
+    {
+      "id": "cw_explain_describe_clarify",
+      "topic": "explain · describe · clarify",
+      "words": [
+        {
+          "word": "explain",
+          "nuance": "Gives reasons or details to make something understandable.",
+          "example": "Could you ___ how this machine works?",
+          "whenToUse": "Use when helping someone understand how or why something happens."
+        },
+        {
+          "word": "describe",
+          "nuance": "Gives details about what something looks or is like, without necessarily explaining causes.",
+          "example": "Please ___ the suspect to the police officer.",
+          "whenToUse": "Use when giving details about appearance, qualities, or events, not reasons."
+        },
+        {
+          "word": "clarify",
+          "nuance": "Removes confusion about something that was already partly said or understood.",
+          "example": "Let me ___ what I meant by that comment.",
+          "whenToUse": "Use when correcting or making clearer something that caused confusion."
+        }
+      ]
+    },
+    {
+      "id": "cw_choose_select_pick",
+      "topic": "choose · select · pick",
+      "words": [
+        {
+          "word": "choose",
+          "nuance": "The everyday, neutral word for deciding between options.",
+          "example": "You can ___ any dessert from the menu.",
+          "whenToUse": "Use as your default, general word for making a decision."
+        },
+        {
+          "word": "select",
+          "nuance": "A more formal word, often used in official, technical, or written contexts.",
+          "example": "Please ___ your preferred payment method.",
+          "whenToUse": "Use in formal or technical writing, such as forms, software, or reports."
+        },
+        {
+          "word": "pick",
+          "nuance": "A casual, informal word, often for quick or less serious decisions.",
+          "example": "Just ___ whichever color you like best.",
+          "whenToUse": "Use in casual speech for quick, everyday decisions."
+        }
+      ]
+    },
+    {
+      "id": "cw_finish_complete_end",
+      "topic": "finish · complete · end",
+      "words": [
+        {
+          "word": "finish",
+          "nuance": "The everyday word for reaching the end of an activity.",
+          "example": "I need to ___ my homework before dinner.",
+          "whenToUse": "Use as your default, casual word for completing a task."
+        },
+        {
+          "word": "complete",
+          "nuance": "A more formal word, often used for tasks, forms, or projects done thoroughly.",
+          "example": "Please ___ the application form by Friday.",
+          "whenToUse": "Use in formal contexts, especially for forms, projects, or official processes."
+        },
+        {
+          "word": "end",
+          "nuance": "Focuses on something stopping or reaching its final point, not always by finishing successfully.",
+          "example": "The movie will ___ in about twenty minutes.",
+          "whenToUse": "Use for something reaching its conclusion in time, not necessarily 'finished' with effort."
+        }
+      ]
+    },
+    {
+      "id": "cw_suggest_recommend",
+      "topic": "suggest vs recommend",
+      "words": [
+        {
+          "word": "suggest",
+          "nuance": "Offers an idea gently, without strong personal endorsement.",
+          "example": "I ___ we leave a bit earlier to avoid traffic.",
+          "whenToUse": "Use for gentle, tentative ideas without strong personal backing."
+        },
+        {
+          "word": "recommend",
+          "nuance": "Expresses a stronger, more confident endorsement, often based on experience.",
+          "example": "The doctor will ___ the best treatment for you.",
+          "whenToUse": "Use when you have real confidence in the suggestion, often based on expertise or experience."
+        }
+      ]
+    }
+  ]
+}

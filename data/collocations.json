@@ -1,0 +1,244 @@
+{
+  "collocations": [
+    {
+      "id": "col_lead_to",
+      "phrase": "lead to",
+      "particle": "to",
+      "meaning": "To result in or cause something, usually a consequence.",
+      "example": "Poor decisions led ___ failure.",
+      "options": ["to", "for", "with", "in"]
+    },
+    {
+      "id": "col_depend_on",
+      "phrase": "depend on",
+      "particle": "on",
+      "meaning": "To rely on someone or something as necessary for support or a result.",
+      "example": "Success often depends ___ hard work.",
+      "options": ["on", "in", "for", "with"]
+    },
+    {
+      "id": "col_result_in",
+      "phrase": "result in",
+      "particle": "in",
+      "meaning": "To have something as a consequence or outcome.",
+      "example": "The negotiations resulted ___ a new agreement.",
+      "options": ["in", "to", "with", "from"]
+    },
+    {
+      "id": "col_rely_on",
+      "phrase": "rely on",
+      "particle": "on",
+      "meaning": "To trust or depend on someone or something with confidence.",
+      "example": "You can always rely ___ her for good advice.",
+      "options": ["on", "in", "to", "with"]
+    },
+    {
+      "id": "col_account_for",
+      "phrase": "account for",
+      "particle": "for",
+      "meaning": "To explain or give a reason for something; also, to make up a part or proportion of something.",
+      "example": "Bad weather can account ___ the delay.",
+      "options": ["for", "of", "with", "to"]
+    },
+    {
+      "id": "col_cope_with",
+      "phrase": "cope with",
+      "particle": "with",
+      "meaning": "To deal successfully with a difficult situation.",
+      "example": "It's not easy to cope ___ so much stress.",
+      "options": ["with", "to", "for", "of"]
+    },
+    {
+      "id": "col_consist_of",
+      "phrase": "consist of",
+      "particle": "of",
+      "meaning": "To be made up of or composed of particular parts.",
+      "example": "The committee consists ___ ten members.",
+      "options": ["of", "in", "with", "from"]
+    },
+    {
+      "id": "col_deal_with",
+      "phrase": "deal with",
+      "particle": "with",
+      "meaning": "To take action to solve a problem, or to handle a situation or person.",
+      "example": "The manager had to deal ___ several complaints today.",
+      "options": ["with", "of", "to", "for"]
+    },
+    {
+      "id": "col_focus_on",
+      "phrase": "focus on",
+      "particle": "on",
+      "meaning": "To give most of your attention to one particular thing.",
+      "example": "Let's focus ___ the most important issue first.",
+      "options": ["on", "in", "to", "at"]
+    },
+    {
+      "id": "col_insist_on",
+      "phrase": "insist on",
+      "particle": "on",
+      "meaning": "To demand something firmly, refusing to accept another option.",
+      "example": "She insisted ___ paying for the meal herself.",
+      "options": ["on", "in", "for", "with"]
+    },
+    {
+      "id": "col_believe_in",
+      "phrase": "believe in",
+      "particle": "in",
+      "meaning": "To be convinced that something exists, or to have faith or trust in someone's ability.",
+      "example": "I really believe ___ you — you can do this.",
+      "options": ["in", "on", "at", "for"]
+    },
+    {
+      "id": "col_apply_for",
+      "phrase": "apply for",
+      "particle": "for",
+      "meaning": "To make a formal request for something, such as a job or a permit.",
+      "example": "He decided to apply ___ the marketing position.",
+      "options": ["for", "to", "on", "in"]
+    },
+    {
+      "id": "col_benefit_from",
+      "phrase": "benefit from",
+      "particle": "from",
+      "meaning": "To be helped or improved by something.",
+      "example": "Many students benefit ___ extra practice before exams.",
+      "options": ["from", "of", "with", "by"]
+    },
+    {
+      "id": "col_suffer_from",
+      "phrase": "suffer from",
+      "particle": "from",
+      "meaning": "To be affected by an illness or a negative condition over time.",
+      "example": "She has been suffering ___ headaches all week.",
+      "options": ["from", "of", "with", "by"]
+    },
+    {
+      "id": "col_participate_in",
+      "phrase": "participate in",
+      "particle": "in",
+      "meaning": "To take part in an activity or event.",
+      "example": "All employees are encouraged to participate ___ the training program.",
+      "options": ["in", "on", "at", "with"]
+    },
+    {
+      "id": "col_succeed_in",
+      "phrase": "succeed in",
+      "particle": "in",
+      "meaning": "To achieve the result you were trying to achieve.",
+      "example": "He finally succeeded ___ passing the driving test.",
+      "options": ["in", "at", "with", "on"]
+    },
+    {
+      "id": "col_specialize_in",
+      "phrase": "specialize in",
+      "particle": "in",
+      "meaning": "To focus your work or study on one particular subject or area.",
+      "example": "This law firm specializes ___ international trade disputes.",
+      "options": ["in", "on", "at", "with"]
+    },
+    {
+      "id": "col_comment_on",
+      "phrase": "comment on",
+      "particle": "on",
+      "meaning": "To express an opinion or observation about something.",
+      "example": "The critics didn't comment ___ the ending of the film.",
+      "options": ["on", "in", "at", "for"]
+    },
+    {
+      "id": "col_concentrate_on",
+      "phrase": "concentrate on",
+      "particle": "on",
+      "meaning": "To direct all your effort or attention toward one thing.",
+      "example": "Try to concentrate ___ your breathing to relax.",
+      "options": ["on", "in", "at", "to"]
+    },
+    {
+      "id": "col_contribute_to",
+      "phrase": "contribute to",
+      "particle": "to",
+      "meaning": "To give something, such as money, effort, or ideas, that helps achieve a result.",
+      "example": "Everyone on the team contributed ___ the project's success.",
+      "options": ["to", "for", "with", "in"]
+    },
+    {
+      "id": "col_react_to",
+      "phrase": "react to",
+      "particle": "to",
+      "meaning": "To behave or respond in a particular way because of something that happens.",
+      "example": "It's hard to predict how people will react ___ the news.",
+      "options": ["to", "on", "with", "for"]
+    },
+    {
+      "id": "col_respond_to",
+      "phrase": "respond to",
+      "particle": "to",
+      "meaning": "To reply or act in answer to something.",
+      "example": "The company was slow to respond ___ customer complaints.",
+      "options": ["to", "with", "on", "for"]
+    },
+    {
+      "id": "col_adapt_to",
+      "phrase": "adapt to",
+      "particle": "to",
+      "meaning": "To change your behavior to suit a new situation or environment.",
+      "example": "It took her a while to adapt ___ the new schedule.",
+      "options": ["to", "with", "for", "in"]
+    },
+    {
+      "id": "col_differ_from",
+      "phrase": "differ from",
+      "particle": "from",
+      "meaning": "To be different from or unlike something else.",
+      "example": "His opinion differs ___ mine on this issue.",
+      "options": ["from", "with", "to", "of"]
+    },
+    {
+      "id": "col_agree_with",
+      "phrase": "agree with",
+      "particle": "with",
+      "meaning": "To have the same opinion as someone, or to think something is right.",
+      "example": "I completely agree ___ your decision.",
+      "options": ["with", "to", "on", "for"]
+    },
+    {
+      "id": "col_compete_with",
+      "phrase": "compete with",
+      "particle": "with",
+      "meaning": "To try to be more successful than another person or company in the same activity.",
+      "example": "Small shops struggle to compete ___ big supermarkets.",
+      "options": ["with", "to", "in", "for"]
+    },
+    {
+      "id": "col_invest_in",
+      "phrase": "invest in",
+      "particle": "in",
+      "meaning": "To put money, time, or effort into something, expecting a future benefit.",
+      "example": "The company plans to invest ___ new technology next year.",
+      "options": ["in", "on", "for", "with"]
+    },
+    {
+      "id": "col_approve_of",
+      "phrase": "approve of",
+      "particle": "of",
+      "meaning": "To think that someone or something is good, acceptable, or suitable.",
+      "example": "Her parents didn't approve ___ her career choice at first.",
+      "options": ["of", "on", "for", "with"]
+    },
+    {
+      "id": "col_object_to",
+      "phrase": "object to",
+      "particle": "to",
+      "meaning": "To express disagreement or opposition to something.",
+      "example": "Several residents objected ___ the new construction project.",
+      "options": ["to", "on", "for", "with"]
+    },
+    {
+      "id": "col_wait_for",
+      "phrase": "wait for",
+      "particle": "for",
+      "meaning": "To stay in a place or remain ready until someone or something arrives, or until something happens.",
+      "example": "We waited ___ the bus for almost an hour.",
+      "options": ["for", "to", "on", "at"]
+    }
+  ]
+}

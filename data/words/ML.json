@@ -1,0 +1,5791 @@
+[
+  {
+    "id": "ml_01",
+    "word": "algorithm",
+    "rank": 3,
+    "definition": "A step-by-step set of rules or instructions used to solve a problem or complete a task.",
+    "example": "The search engine uses a special ___ to rank web pages by relevance."
+  },
+  {
+    "id": "ml_02",
+    "word": "dataset",
+    "rank": 8,
+    "definition": "A structured collection of data, often used to train or test a model.",
+    "example": "Before training the model, the team cleaned the entire ___ to remove errors."
+  },
+  {
+    "id": "ml_03",
+    "word": "overfitting",
+    "rank": 35,
+    "definition": "When a model learns training data too well, including noise, and performs poorly on new data.",
+    "example": "The model showed signs of ___ because it scored perfectly on training data but poorly on new data."
+  },
+  {
+    "id": "ml_04",
+    "word": "gradient",
+    "rank": 30,
+    "definition": "A vector that shows the direction and rate of the steepest increase of a function.",
+    "example": "The optimizer follows the ___ to find the minimum of the loss function."
+  },
+  {
+    "id": "ml_05",
+    "word": "inference",
+    "rank": 20,
+    "definition": "The process of using a trained model to make predictions on new data.",
+    "example": "After training, the model is deployed to run ___ on live user data."
+  },
+  {
+    "id": "ml_06",
+    "word": "regression",
+    "rank": 25,
+    "definition": "A statistical method used to predict a continuous numeric value.",
+    "example": "Linear ___ is often used to predict house prices based on their features."
+  },
+  {
+    "id": "ml_07",
+    "word": "classification",
+    "rank": 22,
+    "definition": "The task of assigning input data into predefined categories or classes.",
+    "example": "Email spam detection is a common ___ problem with two classes: spam or not spam."
+  },
+  {
+    "id": "ml_08",
+    "word": "feature",
+    "rank": 15,
+    "definition": "An individual measurable property or characteristic used as input to a model.",
+    "example": "Age and income are two important ___ used to predict loan approval."
+  },
+  {
+    "id": "ml_09",
+    "word": "epoch",
+    "rank": 45,
+    "definition": "One complete pass of the entire training dataset through a learning algorithm.",
+    "example": "The model was trained for fifty ___ before the accuracy stopped improving."
+  },
+  {
+    "id": "ml_10",
+    "word": "bias",
+    "rank": 18,
+    "definition": "A systematic error that causes a model to consistently favor certain outcomes.",
+    "example": "The hiring algorithm showed a clear ___ toward candidates from certain universities."
+  },
+  {
+    "id": "ml_11",
+    "word": "model",
+    "rank": 1,
+    "definition": "A mathematical or computational representation trained to make predictions from data.",
+    "example": "After training, the ___ was tested on data it had never seen before."
+  },
+  {
+    "id": "ml_12",
+    "word": "label",
+    "rank": 10,
+    "definition": "The correct answer or category assigned to a training example, used to guide supervised learning.",
+    "example": "Each image in the dataset was given a ___ such as 'cat' or 'dog'."
+  },
+  {
+    "id": "ml_13",
+    "word": "loss",
+    "rank": 5,
+    "definition": "A number that measures how far a model's predictions are from the correct answers.",
+    "example": "The training process tries to minimize the ___ with each update."
+  },
+  {
+    "id": "ml_14",
+    "word": "optimizer",
+    "rank": 40,
+    "definition": "An algorithm that adjusts a model's parameters to reduce its errors during training.",
+    "example": "The team used a popular ___ to speed up the training process."
+  },
+  {
+    "id": "ml_15",
+    "word": "hyperparameter",
+    "rank": 55,
+    "definition": "A configuration value set before training begins, such as the learning rate.",
+    "example": "Choosing the right ___ often requires trial and error."
+  },
+  {
+    "id": "ml_16",
+    "word": "validation",
+    "rank": 28,
+    "definition": "The process of checking a model's performance on data separate from the training set.",
+    "example": "A ___ set helps detect overfitting before the model is deployed."
+  },
+  {
+    "id": "ml_17",
+    "word": "embedding",
+    "rank": 60,
+    "definition": "A numerical representation of data, such as words, that captures their meaning in a compact form.",
+    "example": "Word ___ allow the model to understand that 'king' and 'queen' are related."
+  },
+  {
+    "id": "ml_18",
+    "word": "supervised",
+    "rank": 12,
+    "definition": "A type of learning where the model is trained on data that includes the correct answers.",
+    "example": "In ___ learning, the algorithm learns from labeled examples."
+  },
+  {
+    "id": "ml_19",
+    "word": "unsupervised",
+    "rank": 32,
+    "definition": "A type of learning where the model finds patterns in data without labeled answers.",
+    "example": "Clustering is a common ___ learning technique."
+  },
+  {
+    "id": "ml_20",
+    "word": "cluster",
+    "rank": 48,
+    "definition": "A group of similar data points identified by an algorithm.",
+    "example": "The algorithm grouped the customers into three distinct ___."
+  },
+  {
+    "id": "ml_21",
+    "word": "precision",
+    "rank": 50,
+    "definition": "A measure of how many of the model's positive predictions were actually correct.",
+    "example": "A spam filter with high ___ rarely marks a real email as spam."
+  },
+  {
+    "id": "ml_22",
+    "word": "recall",
+    "rank": 52,
+    "definition": "A measure of how many of the actual positive cases the model correctly identified.",
+    "example": "A medical test needs high ___ so it does not miss sick patients."
+  },
+  {
+    "id": "ml_23",
+    "word": "normalize",
+    "rank": 65,
+    "definition": "To adjust data values to a common scale before feeding them into a model.",
+    "example": "It is common practice to ___ the input features before training."
+  },
+  {
+    "id": "ml_24",
+    "word": "deploy",
+    "rank": 42,
+    "definition": "To put a trained model into use in a real application.",
+    "example": "Once tested, the team plans to ___ the model to the production app."
+  },
+  {
+    "id": "ml_25",
+    "word": "token",
+    "rank": 70,
+    "definition": "A single unit of text, such as a word or part of a word, used as input to a language model.",
+    "example": "The sentence was split into individual ___ before processing."
+  },
+  {
+    "id": "ml_26",
+    "word": "pipeline",
+    "rank": 75,
+    "definition": "A sequence of automated steps that process data from raw input to final output.",
+    "example": "The data ___ cleans, transforms, and loads the data every night."
+  },
+  {
+    "id": "ml_27",
+    "word": "checkpoint",
+    "rank": 85,
+    "definition": "A saved snapshot of a model's parameters during training, used to resume or recover training.",
+    "example": "The engineer saved a ___ every few hours in case the training crashed."
+  },
+  {
+    "id": "ml_28",
+    "word": "latency",
+    "rank": 68,
+    "definition": "The delay between a request and the model's response.",
+    "example": "Reducing ___ is critical for a chatbot that needs to feel instant."
+  },
+  {
+    "id": "ml_gen_001",
+    "word": "backpropagation",
+    "rank": 90,
+    "definition": "An algorithm for training neural networks by propagating the error backward through the layers to update weights.",
+    "example": "The team used ___ to adjust the network's weights during training."
+  },
+  {
+    "id": "ml_gen_002",
+    "word": "tensor",
+    "rank": 95,
+    "definition": "A multi-dimensional array used to represent data in machine learning frameworks.",
+    "example": "The image was converted into a ___ before being processed."
+  },
+  {
+    "id": "ml_gen_003",
+    "word": "parameter",
+    "rank": 100,
+    "definition": "A value learned by a model during training.",
+    "example": "The model has millions of ___s tuned during training."
+  },
+  {
+    "id": "ml_gen_004",
+    "word": "batch",
+    "rank": 105,
+    "definition": "A subset of the training data processed together in one training step.",
+    "example": "The model updates its weights after each ___ of examples."
+  },
+  {
+    "id": "ml_gen_005",
+    "word": "underfitting",
+    "rank": 110,
+    "definition": "When a model is too simple to capture the underlying pattern in the data.",
+    "example": "The model suffered from ___ because it performed poorly even on the training set."
+  },
+  {
+    "id": "ml_gen_006",
+    "word": "regularization",
+    "rank": 115,
+    "definition": "A technique used to prevent overfitting by penalizing overly complex models.",
+    "example": "Adding ___ helped the model generalize to new data."
+  },
+  {
+    "id": "ml_gen_007",
+    "word": "dropout",
+    "rank": 120,
+    "definition": "A regularization technique that randomly disables neurons during training.",
+    "example": "___ is often used to reduce overfitting in deep networks."
+  },
+  {
+    "id": "ml_gen_008",
+    "word": "accuracy",
+    "rank": 125,
+    "definition": "The proportion of correct predictions made by a model.",
+    "example": "The final model achieved ninety-five percent ___ on the test set."
+  },
+  {
+    "id": "ml_gen_009",
+    "word": "neuron",
+    "rank": 130,
+    "definition": "A basic computational unit in a neural network, inspired by biological brain cells.",
+    "example": "Each ___ in the layer receives inputs and produces an output."
+  },
+  {
+    "id": "ml_gen_010",
+    "word": "perceptron",
+    "rank": 135,
+    "definition": "One of the simplest types of artificial neural network, used for binary classification.",
+    "example": "The ___ was one of the earliest models of a neural network."
+  },
+  {
+    "id": "ml_gen_011",
+    "word": "autoencoder",
+    "rank": 140,
+    "definition": "A neural network trained to compress and then reconstruct its input data.",
+    "example": "The team used an ___ to detect unusual transactions."
+  },
+  {
+    "id": "ml_gen_012",
+    "word": "transformer",
+    "rank": 145,
+    "definition": "A neural network architecture that relies on attention mechanisms, widely used in language models.",
+    "example": "Modern chatbots are usually built on the ___ architecture."
+  },
+  {
+    "id": "ml_gen_013",
+    "word": "attention",
+    "rank": 150,
+    "definition": "A mechanism that allows a model to focus on the most relevant parts of the input.",
+    "example": "The ___ mechanism helps the model focus on important words in a sentence."
+  },
+  {
+    "id": "ml_gen_014",
+    "word": "corpus",
+    "rank": 155,
+    "definition": "A large collection of text used to train language models.",
+    "example": "The model was trained on a huge ___ of internet text."
+  },
+  {
+    "id": "ml_gen_015",
+    "word": "tokenization",
+    "rank": 160,
+    "definition": "The process of splitting text into smaller units, such as words or subwords.",
+    "example": "___ is usually the first step in processing text data."
+  },
+  {
+    "id": "ml_gen_016",
+    "word": "vectorize",
+    "rank": 165,
+    "definition": "To convert data, such as text or images, into numerical vectors.",
+    "example": "The first step is to ___ the text before feeding it into the model."
+  },
+  {
+    "id": "ml_gen_017",
+    "word": "similarity",
+    "rank": 170,
+    "definition": "A measure of how alike two data points or vectors are.",
+    "example": "Cosine ___ is often used to compare two text embeddings."
+  },
+  {
+    "id": "ml_gen_018",
+    "word": "outlier",
+    "rank": 175,
+    "definition": "A data point that lies far outside the normal range of the dataset.",
+    "example": "The analyst removed the ___ before running the calculation."
+  },
+  {
+    "id": "ml_gen_019",
+    "word": "imputation",
+    "rank": 180,
+    "definition": "The process of filling in missing values in a dataset.",
+    "example": "The team used mean ___ to handle the missing entries."
+  },
+  {
+    "id": "ml_gen_020",
+    "word": "augmentation",
+    "rank": 185,
+    "definition": "Techniques used to artificially increase the size of a training dataset.",
+    "example": "Data ___ helped improve the model's performance on rotated images."
+  },
+  {
+    "id": "ml_gen_021",
+    "word": "ensemble",
+    "rank": 190,
+    "definition": "A technique that combines multiple models to improve overall performance.",
+    "example": "The final prediction came from an ___ of several models."
+  },
+  {
+    "id": "ml_gen_022",
+    "word": "bootstrapping",
+    "rank": 195,
+    "definition": "A resampling technique used to estimate statistics by sampling with replacement.",
+    "example": "___ was used to estimate the confidence interval of the result."
+  },
+  {
+    "id": "ml_gen_023",
+    "word": "benchmark",
+    "rank": 200,
+    "definition": "A standard test used to compare the performance of different models.",
+    "example": "The new model outperformed the previous ___ by a wide margin."
+  },
+  {
+    "id": "ml_gen_024",
+    "word": "baseline",
+    "rank": 205,
+    "definition": "A simple model or method used as a reference point for comparison.",
+    "example": "The team's first goal was to beat the ___ model."
+  },
+  {
+    "id": "ml_gen_025",
+    "word": "metric",
+    "rank": 210,
+    "definition": "A quantitative measure used to evaluate the performance of a model.",
+    "example": "Accuracy is the most common ___ used for classification tasks."
+  },
+  {
+    "id": "ml_gen_026",
+    "word": "threshold",
+    "rank": 215,
+    "definition": "A value used to decide between two possible outcomes in a model's prediction.",
+    "example": "Lowering the ___ increased the number of positive predictions."
+  },
+  {
+    "id": "ml_gen_027",
+    "word": "sigmoid",
+    "rank": 220,
+    "definition": "An activation function that maps values into a range between zero and one.",
+    "example": "The output layer used a ___ function for binary classification."
+  },
+  {
+    "id": "ml_gen_028",
+    "word": "softmax",
+    "rank": 225,
+    "definition": "An activation function that converts a vector of numbers into probabilities.",
+    "example": "The ___ function was applied to get class probabilities."
+  },
+  {
+    "id": "ml_gen_029",
+    "word": "convergence",
+    "rank": 230,
+    "definition": "The point at which a training process stops improving significantly.",
+    "example": "Training continued until the loss reached ___."
+  },
+  {
+    "id": "ml_gen_030",
+    "word": "divergence",
+    "rank": 235,
+    "definition": "A measure of how one probability distribution differs from another, or a failure of a process to stabilize.",
+    "example": "The training run showed signs of ___ instead of convergence."
+  },
+  {
+    "id": "ml_gen_031",
+    "word": "saturation",
+    "rank": 240,
+    "definition": "A state in which a neuron's output stops changing significantly with input, slowing learning.",
+    "example": "Using the wrong activation function can cause neuron ___."
+  },
+  {
+    "id": "ml_gen_032",
+    "word": "scheduler",
+    "rank": 245,
+    "definition": "A component that adjusts the learning rate during training according to a plan.",
+    "example": "The learning rate ___ reduced the rate every few epochs."
+  },
+  {
+    "id": "ml_gen_033",
+    "word": "synthetic",
+    "rank": 250,
+    "definition": "Artificially created rather than naturally occurring, often used to describe generated data.",
+    "example": "The team generated ___ data to expand the training set."
+  },
+  {
+    "id": "ml_gen_034",
+    "word": "annotation",
+    "rank": 255,
+    "definition": "A label or note added to data to describe it, often used for supervised learning.",
+    "example": "Each image required manual ___ before training."
+  },
+  {
+    "id": "ml_gen_035",
+    "word": "curation",
+    "rank": 260,
+    "definition": "The process of selecting and organizing data for a particular purpose.",
+    "example": "Careful data ___ improved the quality of the training set."
+  },
+  {
+    "id": "ml_gen_036",
+    "word": "preprocessing",
+    "rank": 265,
+    "definition": "The steps taken to clean and prepare raw data before it is used by a model.",
+    "example": "Data ___ included removing duplicates and filling missing values."
+  },
+  {
+    "id": "ml_gen_037",
+    "word": "postprocessing",
+    "rank": 270,
+    "definition": "Steps applied to a model's output after prediction to refine the final result.",
+    "example": "The team added a ___ step to filter out low-confidence results."
+  },
+  {
+    "id": "ml_gen_038",
+    "word": "reasoning",
+    "rank": 275,
+    "definition": "The process of drawing conclusions from information, often used to describe a model's problem-solving ability.",
+    "example": "The new model showed stronger ___ on multi-step math problems."
+  },
+  {
+    "id": "ml_gen_039",
+    "word": "multimodal",
+    "rank": 280,
+    "definition": "Involving or combining several different types of data, such as text and images.",
+    "example": "The new model is ___ and can process both text and images."
+  },
+  {
+    "id": "ml_gen_040",
+    "word": "generative",
+    "rank": 285,
+    "definition": "Describes a model designed to create new data similar to its training data.",
+    "example": "The team built a ___ model to create realistic images."
+  },
+  {
+    "id": "ml_gen_041",
+    "word": "discriminative",
+    "rank": 290,
+    "definition": "Describes a model designed to distinguish between different classes of data.",
+    "example": "A ___ model was trained to separate spam from real emails."
+  },
+  {
+    "id": "ml_gen_042",
+    "word": "reinforcement",
+    "rank": 295,
+    "definition": "A type of learning in which an agent learns by receiving rewards or penalties for its actions.",
+    "example": "The robot used ___ learning to learn how to walk."
+  },
+  {
+    "id": "ml_gen_043",
+    "word": "agent",
+    "rank": 300,
+    "definition": "A program that perceives its environment and takes actions to achieve a goal.",
+    "example": "The ___ received a reward each time it reached the target."
+  },
+  {
+    "id": "ml_gen_044",
+    "word": "reward",
+    "rank": 305,
+    "definition": "A signal used in reinforcement learning to indicate how good an action was.",
+    "example": "The agent received a positive ___ for completing the task quickly."
+  },
+  {
+    "id": "ml_gen_045",
+    "word": "policy",
+    "rank": 310,
+    "definition": "In reinforcement learning, a strategy that defines the actions an agent takes in each state.",
+    "example": "The agent updated its ___ after each round of training."
+  },
+  {
+    "id": "ml_gen_046",
+    "word": "simulation",
+    "rank": 315,
+    "definition": "A computer model of a real-world process, used to test systems safely.",
+    "example": "The self-driving car was first tested in a ___."
+  },
+  {
+    "id": "ml_gen_047",
+    "word": "robustness",
+    "rank": 320,
+    "definition": "A model's ability to maintain performance despite noise or unexpected input.",
+    "example": "The team tested the model's ___ against slightly altered images."
+  },
+  {
+    "id": "ml_gen_048",
+    "word": "interpretability",
+    "rank": 325,
+    "definition": "The degree to which a human can understand the reasons behind a model's decisions.",
+    "example": "Doctors need models with high ___ before trusting medical predictions."
+  },
+  {
+    "id": "ml_gen_049",
+    "word": "explainability",
+    "rank": 330,
+    "definition": "The ability to describe, in human terms, why a model produced a particular output.",
+    "example": "Regulators are increasingly demanding ___ from AI systems."
+  },
+  {
+    "id": "ml_gen_050",
+    "word": "fairness",
+    "rank": 335,
+    "definition": "The principle that a model's predictions should not unjustly favor or disadvantage particular groups.",
+    "example": "The team audited the model for ___ across different demographics."
+  },
+  {
+    "id": "ml_gen_051",
+    "word": "scalability",
+    "rank": 340,
+    "definition": "The ability of a system to handle a growing amount of work or data.",
+    "example": "The new architecture was designed with ___ in mind."
+  },
+  {
+    "id": "ml_gen_052",
+    "word": "throughput",
+    "rank": 345,
+    "definition": "The amount of data or number of requests a system can process in a given time.",
+    "example": "The upgraded servers doubled the system's ___."
+  },
+  {
+    "id": "ml_gen_053",
+    "word": "quantization",
+    "rank": 350,
+    "definition": "A technique that reduces the precision of a model's numbers to make it smaller and faster.",
+    "example": "___ reduced the model's size without a big drop in accuracy."
+  },
+  {
+    "id": "ml_gen_054",
+    "word": "pruning",
+    "rank": 355,
+    "definition": "The process of removing unnecessary parts of a neural network to make it smaller.",
+    "example": "Model ___ removed connections that contributed little to accuracy."
+  },
+  {
+    "id": "ml_gen_055",
+    "word": "distillation",
+    "rank": 360,
+    "definition": "A technique where a smaller model is trained to mimic a larger, more complex model.",
+    "example": "Knowledge ___ allowed the smaller model to run on mobile devices."
+  },
+  {
+    "id": "ml_gen_056",
+    "word": "hallucination",
+    "rank": 365,
+    "definition": "When a language model generates confident but false or made-up information.",
+    "example": "The chatbot's ___ gave the user an incorrect fact."
+  },
+  {
+    "id": "ml_gen_057",
+    "word": "prompt",
+    "rank": 370,
+    "definition": "The input text given to a language model to guide its response.",
+    "example": "A well-written ___ can greatly improve the model's answer."
+  },
+  {
+    "id": "ml_gen_058",
+    "word": "context",
+    "rank": 375,
+    "definition": "The surrounding information that helps a model or person understand meaning.",
+    "example": "The model uses the surrounding ___ to choose the right word."
+  },
+  {
+    "id": "ml_gen_059",
+    "word": "curriculum",
+    "rank": 380,
+    "definition": "A structured plan for what and in what order a model should learn.",
+    "example": "The team designed a training ___ that started with simple examples."
+  },
+  {
+    "id": "ml_gen_060",
+    "word": "warmup",
+    "rank": 385,
+    "definition": "A phase at the start of training where the learning rate gradually increases.",
+    "example": "The training schedule included a short ___ period."
+  },
+  {
+    "id": "ml_gen_061",
+    "word": "seed",
+    "rank": 390,
+    "definition": "A fixed starting value used to make random processes reproducible.",
+    "example": "Setting a fixed ___ ensured the experiment could be repeated exactly."
+  },
+  {
+    "id": "ml_gen_062",
+    "word": "reproducibility",
+    "rank": 395,
+    "definition": "The ability to get the same results again using the same method and data.",
+    "example": "Scientists value ___ as a core principle of good research."
+  },
+  {
+    "id": "ml_gen_063",
+    "word": "artifact",
+    "rank": 400,
+    "definition": "A byproduct or unwanted pattern introduced during data processing or generation.",
+    "example": "Compression sometimes introduces visual ___s into the image."
+  },
+  {
+    "id": "ml_gen_064",
+    "word": "lexicon",
+    "rank": 405,
+    "definition": "The complete set of words or tokens a model can recognize and use.",
+    "example": "The model's ___ includes over fifty thousand tokens."
+  },
+  {
+    "id": "ml_gen_065",
+    "word": "serving",
+    "rank": 410,
+    "definition": "The process of making a trained model available to handle real-world requests.",
+    "example": "The company built a system for ___ the model at scale."
+  },
+  {
+    "id": "ml_gen_066",
+    "word": "endpoint",
+    "rank": 415,
+    "definition": "A network address through which a deployed model can be accessed.",
+    "example": "The application sends requests to the model's ___."
+  },
+  {
+    "id": "ml_gen_067",
+    "word": "monitoring",
+    "rank": 420,
+    "definition": "The ongoing process of tracking a deployed model's performance and behavior.",
+    "example": "Continuous ___ helped catch a drop in model accuracy early."
+  },
+  {
+    "id": "ml_gen_068",
+    "word": "drift",
+    "rank": 425,
+    "definition": "A gradual change in data patterns over time that can reduce a model's accuracy.",
+    "example": "The team noticed data ___ several months after deployment."
+  },
+  {
+    "id": "ml_gen_069",
+    "word": "versioning",
+    "rank": 430,
+    "definition": "The practice of tracking and managing different versions of a model or dataset.",
+    "example": "Model ___ made it easy to roll back to an earlier version."
+  },
+  {
+    "id": "ml_gen_070",
+    "word": "orchestration",
+    "rank": 435,
+    "definition": "The automated coordination of multiple systems or steps in a machine learning workflow.",
+    "example": "The pipeline relies on ___ tools to manage each step automatically."
+  },
+  {
+    "id": "ml_gen_071",
+    "word": "stochastic",
+    "rank": 440,
+    "definition": "Involving randomness or a random process, often used to describe certain training methods.",
+    "example": "The model uses a ___ approach to update its weights each step."
+  },
+  {
+    "id": "ml_gen_072",
+    "word": "sampling",
+    "rank": 445,
+    "definition": "The process of selecting a subset of data points from a larger dataset or distribution.",
+    "example": "Random ___ was used to create the training and test sets."
+  },
+  {
+    "id": "ml_gen_073",
+    "word": "compression",
+    "rank": 450,
+    "definition": "The process of reducing the size of data or a model while preserving important information.",
+    "example": "Model ___ made it possible to run the network on a phone."
+  },
+  {
+    "id": "ml_gen_074",
+    "word": "topology",
+    "rank": 455,
+    "definition": "The structure and arrangement of layers and connections within a neural network.",
+    "example": "Changing the network's ___ improved its performance slightly."
+  },
+  {
+    "id": "ml_gen_075",
+    "word": "clustering",
+    "rank": 460,
+    "definition": "A technique for grouping similar data points together without using labeled examples.",
+    "example": "___ was used to segment customers into distinct groups."
+  },
+  {
+    "id": "ml_gen_076",
+    "word": "denoising",
+    "rank": 465,
+    "definition": "The process of removing noise from data to improve its quality.",
+    "example": "___ techniques improved the clarity of the audio recordings."
+  },
+  {
+    "id": "ml_gen_077",
+    "word": "interpolation",
+    "rank": 470,
+    "definition": "The process of estimating unknown values that fall between known data points.",
+    "example": "The model relies on ___ to fill gaps in the sensor readings."
+  },
+  {
+    "id": "ml_gen_078",
+    "word": "initialization",
+    "rank": 475,
+    "definition": "The process of setting a model's parameters to starting values before training begins.",
+    "example": "Poor weight ___ can slow down the whole training process."
+  },
+  {
+    "id": "ml_gen_079",
+    "word": "encoder",
+    "rank": 476,
+    "definition": "The part of a model that converts input, such as text, into an internal representation.",
+    "example": "The ___ compresses the input sentence into a dense vector."
+  },
+  {
+    "id": "ml_gen_080",
+    "word": "decoder",
+    "rank": 477,
+    "definition": "The part of a model that generates output, such as text, from an internal representation.",
+    "example": "The ___ produces the translated sentence one word at a time."
+  },
+  {
+    "id": "ml_gen_081",
+    "word": "layer",
+    "rank": 478,
+    "definition": "A set of neurons or units in a neural network that process input at the same stage.",
+    "example": "Each ___ in the network extracts increasingly complex features."
+  },
+  {
+    "id": "ml_gen_082",
+    "word": "depth",
+    "rank": 479,
+    "definition": "The number of layers stacked in a neural network.",
+    "example": "Increasing the network's ___ allowed it to learn more complex patterns."
+  },
+  {
+    "id": "ml_gen_083",
+    "word": "channel",
+    "rank": 480,
+    "definition": "One dimension of feature data processed separately, common in image models.",
+    "example": "Each color image has three color ___s: red, green, and blue."
+  },
+  {
+    "id": "ml_gen_084",
+    "word": "kernel",
+    "rank": 481,
+    "definition": "A small matrix used to scan input data in a convolutional layer.",
+    "example": "A 3x3 ___ was used to detect edges in the image."
+  },
+  {
+    "id": "ml_gen_085",
+    "word": "stride",
+    "rank": 482,
+    "definition": "The number of pixels a convolutional filter moves at each step.",
+    "example": "A larger ___ reduces the size of the output feature map."
+  },
+  {
+    "id": "ml_gen_086",
+    "word": "padding",
+    "rank": 483,
+    "definition": "Extra values added around input data so a filter can process its edges properly.",
+    "example": "___ was added around the image to preserve its original size."
+  },
+  {
+    "id": "ml_gen_087",
+    "word": "pooling",
+    "rank": 484,
+    "definition": "A technique that reduces the size of feature maps by summarizing nearby values.",
+    "example": "Max ___ keeps only the strongest signal in each region."
+  },
+  {
+    "id": "ml_gen_088",
+    "word": "residual",
+    "rank": 485,
+    "definition": "Describes a connection that skips one or more layers in a network.",
+    "example": "A ___ connection helps gradients flow through very deep networks."
+  },
+  {
+    "id": "ml_gen_089",
+    "word": "query",
+    "rank": 486,
+    "definition": "In an attention mechanism, a vector used to search for relevant information.",
+    "example": "The model compares each ___ against every key in the sequence."
+  },
+  {
+    "id": "ml_gen_090",
+    "word": "key",
+    "rank": 487,
+    "definition": "In an attention mechanism, a vector compared against a query to determine relevance.",
+    "example": "Each word produces a ___ that the attention mechanism can match against."
+  },
+  {
+    "id": "ml_gen_091",
+    "word": "positional",
+    "rank": 488,
+    "definition": "Relating to the order or position of tokens in a sequence.",
+    "example": "___ information tells the model where each word appears in the sentence."
+  },
+  {
+    "id": "ml_gen_092",
+    "word": "causal",
+    "rank": 489,
+    "definition": "Describes a model that can only use past information to predict, never future.",
+    "example": "A ___ language model predicts the next word using only what came before."
+  },
+  {
+    "id": "ml_gen_093",
+    "word": "logits",
+    "rank": 490,
+    "definition": "Raw, unnormalized scores produced by a model before applying softmax.",
+    "example": "The ___ were converted into probabilities using the softmax function."
+  },
+  {
+    "id": "ml_gen_094",
+    "word": "temperature",
+    "rank": 491,
+    "definition": "A parameter that controls the randomness of a language model's output.",
+    "example": "Lowering the ___ makes the model's answers more predictable."
+  },
+  {
+    "id": "ml_gen_095",
+    "word": "greedy",
+    "rank": 492,
+    "definition": "Describes a decoding strategy that always picks the single most likely next token.",
+    "example": "___ decoding is fast but can miss better overall sentences."
+  },
+  {
+    "id": "ml_gen_096",
+    "word": "beam",
+    "rank": 493,
+    "definition": "A decoding strategy that tracks several likely sequences at once before choosing the best.",
+    "example": "___ search often produces more fluent text than greedy decoding."
+  },
+  {
+    "id": "ml_gen_097",
+    "word": "alignment",
+    "rank": 494,
+    "definition": "The degree to which a model's behavior matches human intentions and values.",
+    "example": "Researchers are working hard to improve model ___."
+  },
+  {
+    "id": "ml_gen_098",
+    "word": "finetuning",
+    "rank": 495,
+    "definition": "Additional training of a pretrained model on a smaller, specific dataset.",
+    "example": "___ adapted the general model to answer medical questions accurately."
+  },
+  {
+    "id": "ml_gen_099",
+    "word": "pretraining",
+    "rank": 496,
+    "definition": "Initial training of a model on a large, general dataset before finetuning.",
+    "example": "___ on billions of web pages gave the model broad language knowledge."
+  },
+  {
+    "id": "ml_gen_100",
+    "word": "generalization",
+    "rank": 497,
+    "definition": "A model's ability to perform well on new data it has not seen before.",
+    "example": "Good ___ is more important than perfect accuracy on the training set."
+  },
+  {
+    "id": "ml_gen_101",
+    "word": "instruction",
+    "rank": 498,
+    "definition": "Text that tells a model what task it should perform.",
+    "example": "The model follows the user's ___ to write a short summary."
+  },
+  {
+    "id": "ml_gen_102",
+    "word": "retrieval",
+    "rank": 499,
+    "definition": "The process of finding relevant information from a large collection to assist a model.",
+    "example": "___ lets the chatbot look up facts instead of guessing."
+  },
+  {
+    "id": "ml_gen_103",
+    "word": "grounding",
+    "rank": 500,
+    "definition": "Connecting a model's output to verifiable facts or real-world data.",
+    "example": "Proper ___ reduces the chance of a model inventing false facts."
+  },
+  {
+    "id": "ml_gen_104",
+    "word": "latent",
+    "rank": 500,
+    "definition": "Describes a hidden internal representation that is not directly observed.",
+    "example": "The ___ space captures the essential features of the input data."
+  },
+  {
+    "id": "ml_gen_105",
+    "word": "manifold",
+    "rank": 500,
+    "definition": "The underlying lower-dimensional structure that high-dimensional data lies on.",
+    "example": "The algorithm assumes the images lie on a smooth ___."
+  },
+  {
+    "id": "ml_gen_106",
+    "word": "sparsity",
+    "rank": 500,
+    "definition": "The property of having mostly zero or inactive values.",
+    "example": "High ___ in the weights allowed the model to run much faster."
+  },
+  {
+    "id": "ml_gen_107",
+    "word": "redundancy",
+    "rank": 500,
+    "definition": "Repeated or duplicate information within a system or dataset.",
+    "example": "Removing ___ in the dataset made training noticeably faster."
+  },
+  {
+    "id": "ml_gen_108",
+    "word": "concurrency",
+    "rank": 500,
+    "definition": "The ability of a system to handle multiple tasks at the same time.",
+    "example": "The server was redesigned to support much higher ___."
+  },
+  {
+    "id": "ml_gen_109",
+    "word": "parallelism",
+    "rank": 500,
+    "definition": "Splitting computation across multiple processors so it runs at the same time.",
+    "example": "Data ___ let the team train the model across eight GPUs."
+  },
+  {
+    "id": "ml_gen_110",
+    "word": "sharding",
+    "rank": 500,
+    "definition": "Splitting a large model or dataset across multiple machines.",
+    "example": "___ made it possible to train a model too large for one GPU."
+  },
+  {
+    "id": "ml_gen_111",
+    "word": "telemetry",
+    "rank": 500,
+    "definition": "Data automatically collected about a system's performance while it runs.",
+    "example": "___ showed a sudden spike in response time after the update."
+  },
+  {
+    "id": "ml_gen_112",
+    "word": "provenance",
+    "rank": 500,
+    "definition": "A record of the origin and history of a piece of data.",
+    "example": "The team tracked the ___ of every dataset used in training."
+  },
+  {
+    "id": "ml_gen_113",
+    "word": "lineage",
+    "rank": 500,
+    "definition": "The recorded history of how a piece of data or a model was derived.",
+    "example": "Data ___ made it easy to trace an error back to its source."
+  },
+  {
+    "id": "ml_gen_114",
+    "word": "governance",
+    "rank": 500,
+    "definition": "The policies and processes that control how a system or model is used.",
+    "example": "Strong data ___ is required before the model can be deployed."
+  },
+  {
+    "id": "ml_gen_115",
+    "word": "observability",
+    "rank": 500,
+    "definition": "The ability to understand a system's internal state from its outputs.",
+    "example": "Better ___ helped engineers diagnose the failure within minutes."
+  },
+  {
+    "id": "ml_gen_116",
+    "word": "adversarial",
+    "rank": 500,
+    "definition": "Designed to deliberately fool, attack, or stress-test a model.",
+    "example": "___ examples can trick an image classifier into a wrong answer."
+  },
+  {
+    "id": "ml_gen_117",
+    "word": "calibration",
+    "rank": 500,
+    "definition": "The process of adjusting a model's confidence scores to better reflect true probabilities.",
+    "example": "After ___, the model's stated confidence matched its real accuracy."
+  },
+  {
+    "id": "ml_gen_118",
+    "word": "imbalance",
+    "rank": 500,
+    "definition": "An unequal distribution of classes within a dataset that can bias a model.",
+    "example": "Class ___ made the model overly likely to predict the common label."
+  },
+  {
+    "id": "ml_gen_119",
+    "word": "leakage",
+    "rank": 500,
+    "definition": "When information from outside the training set improperly influences a model.",
+    "example": "Data ___ made the test results look better than they really were."
+  },
+  {
+    "id": "ml_gen_120",
+    "word": "repository",
+    "rank": 500,
+    "definition": "A central location where code, models, or data are stored and managed.",
+    "example": "The trained model was pushed to a public ___."
+  },
+  {
+    "id": "ml_gen_121",
+    "word": "backend",
+    "rank": 500,
+    "definition": "The part of a system that handles data processing and logic, not seen by the user.",
+    "example": "The recommendation engine runs entirely on the ___."
+  },
+  {
+    "id": "ml_gen_122",
+    "word": "activation",
+    "rank": 500,
+    "definition": "In neural networks, the output signal produced by a neuron after applying a function to its input.",
+    "example": "Choosing the right ___ function can significantly affect model performance."
+  },
+  {
+    "id": "ml_gen_123",
+    "word": "asynchronous",
+    "rank": 500,
+    "definition": "Not occurring at the same time; processed independently rather than in strict sequence.",
+    "example": "The pipeline uses ___ requests to avoid blocking the main thread."
+  },
+  {
+    "id": "ml_gen_124",
+    "word": "cache",
+    "rank": 500,
+    "definition": "A temporary storage area used to speed up future access to data.",
+    "example": "Results are stored in a ___ to avoid recomputing them."
+  },
+  {
+    "id": "ml_gen_125",
+    "word": "canary",
+    "rank": 500,
+    "definition": "A small-scale rollout used to test a new model or feature before full release.",
+    "example": "The team deployed the update as a ___ to a small user group first."
+  },
+  {
+    "id": "ml_gen_126",
+    "word": "cascade",
+    "rank": 500,
+    "definition": "A sequence in which the output of one process becomes the input of the next.",
+    "example": "Errors in the first stage can ___ through the rest of the pipeline."
+  },
+  {
+    "id": "ml_gen_127",
+    "word": "containerization",
+    "rank": 500,
+    "definition": "The practice of packaging software and its dependencies into isolated units.",
+    "example": "___ made it much easier to deploy the model across different servers."
+  },
+  {
+    "id": "ml_gen_128",
+    "word": "convolution",
+    "rank": 500,
+    "definition": "A mathematical operation used in neural networks to detect patterns in data such as images.",
+    "example": "The image classifier relies on several layers of ___."
+  },
+  {
+    "id": "ml_gen_129",
+    "word": "correlation",
+    "rank": 500,
+    "definition": "A statistical relationship between two or more variables.",
+    "example": "Analysts found a strong ___ between screen time and sleep quality."
+  },
+  {
+    "id": "ml_gen_130",
+    "word": "crowdsourcing",
+    "rank": 500,
+    "definition": "Obtaining data, labels, or ideas from a large group of people, often online.",
+    "example": "The dataset was built through ___ from thousands of volunteers."
+  },
+  {
+    "id": "ml_gen_131",
+    "word": "cybersecurity",
+    "rank": 500,
+    "definition": "The practice of protecting systems and data from digital attacks.",
+    "example": "The company invested heavily in ___ after the recent breach."
+  },
+  {
+    "id": "ml_gen_132",
+    "word": "dashboard",
+    "rank": 500,
+    "definition": "A visual interface that displays key metrics and data at a glance.",
+    "example": "The team checks the model's performance ___ every morning."
+  },
+  {
+    "id": "ml_gen_133",
+    "word": "debug",
+    "rank": 500,
+    "definition": "To find and fix errors in code or a system.",
+    "example": "It took hours to ___ the failing training script."
+  },
+  {
+    "id": "ml_gen_134",
+    "word": "decay",
+    "rank": 500,
+    "definition": "A gradual reduction in a value over time, such as a learning rate.",
+    "example": "The training schedule uses a slow learning rate ___."
+  },
+  {
+    "id": "ml_gen_135",
+    "word": "dimensionality",
+    "rank": 500,
+    "definition": "The number of features or variables describing a dataset.",
+    "example": "High ___ can make the model slower and harder to interpret."
+  },
+  {
+    "id": "ml_gen_136",
+    "word": "distributed",
+    "rank": 500,
+    "definition": "Spread across multiple machines or locations rather than centralized.",
+    "example": "The model was trained using a ___ computing cluster."
+  },
+  {
+    "id": "ml_gen_137",
+    "word": "edge",
+    "rank": 500,
+    "definition": "Relating to computation performed near the data source rather than in the cloud.",
+    "example": "The app runs the model on the device using ___ computing."
+  },
+  {
+    "id": "ml_gen_138",
+    "word": "ethics",
+    "rank": 500,
+    "definition": "Moral principles guiding responsible behavior, especially around fairness and harm.",
+    "example": "The team reviewed the project for ___ concerns before launch."
+  },
+  {
+    "id": "ml_gen_139",
+    "word": "evaluation",
+    "rank": 500,
+    "definition": "The process of measuring how well a model performs.",
+    "example": "The final ___ showed a clear improvement over the baseline."
+  },
+  {
+    "id": "ml_gen_140",
+    "word": "exploration",
+    "rank": 500,
+    "definition": "In reinforcement learning, trying new actions to discover their effects.",
+    "example": "Balancing ___ and exploitation is a key challenge in the algorithm."
+  },
+  {
+    "id": "ml_gen_141",
+    "word": "exploitation",
+    "rank": 500,
+    "definition": "In reinforcement learning, using known information to maximize reward.",
+    "example": "Too much ___ early on can prevent the agent from finding better strategies."
+  },
+  {
+    "id": "ml_gen_142",
+    "word": "extraction",
+    "rank": 500,
+    "definition": "The process of pulling specific information or features out of raw data.",
+    "example": "Feature ___ turned the raw text into usable numerical data."
+  },
+  {
+    "id": "ml_gen_143",
+    "word": "federated",
+    "rank": 500,
+    "definition": "Describing a system where data stays local while a shared model is trained collaboratively.",
+    "example": "___ learning lets phones improve the model without sharing raw data."
+  },
+  {
+    "id": "ml_gen_144",
+    "word": "filtering",
+    "rank": 500,
+    "definition": "The process of removing unwanted data or noise from a dataset.",
+    "example": "Spam ___ removed most of the low-quality entries."
+  },
+  {
+    "id": "ml_gen_145",
+    "word": "forecasting",
+    "rank": 500,
+    "definition": "Predicting future values based on historical data.",
+    "example": "The company uses the model for sales ___."
+  },
+  {
+    "id": "ml_gen_146",
+    "word": "framework",
+    "rank": 500,
+    "definition": "A structured set of tools and libraries used to build software or models.",
+    "example": "The team built the model using a popular deep learning ___."
+  },
+  {
+    "id": "ml_gen_147",
+    "word": "gateway",
+    "rank": 500,
+    "definition": "A component that manages and routes requests between systems.",
+    "example": "All API calls pass through a central ___ for security checks."
+  },
+  {
+    "id": "ml_gen_148",
+    "word": "granularity",
+    "rank": 500,
+    "definition": "The level of detail or precision at which data is measured.",
+    "example": "Increasing the ___ of the logs helped diagnose the issue."
+  },
+  {
+    "id": "ml_gen_149",
+    "word": "heuristic",
+    "rank": 500,
+    "definition": "A practical rule or shortcut used to solve a problem quickly, though not always optimally.",
+    "example": "The algorithm uses a simple ___ to speed up the search."
+  },
+  {
+    "id": "ml_gen_150",
+    "word": "indexing",
+    "rank": 500,
+    "definition": "Organizing data so that it can be found and retrieved quickly.",
+    "example": "Proper ___ made the database queries much faster."
+  },
+  {
+    "id": "ml_gen_151",
+    "word": "ingestion",
+    "rank": 500,
+    "definition": "The process of importing and preparing raw data for use in a system.",
+    "example": "Data ___ is the first stage of the analytics pipeline."
+  },
+  {
+    "id": "ml_gen_152",
+    "word": "instrumentation",
+    "rank": 500,
+    "definition": "Tools and code added to a system to monitor its behavior.",
+    "example": "Better ___ helped the team catch the bug faster."
+  },
+  {
+    "id": "ml_gen_153",
+    "word": "integration",
+    "rank": 500,
+    "definition": "The process of combining separate systems or components into one.",
+    "example": "API ___ allowed the model to work inside the existing app."
+  },
+  {
+    "id": "ml_gen_154",
+    "word": "iteration",
+    "rank": 500,
+    "definition": "One complete cycle of updating a model during training, or a repeated attempt at improvement.",
+    "example": "Each ___ slightly reduced the model's error."
+  },
+  {
+    "id": "ml_gen_155",
+    "word": "jitter",
+    "rank": 500,
+    "definition": "Small random variation added to data or timing, often to improve robustness.",
+    "example": "The team added ___ to the retry delay to avoid overload."
+  },
+  {
+    "id": "ml_gen_156",
+    "word": "lifecycle",
+    "rank": 500,
+    "definition": "The full sequence of stages a model or project goes through, from creation to retirement.",
+    "example": "Monitoring is part of the model's entire ___."
+  },
+  {
+    "id": "ml_gen_157",
+    "word": "localization",
+    "rank": 500,
+    "definition": "Adapting a product or model for a specific language or region.",
+    "example": "The team worked on ___ before launching the app internationally."
+  },
+  {
+    "id": "ml_gen_158",
+    "word": "lookup",
+    "rank": 500,
+    "definition": "A quick search for a value in a table or index.",
+    "example": "The system performs a fast ___ to retrieve cached results."
+  },
+  {
+    "id": "ml_gen_159",
+    "word": "masking",
+    "rank": 500,
+    "definition": "Hiding or ignoring certain data or tokens during processing.",
+    "example": "___ was used to hide future tokens during training."
+  },
+  {
+    "id": "ml_gen_160",
+    "word": "migration",
+    "rank": 500,
+    "definition": "Moving data or systems from one platform or format to another.",
+    "example": "The database ___ took the whole weekend to complete."
+  },
+  {
+    "id": "ml_gen_161",
+    "word": "mining",
+    "rank": 500,
+    "definition": "The process of discovering useful patterns in large datasets.",
+    "example": "Data ___ revealed an unexpected trend in customer behavior."
+  },
+  {
+    "id": "ml_gen_162",
+    "word": "mixture",
+    "rank": 500,
+    "definition": "A model architecture that combines several smaller specialized components.",
+    "example": "The system uses a ___ of experts to handle different tasks."
+  },
+  {
+    "id": "ml_gen_163",
+    "word": "modularity",
+    "rank": 500,
+    "definition": "The degree to which a system is built from separate, independent parts.",
+    "example": "Good ___ made it easy to replace just one component."
+  },
+  {
+    "id": "ml_gen_164",
+    "word": "mutation",
+    "rank": 500,
+    "definition": "A small random change applied to a solution, especially in evolutionary algorithms.",
+    "example": "The genetic algorithm applies random ___ to each generation."
+  },
+  {
+    "id": "ml_gen_165",
+    "word": "namespace",
+    "rank": 500,
+    "definition": "A named context that keeps identifiers organized and prevents naming conflicts.",
+    "example": "Each service runs inside its own ___ to avoid conflicts."
+  },
+  {
+    "id": "ml_gen_166",
+    "word": "node",
+    "rank": 500,
+    "definition": "A single point in a network, graph, or distributed system.",
+    "example": "Each ___ in the cluster processes a portion of the data."
+  },
+  {
+    "id": "ml_gen_167",
+    "word": "notebook",
+    "rank": 500,
+    "definition": "An interactive document used to write and run code alongside notes and results.",
+    "example": "She prototyped the model in a Jupyter ___."
+  },
+  {
+    "id": "ml_gen_168",
+    "word": "ontology",
+    "rank": 500,
+    "definition": "A formal structure that defines categories and relationships within a domain.",
+    "example": "The team built an ___ to organize medical terms consistently."
+  },
+  {
+    "id": "ml_gen_169",
+    "word": "outage",
+    "rank": 500,
+    "definition": "A period when a system or service is unavailable.",
+    "example": "A server ___ delayed the scheduled model update."
+  },
+  {
+    "id": "ml_gen_170",
+    "word": "overhead",
+    "rank": 500,
+    "definition": "The extra time or resources a system uses beyond the core task.",
+    "example": "Logging every request adds some performance ___."
+  },
+  {
+    "id": "ml_gen_171",
+    "word": "parsing",
+    "rank": 500,
+    "definition": "Analyzing text or data to break it into structured components.",
+    "example": "The tool performs ___ to convert raw text into structured fields."
+  },
+  {
+    "id": "ml_gen_172",
+    "word": "partition",
+    "rank": 500,
+    "definition": "To divide data or a system into separate sections.",
+    "example": "The dataset was split into training and test ___s."
+  },
+  {
+    "id": "ml_gen_173",
+    "word": "perplexity",
+    "rank": 500,
+    "definition": "A metric that measures how well a language model predicts a sample of text.",
+    "example": "Lower ___ generally indicates a better language model."
+  },
+  {
+    "id": "ml_gen_174",
+    "word": "pixel",
+    "rank": 500,
+    "definition": "The smallest single point of color in a digital image.",
+    "example": "Each ___ in the image was processed by the convolutional layer."
+  },
+  {
+    "id": "ml_gen_175",
+    "word": "abstraction",
+    "rank": 500,
+    "definition": "A simplified representation that hides unnecessary detail.",
+    "example": "The API provides a clean ___ over the database."
+  },
+  {
+    "id": "ml_gen_176",
+    "word": "adapter",
+    "rank": 500,
+    "definition": "A component that connects two incompatible systems.",
+    "example": "The library uses an ___ to support old formats."
+  },
+  {
+    "id": "ml_gen_177",
+    "word": "agentic",
+    "rank": 500,
+    "definition": "Describing a system that acts autonomously toward a goal.",
+    "example": "The team built an ___ workflow to handle tickets."
+  },
+  {
+    "id": "ml_gen_178",
+    "word": "architecture",
+    "rank": 500,
+    "definition": "The overall structure and design of a system.",
+    "example": "They redesigned the system's ___ for scalability."
+  },
+  {
+    "id": "ml_gen_179",
+    "word": "autoregressive",
+    "rank": 500,
+    "definition": "Describing a model that predicts the next value from previous ones.",
+    "example": "The chatbot is powered by an ___ language model."
+  },
+  {
+    "id": "ml_gen_180",
+    "word": "canonical",
+    "rank": 500,
+    "definition": "Regarded as the standard, authoritative version.",
+    "example": "They defined a ___ format for all events."
+  },
+  {
+    "id": "ml_gen_181",
+    "word": "chatbot",
+    "rank": 500,
+    "definition": "A program designed to simulate conversation with users.",
+    "example": "The company launched a customer support ___."
+  },
+  {
+    "id": "ml_gen_182",
+    "word": "classifier",
+    "rank": 500,
+    "definition": "A model that assigns inputs to categories.",
+    "example": "The spam ___ flags suspicious emails."
+  },
+  {
+    "id": "ml_gen_183",
+    "word": "codebase",
+    "rank": 500,
+    "definition": "The complete collection of source code for a project.",
+    "example": "The team migrated the entire ___ to a new language."
+  },
+  {
+    "id": "ml_gen_184",
+    "word": "cohort",
+    "rank": 500,
+    "definition": "A group of users or data points sharing a common trait.",
+    "example": "The experiment tracked a ___ of new users."
+  },
+  {
+    "id": "ml_gen_185",
+    "word": "compute",
+    "rank": 500,
+    "definition": "Computational power or resources available for processing.",
+    "example": "Training the model required significant ___."
+  },
+  {
+    "id": "ml_gen_186",
+    "word": "confidence",
+    "rank": 500,
+    "definition": "A model's estimated certainty about a prediction.",
+    "example": "The system flags results with low ___ for review."
+  },
+  {
+    "id": "ml_gen_187",
+    "word": "configuration",
+    "rank": 500,
+    "definition": "The specific set of settings for a system.",
+    "example": "Update the ___ before restarting the service."
+  },
+  {
+    "id": "ml_gen_188",
+    "word": "connectivity",
+    "rank": 500,
+    "definition": "The state of being connected to a network.",
+    "example": "The outage was caused by a loss of ___."
+  },
+  {
+    "id": "ml_gen_189",
+    "word": "consensus",
+    "rank": 500,
+    "definition": "General agreement among distributed nodes or people.",
+    "example": "The nodes must reach ___ before committing data."
+  },
+  {
+    "id": "ml_gen_190",
+    "word": "constraint",
+    "rank": 500,
+    "definition": "A limitation placed on a system or model.",
+    "example": "The optimizer must respect several ___s."
+  },
+  {
+    "id": "ml_gen_191",
+    "word": "continuous",
+    "rank": 500,
+    "definition": "Happening without interruption, as in ongoing deployment.",
+    "example": "They use ___ integration to catch bugs early."
+  },
+  {
+    "id": "ml_gen_192",
+    "word": "coverage",
+    "rank": 500,
+    "definition": "The extent to which code or tests are exercised.",
+    "example": "Test ___ improved after the refactor."
+  },
+  {
+    "id": "ml_gen_193",
+    "word": "decoupling",
+    "rank": 500,
+    "definition": "Separating components so they depend on each other less.",
+    "example": "___ the modules made testing much easier."
+  },
+  {
+    "id": "ml_gen_194",
+    "word": "dependency",
+    "rank": 500,
+    "definition": "Something a system relies on to function.",
+    "example": "The build failed due to a missing ___."
+  },
+  {
+    "id": "ml_gen_195",
+    "word": "deprecate",
+    "rank": 500,
+    "definition": "To mark a feature as outdated and discouraged.",
+    "example": "They plan to ___ the old API next year."
+  },
+  {
+    "id": "ml_gen_196",
+    "word": "deterministic",
+    "rank": 500,
+    "definition": "Producing the same output given the same input, every time.",
+    "example": "Unlike sampling, greedy decoding is ___."
+  },
+  {
+    "id": "ml_gen_197",
+    "word": "diagnostic",
+    "rank": 500,
+    "definition": "Information used to identify and fix a problem.",
+    "example": "The tool prints a ___ report on failure."
+  },
+  {
+    "id": "ml_gen_198",
+    "word": "downstream",
+    "rank": 500,
+    "definition": "Occurring later in a processing pipeline.",
+    "example": "Errors here can affect ___ systems."
+  },
+  {
+    "id": "ml_gen_199",
+    "word": "duplication",
+    "rank": 500,
+    "definition": "The presence of repeated, redundant data or code.",
+    "example": "They removed data ___ to save storage."
+  },
+  {
+    "id": "ml_gen_200",
+    "word": "elastic",
+    "rank": 500,
+    "definition": "Able to scale resources up or down automatically.",
+    "example": "The platform uses ___ compute to handle spikes."
+  },
+  {
+    "id": "ml_gen_201",
+    "word": "emergent",
+    "rank": 500,
+    "definition": "Arising unexpectedly from a complex system.",
+    "example": "Researchers studied ___ behavior in large models."
+  },
+  {
+    "id": "ml_gen_202",
+    "word": "encoding",
+    "rank": 500,
+    "definition": "The process of converting data into a particular format.",
+    "example": "Text is converted using UTF-8 ___."
+  },
+  {
+    "id": "ml_gen_203",
+    "word": "entropy",
+    "rank": 500,
+    "definition": "A measure of disorder or uncertainty in data.",
+    "example": "High ___ suggests the model is uncertain."
+  },
+  {
+    "id": "ml_gen_204",
+    "word": "escalation",
+    "rank": 500,
+    "definition": "The process of passing an issue to a higher level.",
+    "example": "The incident triggered an automatic ___."
+  },
+  {
+    "id": "ml_gen_205",
+    "word": "failover",
+    "rank": 500,
+    "definition": "Automatic switching to a backup system after failure.",
+    "example": "The cluster has built-in ___ support."
+  },
+  {
+    "id": "ml_gen_206",
+    "word": "fallback",
+    "rank": 500,
+    "definition": "An alternative used when the primary option fails.",
+    "example": "The app uses a cached ___ when offline."
+  },
+  {
+    "id": "ml_gen_207",
+    "word": "feedback",
+    "rank": 500,
+    "definition": "Information used to improve a system or model.",
+    "example": "User ___ helped refine the recommendation engine."
+  },
+  {
+    "id": "ml_gen_208",
+    "word": "fingerprint",
+    "rank": 500,
+    "definition": "A unique identifier derived from data content.",
+    "example": "Each file gets a unique ___ for verification."
+  },
+  {
+    "id": "ml_gen_209",
+    "word": "firmware",
+    "rank": 500,
+    "definition": "Software embedded directly into a hardware device.",
+    "example": "The device needed a ___ update."
+  },
+  {
+    "id": "ml_gen_210",
+    "word": "flag",
+    "rank": 500,
+    "definition": "A marker used to indicate a setting or condition.",
+    "example": "Set the debug ___ to see extra logs."
+  },
+  {
+    "id": "ml_gen_211",
+    "word": "fork",
+    "rank": 500,
+    "definition": "A copy of a code repository used for independent development.",
+    "example": "She created a ___ to test her changes."
+  },
+  {
+    "id": "ml_gen_212",
+    "word": "glossary",
+    "rank": 500,
+    "definition": "A list of terms with their definitions.",
+    "example": "The docs include a ___ of key terms."
+  },
+  {
+    "id": "ml_gen_213",
+    "word": "grid",
+    "rank": 500,
+    "definition": "A network of computing resources used for large tasks.",
+    "example": "The simulation ran across a computing ___."
+  },
+  {
+    "id": "ml_gen_214",
+    "word": "harness",
+    "rank": 500,
+    "definition": "A framework used to run and manage tests or experiments.",
+    "example": "They built a custom test ___."
+  },
+  {
+    "id": "ml_gen_215",
+    "word": "heatmap",
+    "rank": 500,
+    "definition": "A visual representation of data using color intensity.",
+    "example": "The ___ showed which features mattered most."
+  },
+  {
+    "id": "ml_gen_216",
+    "word": "hosting",
+    "rank": 500,
+    "definition": "The service of running and maintaining a system online.",
+    "example": "They switched to cloud ___ last year."
+  },
+  {
+    "id": "ml_gen_217",
+    "word": "hotfix",
+    "rank": 500,
+    "definition": "A quick fix released to solve an urgent problem.",
+    "example": "The team pushed a ___ within the hour."
+  },
+  {
+    "id": "ml_gen_218",
+    "word": "interface",
+    "rank": 500,
+    "definition": "A point where two systems interact.",
+    "example": "The app has a simple, clean ___."
+  },
+  {
+    "id": "ml_gen_219",
+    "word": "interoperability",
+    "rank": 500,
+    "definition": "The ability of systems to work together.",
+    "example": "The standard improves ___ between platforms."
+  },
+  {
+    "id": "ml_gen_220",
+    "word": "invariant",
+    "rank": 500,
+    "definition": "A condition that must always remain true.",
+    "example": "The function must preserve this ___."
+  },
+  {
+    "id": "ml_gen_221",
+    "word": "linter",
+    "rank": 500,
+    "definition": "A tool that checks code for errors and style issues.",
+    "example": "The ___ flagged several unused variables."
+  },
+  {
+    "id": "ml_gen_222",
+    "word": "log",
+    "rank": 500,
+    "definition": "A record of events produced by a system.",
+    "example": "Check the server ___ for errors."
+  },
+  {
+    "id": "ml_gen_223",
+    "word": "logging",
+    "rank": 500,
+    "definition": "The practice of recording system events for later review.",
+    "example": "Detailed ___ helped diagnose the outage."
+  },
+  {
+    "id": "ml_gen_224",
+    "word": "lossy",
+    "rank": 500,
+    "definition": "Describing compression that loses some information.",
+    "example": "JPEG uses a ___ compression method."
+  },
+  {
+    "id": "ml_gen_225",
+    "word": "maintainability",
+    "rank": 500,
+    "definition": "How easily software can be updated and fixed.",
+    "example": "Clean code improves long-term ___."
+  },
+  {
+    "id": "ml_gen_226",
+    "word": "malfunction",
+    "rank": 500,
+    "definition": "A failure to function correctly.",
+    "example": "A sensor ___ caused the false alarm."
+  },
+  {
+    "id": "ml_gen_227",
+    "word": "manifest",
+    "rank": 500,
+    "definition": "A file listing the components of a package or app.",
+    "example": "The build reads settings from the ___."
+  },
+  {
+    "id": "ml_gen_228",
+    "word": "mapping",
+    "rank": 500,
+    "definition": "A correspondence between one set of values and another.",
+    "example": "The system uses a ___ from IDs to names."
+  },
+  {
+    "id": "ml_gen_229",
+    "word": "matrix",
+    "rank": 500,
+    "definition": "A rectangular array of numbers used in computation.",
+    "example": "The model multiplies each ___ during inference."
+  },
+  {
+    "id": "ml_gen_230",
+    "word": "mesh",
+    "rank": 500,
+    "definition": "A network topology connecting many nodes directly.",
+    "example": "The service uses a ___ for internal communication."
+  },
+  {
+    "id": "ml_gen_231",
+    "word": "metadata",
+    "rank": 500,
+    "definition": "Data that describes other data.",
+    "example": "Each file includes ___ about its creation date."
+  },
+  {
+    "id": "ml_gen_232",
+    "word": "microservice",
+    "rank": 500,
+    "definition": "A small, independent service that is part of a larger system.",
+    "example": "They split the app into several ___s."
+  },
+  {
+    "id": "ml_gen_233",
+    "word": "mock",
+    "rank": 500,
+    "definition": "A fake object used to simulate behavior during testing.",
+    "example": "The test uses a ___ instead of a real database."
+  },
+  {
+    "id": "ml_gen_234",
+    "word": "module",
+    "rank": 500,
+    "definition": "A separate, self-contained part of a program.",
+    "example": "Each ___ handles a different feature."
+  },
+  {
+    "id": "ml_gen_235",
+    "word": "monolith",
+    "rank": 500,
+    "definition": "A large application built as a single unified unit.",
+    "example": "They gradually broke apart the old ___."
+  },
+  {
+    "id": "ml_gen_236",
+    "word": "multithreading",
+    "rank": 500,
+    "definition": "Running multiple sequences of instructions at once.",
+    "example": "___ improved the app's performance."
+  },
+  {
+    "id": "ml_gen_237",
+    "word": "native",
+    "rank": 500,
+    "definition": "Built specifically for a particular platform.",
+    "example": "They released a ___ mobile app."
+  },
+  {
+    "id": "ml_gen_238",
+    "word": "network",
+    "rank": 500,
+    "definition": "A system of interconnected computers or nodes.",
+    "example": "The model was trained on a neural ___."
+  },
+  {
+    "id": "ml_gen_239",
+    "word": "nightly",
+    "rank": 500,
+    "definition": "Happening every night, such as a scheduled build.",
+    "example": "The team relies on ___ automated tests."
+  },
+  {
+    "id": "ml_gen_240",
+    "word": "notification",
+    "rank": 500,
+    "definition": "An alert sent to inform a user of an event.",
+    "example": "She received a ___ when the build failed."
+  },
+  {
+    "id": "ml_gen_241",
+    "word": "offline",
+    "rank": 500,
+    "definition": "Not connected to the internet or a network.",
+    "example": "The app still works while ___."
+  },
+  {
+    "id": "ml_gen_242",
+    "word": "onboarding",
+    "rank": 500,
+    "definition": "The process of introducing a new user or employee to a system.",
+    "example": "The team improved the new-user ___ flow."
+  },
+  {
+    "id": "ml_gen_243",
+    "word": "online",
+    "rank": 500,
+    "definition": "Connected to the internet or currently active.",
+    "example": "The service went back ___ after the fix."
+  },
+  {
+    "id": "ml_gen_244",
+    "word": "output",
+    "rank": 500,
+    "definition": "The result produced by a process or model.",
+    "example": "Check the model's ___ for accuracy."
+  },
+  {
+    "id": "ml_gen_245",
+    "word": "overlay",
+    "rank": 500,
+    "definition": "A layer displayed on top of existing content.",
+    "example": "The app shows a helpful ___ for new users."
+  },
+  {
+    "id": "ml_gen_246",
+    "word": "ownership",
+    "rank": 500,
+    "definition": "Responsibility for maintaining a particular system or task.",
+    "example": "Each team has clear ___ of its service."
+  },
+  {
+    "id": "ml_gen_247",
+    "word": "packet",
+    "rank": 500,
+    "definition": "A unit of data transmitted over a network.",
+    "example": "Each ___ includes a small header."
+  },
+  {
+    "id": "ml_gen_248",
+    "word": "parity",
+    "rank": 500,
+    "definition": "The state of being equal, especially in features.",
+    "example": "The new version achieves feature ___ with the old one."
+  },
+  {
+    "id": "ml_gen_249",
+    "word": "patch",
+    "rank": 500,
+    "definition": "A small piece of code that fixes a problem.",
+    "example": "They released a security ___ overnight."
+  },
+  {
+    "id": "ml_gen_250",
+    "word": "payload",
+    "rank": 500,
+    "definition": "The actual data being transmitted, excluding metadata.",
+    "example": "The request ___ was too large."
+  },
+  {
+    "id": "ml_gen_251",
+    "word": "permission",
+    "rank": 500,
+    "definition": "Authorization to access or modify a resource.",
+    "example": "The app requests camera ___ on first use."
+  },
+  {
+    "id": "ml_gen_252",
+    "word": "persistence",
+    "rank": 500,
+    "definition": "The storage of data so it survives after a process ends.",
+    "example": "The app uses a database for data ___."
+  },
+  {
+    "id": "ml_gen_253",
+    "word": "plugin",
+    "rank": 500,
+    "definition": "An add-on component that extends software functionality.",
+    "example": "She installed a ___ to format code automatically."
+  },
+  {
+    "id": "ml_gen_254",
+    "word": "polymorphism",
+    "rank": 500,
+    "definition": "The ability of different objects to respond to the same call.",
+    "example": "___ lets the function handle multiple types."
+  },
+  {
+    "id": "ml_gen_255",
+    "word": "postmortem",
+    "rank": 500,
+    "definition": "A review conducted after an incident to learn from it.",
+    "example": "The team held a ___ after the outage."
+  },
+  {
+    "id": "ml_gen_256",
+    "word": "primitive",
+    "rank": 500,
+    "definition": "A basic building block used to construct more complex things.",
+    "example": "Strings and numbers are basic ___s."
+  },
+  {
+    "id": "ml_gen_257",
+    "word": "priority",
+    "rank": 500,
+    "definition": "The relative importance assigned to a task.",
+    "example": "High-___ bugs are fixed first."
+  },
+  {
+    "id": "ml_gen_258",
+    "word": "privacy",
+    "rank": 500,
+    "definition": "Protection of personal data from unauthorized access.",
+    "example": "The update improved user ___ controls."
+  },
+  {
+    "id": "ml_gen_259",
+    "word": "probabilistic",
+    "rank": 500,
+    "definition": "Based on probability rather than certainty.",
+    "example": "The model gives a ___ estimate, not a fixed answer."
+  },
+  {
+    "id": "ml_gen_260",
+    "word": "processor",
+    "rank": 500,
+    "definition": "The component that executes instructions in a computer.",
+    "example": "The ___ handles thousands of requests per second."
+  },
+  {
+    "id": "ml_gen_261",
+    "word": "propagation",
+    "rank": 500,
+    "definition": "The spreading of an effect, such as an error, through a system.",
+    "example": "Error ___ made debugging harder."
+  },
+  {
+    "id": "ml_gen_262",
+    "word": "protocol",
+    "rank": 500,
+    "definition": "A set of rules for communication between systems.",
+    "example": "The devices communicate using a shared ___."
+  },
+  {
+    "id": "ml_gen_263",
+    "word": "provisioning",
+    "rank": 500,
+    "definition": "The process of setting up infrastructure for use.",
+    "example": "Automated ___ saved the team hours of setup."
+  },
+  {
+    "id": "ml_gen_264",
+    "word": "proxy",
+    "rank": 500,
+    "definition": "An intermediary that forwards requests between systems.",
+    "example": "Requests pass through a ___ server."
+  },
+  {
+    "id": "ml_gen_265",
+    "word": "quarantine",
+    "rank": 500,
+    "definition": "To isolate something suspicious to prevent harm.",
+    "example": "The system will ___ any suspicious file."
+  },
+  {
+    "id": "ml_gen_266",
+    "word": "queue",
+    "rank": 500,
+    "definition": "A list of items waiting to be processed in order.",
+    "example": "New jobs are added to the processing ___."
+  },
+  {
+    "id": "ml_gen_267",
+    "word": "ramp",
+    "rank": 500,
+    "definition": "A gradual increase in load or traffic.",
+    "example": "They plan a slow ___ up to full traffic."
+  },
+  {
+    "id": "ml_gen_268",
+    "word": "recursion",
+    "rank": 500,
+    "definition": "A technique where a function calls itself.",
+    "example": "The algorithm uses ___ to traverse the tree."
+  },
+  {
+    "id": "ml_gen_269",
+    "word": "redirect",
+    "rank": 500,
+    "definition": "To send a request to a different destination.",
+    "example": "The old URL will ___ to the new page."
+  },
+  {
+    "id": "ml_gen_270",
+    "word": "refactor",
+    "rank": 500,
+    "definition": "To restructure code without changing its behavior.",
+    "example": "They plan to ___ the messy module."
+  },
+  {
+    "id": "ml_gen_271",
+    "word": "registry",
+    "rank": 500,
+    "definition": "A central store of information about available services.",
+    "example": "The service registers itself in the ___."
+  },
+  {
+    "id": "ml_gen_272",
+    "word": "relay",
+    "rank": 500,
+    "definition": "To pass a message or signal from one point to another.",
+    "example": "The server will ___ the request to another node."
+  },
+  {
+    "id": "ml_gen_273",
+    "word": "reliability",
+    "rank": 500,
+    "definition": "The ability of a system to consistently perform correctly.",
+    "example": "___ is critical for payment systems."
+  },
+  {
+    "id": "ml_gen_274",
+    "word": "replica",
+    "rank": 500,
+    "definition": "A copy of data or a service, used for redundancy.",
+    "example": "Each database has three ___s."
+  },
+  {
+    "id": "ml_gen_275",
+    "word": "resolution",
+    "rank": 500,
+    "definition": "The level of detail in an image, or the outcome of an issue.",
+    "example": "The incident had a quick ___."
+  },
+  {
+    "id": "ml_gen_276",
+    "word": "restart",
+    "rank": 500,
+    "definition": "To stop and start a system again.",
+    "example": "The engineer had to ___ the failed server."
+  },
+  {
+    "id": "ml_gen_277",
+    "word": "retry",
+    "rank": 500,
+    "definition": "An attempt to repeat a failed operation.",
+    "example": "The client will automatically ___ the request."
+  },
+  {
+    "id": "ml_gen_278",
+    "word": "rollback",
+    "rank": 500,
+    "definition": "Reverting a system to a previous state.",
+    "example": "They performed a ___ after the bad deployment."
+  },
+  {
+    "id": "ml_gen_279",
+    "word": "rollout",
+    "rank": 500,
+    "definition": "The gradual release of a new feature or version.",
+    "example": "The ___ was paused after early reports of bugs."
+  },
+  {
+    "id": "ml_gen_280",
+    "word": "router",
+    "rank": 500,
+    "definition": "A device or component that directs traffic between networks.",
+    "example": "Data passes through a central ___."
+  },
+  {
+    "id": "ml_gen_281",
+    "word": "runtime",
+    "rank": 500,
+    "definition": "The period during which a program is executing.",
+    "example": "The error only appears at ___."
+  },
+  {
+    "id": "ml_gen_282",
+    "word": "sandbox",
+    "rank": 500,
+    "definition": "An isolated environment used for safe testing.",
+    "example": "New code is tested in a ___ first."
+  },
+  {
+    "id": "ml_gen_283",
+    "word": "scaffold",
+    "rank": 500,
+    "definition": "A basic structure used as a starting point for development.",
+    "example": "The tool generates a project ___ automatically."
+  },
+  {
+    "id": "ml_gen_284",
+    "word": "schema",
+    "rank": 500,
+    "definition": "A formal structure that defines how data is organized.",
+    "example": "The database ___ defines every table's columns."
+  },
+  {
+    "id": "ml_gen_285",
+    "word": "scraping",
+    "rank": 500,
+    "definition": "Automatically extracting data from websites.",
+    "example": "They used web ___ to collect the prices."
+  },
+  {
+    "id": "ml_gen_286",
+    "word": "semantics",
+    "rank": 500,
+    "definition": "The meaning behind code, data, or language.",
+    "example": "The two functions differ only in their ___."
+  },
+  {
+    "id": "ml_gen_287",
+    "word": "sentiment",
+    "rank": 500,
+    "definition": "The emotional tone expressed in text.",
+    "example": "The model analyzes customer ___ in reviews."
+  },
+  {
+    "id": "ml_gen_288",
+    "word": "serialization",
+    "rank": 500,
+    "definition": "Converting data into a format for storage or transfer.",
+    "example": "JSON is a common ___ format."
+  },
+  {
+    "id": "ml_gen_289",
+    "word": "signature",
+    "rank": 500,
+    "definition": "A unique identifying pattern, such as for a function or file.",
+    "example": "Each function call must match its ___."
+  },
+  {
+    "id": "ml_gen_290",
+    "word": "silo",
+    "rank": 500,
+    "definition": "An isolated system or team that doesn't share information.",
+    "example": "Data was trapped in separate ___s."
+  },
+  {
+    "id": "ml_gen_291",
+    "word": "snapshot",
+    "rank": 500,
+    "definition": "A record of a system's state at a particular moment.",
+    "example": "They took a ___ before the upgrade."
+  },
+  {
+    "id": "ml_gen_292",
+    "word": "spike",
+    "rank": 500,
+    "definition": "A sudden sharp increase in load or activity.",
+    "example": "Traffic saw a huge ___ during the sale."
+  },
+  {
+    "id": "ml_gen_293",
+    "word": "staging",
+    "rank": 500,
+    "definition": "An environment used to test changes before production.",
+    "example": "The update was tested on ___ first."
+  },
+  {
+    "id": "ml_gen_294",
+    "word": "standby",
+    "rank": 500,
+    "definition": "A backup system ready to take over if needed.",
+    "example": "The server runs in hot ___ mode."
+  },
+  {
+    "id": "ml_gen_295",
+    "word": "streaming",
+    "rank": 500,
+    "definition": "Processing or transmitting data continuously.",
+    "example": "The platform supports live video ___."
+  },
+  {
+    "id": "ml_gen_296",
+    "word": "subnet",
+    "rank": 500,
+    "definition": "A smaller network within a larger network.",
+    "example": "Each department has its own ___."
+  },
+  {
+    "id": "ml_gen_297",
+    "word": "subscription",
+    "rank": 500,
+    "definition": "An arrangement to receive ongoing updates or access.",
+    "example": "Users pay for a monthly ___."
+  },
+  {
+    "id": "ml_gen_298",
+    "word": "surrogate",
+    "rank": 500,
+    "definition": "A substitute used in place of the real thing.",
+    "example": "They used a ___ metric to estimate quality."
+  },
+  {
+    "id": "ml_gen_299",
+    "word": "synthesis",
+    "rank": 500,
+    "definition": "The combination of parts to form a whole, or generated content.",
+    "example": "The tool performs speech ___ from text."
+  },
+  {
+    "id": "ml_gen_300",
+    "word": "syntax",
+    "rank": 500,
+    "definition": "The rules governing the structure of code or language.",
+    "example": "A missing bracket caused a ___ error."
+  },
+  {
+    "id": "ml_gen_301",
+    "word": "tagging",
+    "rank": 500,
+    "definition": "Labeling data with descriptive keywords.",
+    "example": "___ improves how content is searched."
+  },
+  {
+    "id": "ml_gen_302",
+    "word": "taxonomy",
+    "rank": 500,
+    "definition": "A system for classifying things into categories.",
+    "example": "They built a ___ of product categories."
+  },
+  {
+    "id": "ml_gen_303",
+    "word": "teardown",
+    "rank": 500,
+    "definition": "The process of removing or dismantling a test setup.",
+    "example": "Each test has a setup and ___ step."
+  },
+  {
+    "id": "ml_gen_304",
+    "word": "template",
+    "rank": 500,
+    "definition": "A reusable pattern used as a starting point.",
+    "example": "She created a ___ for new reports."
+  },
+  {
+    "id": "ml_gen_305",
+    "word": "throttle",
+    "rank": 500,
+    "definition": "To deliberately limit the rate of something.",
+    "example": "The API will ___ requests after the limit."
+  },
+  {
+    "id": "ml_gen_306",
+    "word": "timeline",
+    "rank": 500,
+    "definition": "A sequence of events shown in order of occurrence.",
+    "example": "The dashboard shows a ___ of recent changes."
+  },
+  {
+    "id": "ml_gen_307",
+    "word": "timestamp",
+    "rank": 500,
+    "definition": "A record of the exact time an event occurred.",
+    "example": "Every log entry includes a ___."
+  },
+  {
+    "id": "ml_gen_308",
+    "word": "toolkit",
+    "rank": 500,
+    "definition": "A set of tools used for a particular purpose.",
+    "example": "The library is part of a larger developer ___."
+  },
+  {
+    "id": "ml_gen_309",
+    "word": "tradeoff",
+    "rank": 500,
+    "definition": "A balance between two competing outcomes.",
+    "example": "There's always a ___ between speed and accuracy."
+  },
+  {
+    "id": "ml_gen_310",
+    "word": "transparency",
+    "rank": 500,
+    "definition": "Openness about how a system works or decides.",
+    "example": "Users expect more ___ from algorithms."
+  },
+  {
+    "id": "ml_gen_311",
+    "word": "tuning",
+    "rank": 500,
+    "definition": "Adjusting settings to improve performance.",
+    "example": "Careful ___ improved the model's accuracy."
+  },
+  {
+    "id": "ml_gen_312",
+    "word": "uptime",
+    "rank": 500,
+    "definition": "The amount of time a system is running without failure.",
+    "example": "The service maintains 99.9 percent ___."
+  },
+  {
+    "id": "ml_gen_313",
+    "word": "utility",
+    "rank": 500,
+    "definition": "A tool or program that performs a specific useful task.",
+    "example": "She wrote a small ___ to clean the data."
+  },
+  {
+    "id": "ml_gen_314",
+    "word": "variant",
+    "rank": 500,
+    "definition": "A different version of something.",
+    "example": "They tested two ___s of the landing page."
+  },
+  {
+    "id": "ml_gen_315",
+    "word": "velocity",
+    "rank": 500,
+    "definition": "The speed at which work or data moves through a system.",
+    "example": "The team measures development ___ each sprint."
+  },
+  {
+    "id": "ml_gen_316",
+    "word": "virtualization",
+    "rank": 500,
+    "definition": "Creating a virtual version of hardware or a system.",
+    "example": "___ allows many servers to run on one machine."
+  },
+  {
+    "id": "ml_gen_317",
+    "word": "wrapper",
+    "rank": 500,
+    "definition": "Code that surrounds another piece of code to add functionality.",
+    "example": "They wrote a ___ around the old library."
+  },
+  {
+    "id": "ml_gen_318",
+    "word": "accelerator",
+    "rank": 500,
+    "definition": "specialized hardware designed to speed up specific computations",
+    "example": "The lab added a new ___ card to speed up model training."
+  },
+  {
+    "id": "ml_gen_319",
+    "word": "allocator",
+    "rank": 500,
+    "definition": "a component that manages how memory is assigned to a program",
+    "example": "The custom ___ reduced memory fragmentation significantly."
+  },
+  {
+    "id": "ml_gen_320",
+    "word": "anonymize",
+    "rank": 500,
+    "definition": "to remove identifying information from data",
+    "example": "The team had to ___ user records before sharing the dataset."
+  },
+  {
+    "id": "ml_gen_321",
+    "word": "append",
+    "rank": 500,
+    "definition": "to add something to the end of a list or file",
+    "example": "The script will ___ new log entries to the file."
+  },
+  {
+    "id": "ml_gen_322",
+    "word": "assembler",
+    "rank": 500,
+    "definition": "a program that converts low-level code into machine instructions",
+    "example": "The ___ translated the code into binary instructions."
+  },
+  {
+    "id": "ml_gen_323",
+    "word": "assertion",
+    "rank": 500,
+    "definition": "a statement in code that checks a condition is true",
+    "example": "The test failed because an ___ did not hold."
+  },
+  {
+    "id": "ml_gen_324",
+    "word": "authentication",
+    "rank": 500,
+    "definition": "the process of verifying a user's identity",
+    "example": "Users must pass ___ before accessing the dashboard."
+  },
+  {
+    "id": "ml_gen_325",
+    "word": "authorization",
+    "rank": 500,
+    "definition": "the process of granting permission to access a resource",
+    "example": "Even after login the app checks ___ for each action."
+  },
+  {
+    "id": "ml_gen_326",
+    "word": "autoscaling",
+    "rank": 500,
+    "definition": "automatically adjusting resources based on demand",
+    "example": "The cluster uses ___ to handle traffic spikes."
+  },
+  {
+    "id": "ml_gen_327",
+    "word": "backup",
+    "rank": 500,
+    "definition": "a copy of data stored for safety in case of loss",
+    "example": "The team runs a full ___ of the database every night."
+  },
+  {
+    "id": "ml_gen_328",
+    "word": "bandwidth",
+    "rank": 500,
+    "definition": "the maximum rate of data transfer across a network",
+    "example": "Video calls consume a lot of ___."
+  },
+  {
+    "id": "ml_gen_329",
+    "word": "binary",
+    "rank": 500,
+    "definition": "relating to a system using only two digits zero and one",
+    "example": "Computers store all data in ___ form."
+  },
+  {
+    "id": "ml_gen_330",
+    "word": "bitmap",
+    "rank": 500,
+    "definition": "an image made of a grid of individual pixels",
+    "example": "The logo was saved as a ___ file."
+  },
+  {
+    "id": "ml_gen_331",
+    "word": "blockchain",
+    "rank": 500,
+    "definition": "a distributed digital ledger that records transactions",
+    "example": "The startup built its payment system on a ___."
+  },
+  {
+    "id": "ml_gen_332",
+    "word": "boolean",
+    "rank": 500,
+    "definition": "a data type with only two possible values true or false",
+    "example": "The function returns a ___ indicating success or failure."
+  },
+  {
+    "id": "ml_gen_333",
+    "word": "boot",
+    "rank": 500,
+    "definition": "to start up a computer and load its operating system",
+    "example": "It takes about a minute for the laptop to ___."
+  },
+  {
+    "id": "ml_gen_334",
+    "word": "breakpoint",
+    "rank": 500,
+    "definition": "a point in code where execution pauses for debugging",
+    "example": "She set a ___ to inspect the variable's value."
+  },
+  {
+    "id": "ml_gen_335",
+    "word": "broadcast",
+    "rank": 500,
+    "definition": "to send data to multiple recipients at once",
+    "example": "The server will ___ the update to every connected client."
+  },
+  {
+    "id": "ml_gen_336",
+    "word": "browser",
+    "rank": 500,
+    "definition": "a program used to access and view websites",
+    "example": "She opened a new tab in her ___."
+  },
+  {
+    "id": "ml_gen_337",
+    "word": "buffer",
+    "rank": 500,
+    "definition": "a temporary storage area for data being transferred",
+    "example": "The video kept pausing to fill its ___."
+  },
+  {
+    "id": "ml_gen_338",
+    "word": "bug",
+    "rank": 500,
+    "definition": "an error or flaw in a program that causes incorrect behavior",
+    "example": "The developer spent hours tracking down a strange ___."
+  },
+  {
+    "id": "ml_gen_339",
+    "word": "bytecode",
+    "rank": 500,
+    "definition": "intermediate code that can be run by a virtual machine",
+    "example": "The compiler converts the source into ___."
+  },
+  {
+    "id": "ml_gen_340",
+    "word": "callback",
+    "rank": 500,
+    "definition": "a function passed as an argument to be run later",
+    "example": "The button triggers a ___ when clicked."
+  },
+  {
+    "id": "ml_gen_341",
+    "word": "chain",
+    "rank": 500,
+    "definition": "a sequence of linked operations or blocks",
+    "example": "Each transaction is added to the ___ in order."
+  },
+  {
+    "id": "ml_gen_342",
+    "word": "checksum",
+    "rank": 500,
+    "definition": "a value used to verify the integrity of data",
+    "example": "The download failed the ___ so the file was corrupted."
+  },
+  {
+    "id": "ml_gen_343",
+    "word": "ciphertext",
+    "rank": 500,
+    "definition": "data that has been encrypted and is unreadable without a key",
+    "example": "Only the correct key can turn the ___ back into readable text."
+  },
+  {
+    "id": "ml_gen_344",
+    "word": "client",
+    "rank": 500,
+    "definition": "a program or device that requests services from a server",
+    "example": "The mobile app acts as the ___ in this system."
+  },
+  {
+    "id": "ml_gen_345",
+    "word": "codec",
+    "rank": 500,
+    "definition": "software used to compress and decompress audio or video",
+    "example": "The video uses a modern ___ to reduce file size."
+  },
+  {
+    "id": "ml_gen_346",
+    "word": "collision",
+    "rank": 500,
+    "definition": "when two different inputs produce the same hash or result",
+    "example": "A hash ___ can cause serious security problems."
+  },
+  {
+    "id": "ml_gen_347",
+    "word": "compiler",
+    "rank": 500,
+    "definition": "a program that converts source code into executable code",
+    "example": "The ___ reported an error before the build finished."
+  },
+  {
+    "id": "ml_gen_348",
+    "word": "component",
+    "rank": 500,
+    "definition": "a reusable part of a larger software system",
+    "example": "Each button on the page is a separate ___."
+  },
+  {
+    "id": "ml_gen_349",
+    "word": "compress",
+    "rank": 500,
+    "definition": "to reduce the size of a file or data",
+    "example": "The tool will ___ the images before uploading."
+  },
+  {
+    "id": "ml_gen_350",
+    "word": "connector",
+    "rank": 500,
+    "definition": "a piece of software that links two systems together",
+    "example": "The team built a custom ___ to sync the two platforms."
+  },
+  {
+    "id": "ml_gen_351",
+    "word": "console",
+    "rank": 500,
+    "definition": "a text-based interface for entering commands",
+    "example": "She opened the ___ to check for error messages."
+  },
+  {
+    "id": "ml_gen_352",
+    "word": "container",
+    "rank": 500,
+    "definition": "a lightweight package that bundles an application with its dependencies",
+    "example": "The app runs inside a ___ on every server."
+  },
+  {
+    "id": "ml_gen_353",
+    "word": "coroutine",
+    "rank": 500,
+    "definition": "a function that can pause and resume its execution",
+    "example": "The app uses a ___ to handle background tasks efficiently."
+  },
+  {
+    "id": "ml_gen_354",
+    "word": "crash",
+    "rank": 500,
+    "definition": "a sudden and unexpected failure of a program",
+    "example": "The app began to ___ every time it opened the camera."
+  },
+  {
+    "id": "ml_gen_355",
+    "word": "credential",
+    "rank": 500,
+    "definition": "information used to verify identity such as a username and password",
+    "example": "Never share your login ___s with anyone."
+  },
+  {
+    "id": "ml_gen_356",
+    "word": "cron",
+    "rank": 500,
+    "definition": "a scheduler used to run tasks automatically at set times",
+    "example": "A ___ job backs up the database every night."
+  },
+  {
+    "id": "ml_gen_357",
+    "word": "cryptography",
+    "rank": 500,
+    "definition": "the practice of securing information through codes",
+    "example": "Modern ___ protects online banking transactions."
+  },
+  {
+    "id": "ml_gen_358",
+    "word": "daemon",
+    "rank": 500,
+    "definition": "a background process that runs without direct user control",
+    "example": "The ___ checks for updates every hour."
+  },
+  {
+    "id": "ml_gen_359",
+    "word": "database",
+    "rank": 500,
+    "definition": "an organized collection of data stored electronically",
+    "example": "All customer orders are stored in the ___."
+  },
+  {
+    "id": "ml_gen_360",
+    "word": "datacenter",
+    "rank": 500,
+    "definition": "a facility used to house computer systems and servers",
+    "example": "The company opened a new ___ to handle growing traffic."
+  },
+  {
+    "id": "ml_gen_361",
+    "word": "deadlock",
+    "rank": 500,
+    "definition": "a situation where processes are stuck waiting for each other",
+    "example": "The system froze due to a ___ between two threads."
+  },
+  {
+    "id": "ml_gen_362",
+    "word": "debounce",
+    "rank": 500,
+    "definition": "to limit how often a function runs in response to rapid events",
+    "example": "Developers ___ the search box to avoid excessive requests."
+  },
+  {
+    "id": "ml_gen_363",
+    "word": "decrypt",
+    "rank": 500,
+    "definition": "to convert encrypted data back into readable form",
+    "example": "Only the recipient can ___ the message."
+  },
+  {
+    "id": "ml_gen_364",
+    "word": "default",
+    "rank": 500,
+    "definition": "a preselected value used when no other is specified",
+    "example": "The setting returns to its ___ after a reset."
+  },
+  {
+    "id": "ml_gen_365",
+    "word": "defragment",
+    "rank": 500,
+    "definition": "to reorganize data on a disk to improve performance",
+    "example": "Older computers sometimes need to ___ their hard drive."
+  },
+  {
+    "id": "ml_gen_366",
+    "word": "deserialize",
+    "rank": 500,
+    "definition": "to convert stored data back into a usable object",
+    "example": "The server will ___ the JSON into a Python object."
+  },
+  {
+    "id": "ml_gen_367",
+    "word": "desktop",
+    "rank": 500,
+    "definition": "a personal computer designed for regular use at a fixed location",
+    "example": "He prefers working on a ___ rather than a laptop."
+  },
+  {
+    "id": "ml_gen_368",
+    "word": "diff",
+    "rank": 500,
+    "definition": "a comparison showing differences between two versions of a file",
+    "example": "She reviewed the ___ before approving the code change."
+  },
+  {
+    "id": "ml_gen_369",
+    "word": "directory",
+    "rank": 500,
+    "definition": "a folder used to organize files on a computer",
+    "example": "Save the report in the project ___."
+  },
+  {
+    "id": "ml_gen_370",
+    "word": "disk",
+    "rank": 500,
+    "definition": "a device used to store data permanently",
+    "example": "The old ___ was replaced with a faster one."
+  },
+  {
+    "id": "ml_gen_371",
+    "word": "dispatcher",
+    "rank": 500,
+    "definition": "a component that routes tasks or requests to the right handler",
+    "example": "The ___ sends each request to the correct service."
+  },
+  {
+    "id": "ml_gen_372",
+    "word": "dump",
+    "rank": 500,
+    "definition": "to output the full contents of memory or data for inspection",
+    "example": "Developers often ___ the logs to find the source of an error."
+  },
+  {
+    "id": "ml_gen_373",
+    "word": "duplex",
+    "rank": 500,
+    "definition": "allowing data to flow in both directions at the same time",
+    "example": "The printer supports ___ printing on both sides of the page."
+  },
+  {
+    "id": "ml_gen_374",
+    "word": "encrypt",
+    "rank": 500,
+    "definition": "to convert data into a coded form to prevent unauthorized access",
+    "example": "The app will ___ your messages automatically."
+  },
+  {
+    "id": "ml_gen_375",
+    "word": "endianness",
+    "rank": 500,
+    "definition": "the order in which bytes are stored in memory",
+    "example": "Different processors may use different ___."
+  },
+  {
+    "id": "ml_gen_376",
+    "word": "enum",
+    "rank": 500,
+    "definition": "a data type consisting of a fixed set of named values",
+    "example": "The status field is defined as an ___."
+  },
+  {
+    "id": "ml_gen_377",
+    "word": "exception",
+    "rank": 500,
+    "definition": "an unexpected event that disrupts the normal flow of a program",
+    "example": "The code threw an ___ when the file was missing."
+  },
+  {
+    "id": "ml_gen_378",
+    "word": "executable",
+    "rank": 500,
+    "definition": "a file that can be run directly by a computer",
+    "example": "Double-click the ___ to start the installer."
+  },
+  {
+    "id": "ml_gen_379",
+    "word": "expiration",
+    "rank": 500,
+    "definition": "the point at which something is no longer valid",
+    "example": "The session token has a short ___ time."
+  },
+  {
+    "id": "ml_gen_380",
+    "word": "exponent",
+    "rank": 500,
+    "definition": "a number indicating how many times a value is multiplied by itself",
+    "example": "In the formula the base is raised to the ___."
+  },
+  {
+    "id": "ml_gen_381",
+    "word": "extension",
+    "rank": 500,
+    "definition": "a small add-on program that adds features to software",
+    "example": "She installed a browser ___ to block ads."
+  },
+  {
+    "id": "ml_gen_382",
+    "word": "failback",
+    "rank": 500,
+    "definition": "the process of returning to the original system after a failover",
+    "example": "Once repaired the system performed a smooth ___."
+  },
+  {
+    "id": "ml_gen_383",
+    "word": "fanout",
+    "rank": 500,
+    "definition": "the distribution of a single input to multiple outputs",
+    "example": "The message queue uses ___ to notify several services at once."
+  },
+  {
+    "id": "ml_gen_384",
+    "word": "fetch",
+    "rank": 500,
+    "definition": "to retrieve data from a source such as a server",
+    "example": "The app will ___ the latest news every morning."
+  },
+  {
+    "id": "ml_gen_385",
+    "word": "firewall",
+    "rank": 500,
+    "definition": "a system that monitors and controls network traffic for security",
+    "example": "The company's ___ blocked the suspicious connection."
+  },
+  {
+    "id": "ml_gen_386",
+    "word": "flush",
+    "rank": 500,
+    "definition": "to force data to be written out or cleared immediately",
+    "example": "The app will ___ the cache when you log out."
+  },
+  {
+    "id": "ml_gen_387",
+    "word": "footprint",
+    "rank": 500,
+    "definition": "the amount of resources such as memory a program uses",
+    "example": "Developers worked to reduce the app's memory ___."
+  },
+  {
+    "id": "ml_gen_388",
+    "word": "frontend",
+    "rank": 500,
+    "definition": "the part of software that users interact with directly",
+    "example": "She specializes in building the ___ of web applications."
+  },
+  {
+    "id": "ml_gen_389",
+    "word": "function",
+    "rank": 500,
+    "definition": "a named block of code that performs a specific task",
+    "example": "The ___ returns the sum of two numbers."
+  },
+  {
+    "id": "ml_gen_390",
+    "word": "garbage",
+    "rank": 500,
+    "definition": "unused memory that a program no longer needs",
+    "example": "The system periodically clears ___ to free up space."
+  },
+  {
+    "id": "ml_gen_391",
+    "word": "handshake",
+    "rank": 500,
+    "definition": "an initial exchange to establish a connection between systems",
+    "example": "The devices completed a ___ before sharing data."
+  },
+  {
+    "id": "ml_gen_392",
+    "word": "hardware",
+    "rank": 500,
+    "definition": "the physical components of a computer system",
+    "example": "The upgrade improved the laptop's ___ performance."
+  },
+  {
+    "id": "ml_gen_393",
+    "word": "hash",
+    "rank": 500,
+    "definition": "a fixed-size value generated from data for quick lookup or verification",
+    "example": "Passwords are stored as a ___ rather than plain text."
+  },
+  {
+    "id": "ml_gen_394",
+    "word": "header",
+    "rank": 500,
+    "definition": "information placed at the beginning of a file or message",
+    "example": "The email ___ contains the sender's address."
+  },
+  {
+    "id": "ml_gen_395",
+    "word": "heap",
+    "rank": 500,
+    "definition": "an area of memory used for dynamic allocation",
+    "example": "Objects created at runtime are stored on the ___."
+  },
+  {
+    "id": "ml_gen_396",
+    "word": "hierarchy",
+    "rank": 500,
+    "definition": "a system of ranking or organizing elements by level",
+    "example": "The file system uses a ___ of folders and subfolders."
+  },
+  {
+    "id": "ml_gen_397",
+    "word": "hostname",
+    "rank": 500,
+    "definition": "the name assigned to a device on a network",
+    "example": "You can access the server using its ___."
+  },
+  {
+    "id": "ml_gen_398",
+    "word": "hub",
+    "rank": 500,
+    "definition": "a central device that connects multiple devices on a network",
+    "example": "All the office computers connect through a central ___."
+  },
+  {
+    "id": "ml_gen_399",
+    "word": "hypervisor",
+    "rank": 500,
+    "definition": "software that creates and manages virtual machines",
+    "example": "The ___ allows several operating systems to run on one server."
+  },
+  {
+    "id": "ml_gen_400",
+    "word": "idempotent",
+    "rank": 500,
+    "definition": "producing the same result no matter how many times it is applied",
+    "example": "The API endpoint was designed to be ___ for safety."
+  },
+  {
+    "id": "ml_gen_401",
+    "word": "image",
+    "rank": 500,
+    "definition": "a saved snapshot of a system or file used for deployment",
+    "example": "The team built a new container ___ for the release."
+  },
+  {
+    "id": "ml_gen_402",
+    "word": "index",
+    "rank": 500,
+    "definition": "a data structure that improves the speed of data retrieval",
+    "example": "Adding an ___ made the database query much faster."
+  },
+  {
+    "id": "ml_gen_403",
+    "word": "inheritance",
+    "rank": 500,
+    "definition": "a mechanism where a class derives properties from another class",
+    "example": "Through ___ the subclass gains all the parent's methods."
+  },
+  {
+    "id": "ml_gen_404",
+    "word": "injection",
+    "rank": 500,
+    "definition": "inserting malicious code into a program through user input",
+    "example": "The site was vulnerable to a SQL ___ attack."
+  },
+  {
+    "id": "ml_gen_405",
+    "word": "input",
+    "rank": 500,
+    "definition": "data entered into a system for processing",
+    "example": "The form validates all user ___ before submitting."
+  },
+  {
+    "id": "ml_gen_406",
+    "word": "instantiate",
+    "rank": 500,
+    "definition": "to create a specific instance of a class or object",
+    "example": "The program will ___ a new object for each user."
+  },
+  {
+    "id": "ml_gen_407",
+    "word": "integer",
+    "rank": 500,
+    "definition": "a whole number without a fractional part",
+    "example": "The variable stores an ___ representing the item count."
+  },
+  {
+    "id": "ml_gen_408",
+    "word": "interrupt",
+    "rank": 500,
+    "definition": "a signal that pauses a process to handle an urgent event",
+    "example": "The keyboard sends an ___ to the processor with each keystroke."
+  },
+  {
+    "id": "ml_gen_409",
+    "word": "invalidate",
+    "rank": 500,
+    "definition": "to make data or a cached value no longer valid",
+    "example": "The system will ___ the cache after every update."
+  },
+  {
+    "id": "ml_gen_410",
+    "word": "iterator",
+    "rank": 500,
+    "definition": "an object that allows sequential access to elements in a collection",
+    "example": "The loop uses an ___ to go through each item."
+  },
+  {
+    "id": "ml_gen_411",
+    "word": "json",
+    "rank": 500,
+    "definition": "a lightweight text format used to store and exchange data",
+    "example": "The API returns its response as ___."
+  },
+  {
+    "id": "ml_gen_412",
+    "word": "keystore",
+    "rank": 500,
+    "definition": "a secure storage location for cryptographic keys",
+    "example": "The app keeps its private key in a ___."
+  },
+  {
+    "id": "ml_gen_413",
+    "word": "keyword",
+    "rank": 500,
+    "definition": "a reserved word with special meaning in a programming language",
+    "example": "If is a ___ that cannot be used as a variable name."
+  },
+  {
+    "id": "ml_gen_414",
+    "word": "latch",
+    "rank": 500,
+    "definition": "a mechanism used to hold or synchronize a value or state",
+    "example": "The circuit uses a ___ to hold the signal steady."
+  },
+  {
+    "id": "ml_gen_415",
+    "word": "ledger",
+    "rank": 500,
+    "definition": "a record of transactions kept in order",
+    "example": "Every payment is recorded in the digital ___."
+  },
+  {
+    "id": "ml_gen_416",
+    "word": "library",
+    "rank": 500,
+    "definition": "a collection of reusable code that other programs can use",
+    "example": "The project relies on an open-source ___ for graphics."
+  },
+  {
+    "id": "ml_gen_417",
+    "word": "linked",
+    "rank": 500,
+    "definition": "connected or joined together such as in a data structure",
+    "example": "Each node in a ___ list points to the next one."
+  },
+  {
+    "id": "ml_gen_418",
+    "word": "listener",
+    "rank": 500,
+    "definition": "a piece of code that waits for and responds to an event",
+    "example": "The button has a ___ that runs when clicked."
+  },
+  {
+    "id": "ml_gen_419",
+    "word": "load",
+    "rank": 500,
+    "definition": "to bring data or a program into memory for use",
+    "example": "The page began to ___ slowly on the old connection."
+  },
+  {
+    "id": "ml_gen_420",
+    "word": "lockstep",
+    "rank": 500,
+    "definition": "a mode where processes move forward together in sync",
+    "example": "The two servers run in ___ to guarantee consistency."
+  },
+  {
+    "id": "ml_gen_421",
+    "word": "loopback",
+    "rank": 500,
+    "definition": "a network address that routes traffic back to the same device",
+    "example": "Developers use the ___ address to test locally."
+  },
+  {
+    "id": "ml_gen_422",
+    "word": "mainframe",
+    "rank": 500,
+    "definition": "a large powerful computer used for critical business applications",
+    "example": "The bank still runs core operations on a ___."
+  },
+  {
+    "id": "ml_gen_423",
+    "word": "malware",
+    "rank": 500,
+    "definition": "software designed to damage or gain unauthorized access to a system",
+    "example": "The email contained a link that installed ___."
+  },
+  {
+    "id": "ml_gen_424",
+    "word": "mapper",
+    "rank": 500,
+    "definition": "a component that converts data from one format to another",
+    "example": "The ___ converts database rows into objects."
+  },
+  {
+    "id": "ml_gen_425",
+    "word": "markup",
+    "rank": 500,
+    "definition": "a system of tags used to format or structure text",
+    "example": "HTML is a type of ___ language."
+  },
+  {
+    "id": "ml_gen_426",
+    "word": "memoization",
+    "rank": 500,
+    "definition": "storing results of expensive function calls to reuse later",
+    "example": "___ significantly sped up the recursive function."
+  },
+  {
+    "id": "ml_gen_427",
+    "word": "memory",
+    "rank": 500,
+    "definition": "the hardware used to store data temporarily for processing",
+    "example": "The laptop ran slowly because it was low on ___."
+  },
+  {
+    "id": "ml_gen_428",
+    "word": "metaclass",
+    "rank": 500,
+    "definition": "a class whose instances are themselves classes",
+    "example": "Advanced frameworks sometimes rely on a ___ for customization."
+  },
+  {
+    "id": "ml_gen_429",
+    "word": "middleware",
+    "rank": 500,
+    "definition": "software that connects and manages communication between applications",
+    "example": "The request passes through several layers of ___."
+  },
+  {
+    "id": "ml_gen_430",
+    "word": "migrate",
+    "rank": 500,
+    "definition": "to move data or systems from one place to another",
+    "example": "The company plans to ___ its servers to the cloud."
+  },
+  {
+    "id": "ml_gen_431",
+    "word": "mutex",
+    "rank": 500,
+    "definition": "a mechanism that prevents multiple threads from accessing a resource at once",
+    "example": "The program uses a ___ to protect shared data."
+  },
+  {
+    "id": "ml_gen_432",
+    "word": "netmask",
+    "rank": 500,
+    "definition": "a value used to divide an IP address into network and host parts",
+    "example": "The router is configured with a specific ___."
+  },
+  {
+    "id": "ml_gen_433",
+    "word": "nonce",
+    "rank": 500,
+    "definition": "a number used only once to prevent replay attacks",
+    "example": "Each request includes a unique ___ for security."
+  },
+  {
+    "id": "ml_gen_434",
+    "word": "null",
+    "rank": 500,
+    "definition": "a value representing the absence of any value",
+    "example": "The function returns ___ if no match is found."
+  },
+  {
+    "id": "ml_gen_435",
+    "word": "object",
+    "rank": 500,
+    "definition": "an instance of a class containing data and behavior",
+    "example": "Each user is represented as an ___ in the code."
+  },
+  {
+    "id": "ml_gen_436",
+    "word": "opcode",
+    "rank": 500,
+    "definition": "a code that specifies the operation to be performed",
+    "example": "Each ___ tells the processor which instruction to execute."
+  },
+  {
+    "id": "ml_gen_437",
+    "word": "operand",
+    "rank": 500,
+    "definition": "a value on which an operation is performed",
+    "example": "In the expression the numbers are the ___s."
+  },
+  {
+    "id": "ml_gen_438",
+    "word": "overload",
+    "rank": 500,
+    "definition": "to define multiple versions of a function with different parameters",
+    "example": "The language allows you to ___ a function for different types."
+  },
+  {
+    "id": "ml_gen_439",
+    "word": "override",
+    "rank": 500,
+    "definition": "to replace an inherited method with a new implementation",
+    "example": "The subclass will ___ the parent's method."
+  },
+  {
+    "id": "ml_gen_440",
+    "word": "page",
+    "rank": 500,
+    "definition": "a fixed-size block of memory used in virtual memory systems",
+    "example": "The operating system loads each ___ as needed."
+  },
+  {
+    "id": "ml_gen_441",
+    "word": "pagination",
+    "rank": 500,
+    "definition": "dividing content into separate pages for easier navigation",
+    "example": "The results use ___ to show ten items per page."
+  },
+  {
+    "id": "ml_gen_442",
+    "word": "parser",
+    "rank": 500,
+    "definition": "a program that analyzes and interprets structured text",
+    "example": "The ___ converts the code into a syntax tree."
+  },
+  {
+    "id": "ml_gen_443",
+    "word": "passphrase",
+    "rank": 500,
+    "definition": "a longer and more secure version of a password",
+    "example": "She chose a strong ___ to protect her account."
+  },
+  {
+    "id": "ml_gen_444",
+    "word": "persistent",
+    "rank": 500,
+    "definition": "continuing to exist or be stored even after the program ends",
+    "example": "The app uses ___ storage to save user settings."
+  },
+  {
+    "id": "ml_gen_445",
+    "word": "plaintext",
+    "rank": 500,
+    "definition": "unencrypted readable text",
+    "example": "Never send passwords as ___ over the network."
+  },
+  {
+    "id": "ml_gen_446",
+    "word": "pod",
+    "rank": 500,
+    "definition": "a group of one or more containers deployed together",
+    "example": "The cluster restarted the failed ___ automatically."
+  },
+  {
+    "id": "ml_gen_447",
+    "word": "polling",
+    "rank": 500,
+    "definition": "repeatedly checking a source for new data at intervals",
+    "example": "The app uses ___ to check for new messages every few seconds."
+  },
+  {
+    "id": "ml_gen_448",
+    "word": "popup",
+    "rank": 500,
+    "definition": "a small window that appears on top of the main content",
+    "example": "The site displayed an annoying ___ ad."
+  },
+  {
+    "id": "ml_gen_449",
+    "word": "port",
+    "rank": 500,
+    "definition": "a numbered endpoint used for network communication",
+    "example": "The web server listens on ___ eighty."
+  },
+  {
+    "id": "ml_gen_450",
+    "word": "portability",
+    "rank": 500,
+    "definition": "the ability of software to run on different systems",
+    "example": "Using standard code improves the app's ___."
+  },
+  {
+    "id": "ml_gen_451",
+    "word": "precompute",
+    "rank": 500,
+    "definition": "to calculate a value in advance to save time later",
+    "example": "The system will ___ the results to speed up requests."
+  },
+  {
+    "id": "ml_gen_452",
+    "word": "predicate",
+    "rank": 500,
+    "definition": "a function or expression that returns true or false",
+    "example": "The filter uses a ___ to select matching items."
+  },
+  {
+    "id": "ml_gen_453",
+    "word": "preload",
+    "rank": 500,
+    "definition": "to load data in advance before it is needed",
+    "example": "The browser will ___ the next page for faster navigation."
+  },
+  {
+    "id": "ml_gen_454",
+    "word": "prefetch",
+    "rank": 500,
+    "definition": "to retrieve data in advance of it being requested",
+    "example": "The CPU can ___ instructions to improve speed."
+  },
+  {
+    "id": "ml_gen_455",
+    "word": "primary",
+    "rank": 500,
+    "definition": "the main or most important version of something such as a database",
+    "example": "All writes go to the ___ database first."
+  },
+  {
+    "id": "ml_gen_456",
+    "word": "procedure",
+    "rank": 500,
+    "definition": "a named sequence of steps used to perform a task",
+    "example": "The stored ___ updates the records automatically."
+  },
+  {
+    "id": "ml_gen_457",
+    "word": "process",
+    "rank": 500,
+    "definition": "a running instance of a program",
+    "example": "The task manager shows every active ___."
+  },
+  {
+    "id": "ml_gen_458",
+    "word": "profiling",
+    "rank": 500,
+    "definition": "measuring a program's performance to find bottlenecks",
+    "example": "___ revealed that one function used most of the time."
+  },
+  {
+    "id": "ml_gen_459",
+    "word": "pseudocode",
+    "rank": 500,
+    "definition": "an informal description of a program's logic",
+    "example": "She wrote ___ before implementing the actual function."
+  },
+  {
+    "id": "ml_gen_460",
+    "word": "quorum",
+    "rank": 500,
+    "definition": "the minimum number of nodes needed to agree on a decision",
+    "example": "The cluster needs a ___ to remain available."
+  },
+  {
+    "id": "ml_gen_461",
+    "word": "race",
+    "rank": 500,
+    "definition": "a bug that occurs when timing between processes causes errors",
+    "example": "The rare crash was caused by a ___ condition."
+  },
+  {
+    "id": "ml_gen_462",
+    "word": "ram",
+    "rank": 500,
+    "definition": "fast temporary memory used by a computer while running programs",
+    "example": "Adding more ___ improved the computer's speed."
+  },
+  {
+    "id": "ml_gen_463",
+    "word": "ranking",
+    "rank": 500,
+    "definition": "the process of ordering items by relevance or score",
+    "example": "The search engine updates its ___ algorithm regularly."
+  },
+  {
+    "id": "ml_gen_464",
+    "word": "realtime",
+    "rank": 500,
+    "definition": "happening immediately as events occur without noticeable delay",
+    "example": "The dashboard shows ___ data from every sensor."
+  },
+  {
+    "id": "ml_gen_465",
+    "word": "rebase",
+    "rank": 500,
+    "definition": "to move a series of changes onto a new starting point",
+    "example": "He had to ___ his branch before merging."
+  },
+  {
+    "id": "ml_gen_466",
+    "word": "rebuild",
+    "rank": 500,
+    "definition": "to construct a program again from its source code",
+    "example": "You need to ___ the project after changing the config."
+  },
+  {
+    "id": "ml_gen_467",
+    "word": "recompile",
+    "rank": 500,
+    "definition": "to compile source code again after changes",
+    "example": "Every small change required the team to ___ the app."
+  },
+  {
+    "id": "ml_gen_468",
+    "word": "reconnect",
+    "rank": 500,
+    "definition": "to establish a network connection again after it was lost",
+    "example": "The app will automatically ___ if the signal drops."
+  },
+  {
+    "id": "ml_gen_469",
+    "word": "repo",
+    "rank": 500,
+    "definition": "a storage location for a project's code and history",
+    "example": "All the source files are kept in the same ___."
+  },
+  {
+    "id": "ml_gen_470",
+    "word": "resolver",
+    "rank": 500,
+    "definition": "a component that finds an address or answer for a request",
+    "example": "The DNS ___ translates domain names into IP addresses."
+  },
+  {
+    "id": "ml_gen_471",
+    "word": "retention",
+    "rank": 500,
+    "definition": "how long data is kept before being deleted",
+    "example": "The company has a strict data ___ policy."
+  },
+  {
+    "id": "ml_gen_472",
+    "word": "rewrite",
+    "rank": 500,
+    "definition": "to write code again often to improve or fix it",
+    "example": "The team decided to ___ the outdated module."
+  },
+  {
+    "id": "ml_gen_473",
+    "word": "scalar",
+    "rank": 500,
+    "definition": "a single numeric value as opposed to a vector or array",
+    "example": "The function multiplies the vector by a ___."
+  },
+  {
+    "id": "ml_gen_474",
+    "word": "searchable",
+    "rank": 500,
+    "definition": "able to be searched effectively",
+    "example": "The archive was made fully ___ using an index."
+  },
+  {
+    "id": "ml_gen_475",
+    "word": "sector",
+    "rank": 500,
+    "definition": "a fixed-size portion of a storage disk",
+    "example": "Data is written to the disk in small ___s."
+  },
+  {
+    "id": "ml_gen_476",
+    "word": "segment",
+    "rank": 500,
+    "definition": "a distinct part of a larger network memory or dataset",
+    "example": "The network was divided into several ___s for security."
+  },
+  {
+    "id": "ml_gen_477",
+    "word": "semaphore",
+    "rank": 500,
+    "definition": "a signaling mechanism used to control access to shared resources",
+    "example": "The system uses a ___ to limit concurrent connections."
+  },
+  {
+    "id": "ml_gen_478",
+    "word": "server",
+    "rank": 500,
+    "definition": "a computer that provides resources or services to other computers",
+    "example": "The website is hosted on a remote ___."
+  },
+  {
+    "id": "ml_gen_479",
+    "word": "shell",
+    "rank": 500,
+    "definition": "a program that provides a command-line interface to the system",
+    "example": "She typed the command directly into the ___."
+  },
+  {
+    "id": "ml_gen_480",
+    "word": "shim",
+    "rank": 500,
+    "definition": "a small piece of code that bridges compatibility gaps",
+    "example": "The library needed a ___ to work with older browsers."
+  },
+  {
+    "id": "ml_gen_481",
+    "word": "shutdown",
+    "rank": 500,
+    "definition": "the process of turning off a system safely",
+    "example": "The server performs a clean ___ every night."
+  },
+  {
+    "id": "ml_gen_482",
+    "word": "singleton",
+    "rank": 500,
+    "definition": "a design pattern that restricts a class to a single instance",
+    "example": "The configuration manager is implemented as a ___."
+  },
+  {
+    "id": "ml_gen_483",
+    "word": "socket",
+    "rank": 500,
+    "definition": "an endpoint used for sending and receiving data over a network",
+    "example": "The app opens a ___ to communicate with the server."
+  },
+  {
+    "id": "ml_gen_484",
+    "word": "spec",
+    "rank": 500,
+    "definition": "a detailed description of requirements for a system or feature",
+    "example": "The engineers followed the ___ closely during development."
+  },
+  {
+    "id": "ml_gen_485",
+    "word": "split",
+    "rank": 500,
+    "definition": "to divide something such as data or traffic into parts",
+    "example": "The load balancer will ___ traffic between servers."
+  },
+  {
+    "id": "ml_gen_486",
+    "word": "sprint",
+    "rank": 500,
+    "definition": "a fixed short period of time used to complete a set of tasks",
+    "example": "The team planned the tasks for the next ___."
+  },
+  {
+    "id": "ml_gen_487",
+    "word": "stack",
+    "rank": 500,
+    "definition": "a data structure that follows a last-in-first-out order",
+    "example": "The function calls are tracked using a ___."
+  },
+  {
+    "id": "ml_gen_488",
+    "word": "stateful",
+    "rank": 500,
+    "definition": "retaining information about previous interactions",
+    "example": "A ___ application remembers the user's session data."
+  },
+  {
+    "id": "ml_gen_489",
+    "word": "stateless",
+    "rank": 500,
+    "definition": "not retaining information between separate requests",
+    "example": "Each request to a ___ service must include all needed data."
+  },
+  {
+    "id": "ml_gen_490",
+    "word": "storage",
+    "rank": 500,
+    "definition": "space used to hold data on a device or system",
+    "example": "The photos take up a lot of ___ on the phone."
+  },
+  {
+    "id": "ml_gen_491",
+    "word": "string",
+    "rank": 500,
+    "definition": "a sequence of characters used to represent text",
+    "example": "The function checks if the ___ contains any numbers."
+  },
+  {
+    "id": "ml_gen_492",
+    "word": "struct",
+    "rank": 500,
+    "definition": "a data type that groups related variables together",
+    "example": "Each record is represented as a ___."
+  },
+  {
+    "id": "ml_gen_493",
+    "word": "subclass",
+    "rank": 500,
+    "definition": "a class that inherits from another class",
+    "example": "The Dog class is a ___ of Animal."
+  },
+  {
+    "id": "ml_gen_494",
+    "word": "substring",
+    "rank": 500,
+    "definition": "a smaller sequence of characters within a larger string",
+    "example": "The function extracts a ___ from the text."
+  },
+  {
+    "id": "ml_gen_495",
+    "word": "subsystem",
+    "rank": 500,
+    "definition": "a smaller part of a larger overall system",
+    "example": "The billing ___ handles all payment processing."
+  },
+  {
+    "id": "ml_gen_496",
+    "word": "swap",
+    "rank": 500,
+    "definition": "to exchange one value memory page or item for another",
+    "example": "The operating system may ___ data to disk when memory is low."
+  },
+  {
+    "id": "ml_gen_497",
+    "word": "sync",
+    "rank": 500,
+    "definition": "to make data consistent across multiple systems",
+    "example": "The files ___ automatically across all your devices."
+  },
+  {
+    "id": "ml_gen_498",
+    "word": "tarball",
+    "rank": 500,
+    "definition": "a compressed archive file often used to package software",
+    "example": "Download the ___ and extract it to install the tool."
+  },
+  {
+    "id": "ml_gen_499",
+    "word": "terminal",
+    "rank": 500,
+    "definition": "a text-based window used to enter commands directly",
+    "example": "She opened a ___ to run the script."
+  },
+  {
+    "id": "ml_gen_500",
+    "word": "timeout",
+    "rank": 500,
+    "definition": "a limit on how long a system waits before giving up",
+    "example": "The request failed due to a connection ___."
+  },
+  {
+    "id": "ml_gen_501",
+    "word": "toggle",
+    "rank": 500,
+    "definition": "to switch between two states such as on and off",
+    "example": "Click the switch to ___ dark mode."
+  },
+  {
+    "id": "ml_gen_502",
+    "word": "transaction",
+    "rank": 500,
+    "definition": "a complete unit of work often involving a database",
+    "example": "The bank processed the ___ within seconds."
+  },
+  {
+    "id": "ml_gen_503",
+    "word": "truncate",
+    "rank": 500,
+    "definition": "to shorten data by cutting off part of it",
+    "example": "Long text is often ___d for display purposes."
+  },
+  {
+    "id": "ml_gen_504",
+    "word": "tuple",
+    "rank": 500,
+    "definition": "an ordered and unchangeable collection of values",
+    "example": "The function returns a ___ containing two numbers."
+  },
+  {
+    "id": "ml_gen_505",
+    "word": "uplink",
+    "rank": 500,
+    "definition": "a connection that sends data from a local device to a larger network",
+    "example": "The satellite dish provides the ___ for the remote station."
+  },
+  {
+    "id": "ml_gen_506",
+    "word": "url",
+    "rank": 500,
+    "definition": "the address used to locate a resource on the internet",
+    "example": "Copy the ___ to share the page with a friend."
+  },
+  {
+    "id": "ml_gen_507",
+    "word": "userland",
+    "rank": 500,
+    "definition": "the part of an operating system that runs user applications",
+    "example": "Most bugs occur in ___ rather than the kernel itself."
+  },
+  {
+    "id": "ml_gen_508",
+    "word": "utf",
+    "rank": 500,
+    "definition": "a standard encoding used to represent text in multiple languages",
+    "example": "The file is saved using ___ encoding to support all characters."
+  },
+  {
+    "id": "ml_gen_509",
+    "word": "validator",
+    "rank": 500,
+    "definition": "a component that checks whether data meets certain rules",
+    "example": "The form uses a ___ to check the email format."
+  },
+  {
+    "id": "ml_gen_510",
+    "word": "variable",
+    "rank": 500,
+    "definition": "a named storage location that holds a value",
+    "example": "The program stores the user's score in a ___."
+  },
+  {
+    "id": "ml_gen_511",
+    "word": "watchdog",
+    "rank": 500,
+    "definition": "a mechanism that monitors a system and restarts it if it fails",
+    "example": "A ___ process restarts the server if it crashes."
+  },
+  {
+    "id": "ml_gen_512",
+    "word": "webhook",
+    "rank": 500,
+    "definition": "an automated message sent from one app to another when an event occurs",
+    "example": "The payment service sends a ___ when an order completes."
+  },
+  {
+    "id": "ml_gen_513",
+    "word": "whitelist",
+    "rank": 500,
+    "definition": "a list of approved items allowed access",
+    "example": "Only addresses on the ___ can connect to the server."
+  },
+  {
+    "id": "ml_gen_514",
+    "word": "workflow",
+    "rank": 500,
+    "definition": "a defined sequence of steps to complete a process",
+    "example": "The new tool automated much of the approval ___."
+  },
+  {
+    "id": "ml_gen_515",
+    "word": "workspace",
+    "rank": 500,
+    "definition": "an environment where a user's files and tools are organized",
+    "example": "Each developer has a separate cloud ___."
+  },
+  {
+    "id": "ml_gen_516",
+    "word": "zip",
+    "rank": 500,
+    "definition": "to compress files into a single archive",
+    "example": "She will ___ the folder before sending it by email."
+  },
+  {
+    "id": "ml_gen_517",
+    "word": "accelerometer",
+    "rank": 500,
+    "definition": "a sensor that measures the rate of change of velocity",
+    "example": "The phone's ___ detects when you tilt the screen."
+  },
+  {
+    "id": "ml_gen_518",
+    "word": "actuator",
+    "rank": 500,
+    "definition": "a device that produces motion in a mechanical system",
+    "example": "The robotic arm uses an ___ to bend its joints."
+  },
+  {
+    "id": "ml_gen_519",
+    "word": "affinity",
+    "rank": 500,
+    "definition": "a natural attraction or similarity between things",
+    "example": "The recommendation engine groups users by product ___."
+  },
+  {
+    "id": "ml_gen_520",
+    "word": "aggregator",
+    "rank": 500,
+    "definition": "a system that collects and combines data from multiple sources",
+    "example": "The news app is an ___ that pulls stories from many sites."
+  },
+  {
+    "id": "ml_gen_521",
+    "word": "allocation",
+    "rank": 500,
+    "definition": "the process of assigning resources for a specific use",
+    "example": "Memory ___ happens automatically in most modern languages."
+  },
+  {
+    "id": "ml_gen_522",
+    "word": "anonymization",
+    "rank": 500,
+    "definition": "the process of removing personal identifiers from data",
+    "example": "___ helps protect user privacy before analysis."
+  },
+  {
+    "id": "ml_gen_523",
+    "word": "antivirus",
+    "rank": 500,
+    "definition": "software designed to detect and remove malicious programs",
+    "example": "The company installed ___ software on every laptop."
+  },
+  {
+    "id": "ml_gen_524",
+    "word": "authenticate",
+    "rank": 500,
+    "definition": "to verify the identity of a user or system",
+    "example": "Users must ___ with a password and a code."
+  },
+  {
+    "id": "ml_gen_525",
+    "word": "backport",
+    "rank": 500,
+    "definition": "to apply a fix from a newer version to an older one",
+    "example": "The team decided to ___ the security patch."
+  },
+  {
+    "id": "ml_gen_526",
+    "word": "biometric",
+    "rank": 500,
+    "definition": "relating to measurements of physical human characteristics",
+    "example": "The phone uses ___ data to unlock the screen."
+  },
+  {
+    "id": "ml_gen_527",
+    "word": "bitrate",
+    "rank": 500,
+    "definition": "the amount of data processed per unit of time in audio or video",
+    "example": "Lowering the ___ reduces the video's file size."
+  },
+  {
+    "id": "ml_gen_528",
+    "word": "bootstrap",
+    "rank": 500,
+    "definition": "see startup sense above referring to loading a system from a minimal start",
+    "example": "The operating system will ___ from the hard drive."
+  },
+  {
+    "id": "ml_gen_529",
+    "word": "bugfix",
+    "rank": 500,
+    "definition": "a change made to correct an error in software",
+    "example": "The new version includes several small ___es."
+  },
+  {
+    "id": "ml_gen_530",
+    "word": "byte",
+    "rank": 500,
+    "definition": "a unit of digital information made of eight bits",
+    "example": "The file is only a few kilobytes (___)"
+  },
+  {
+    "id": "ml_gen_531",
+    "word": "cardinality",
+    "rank": 500,
+    "definition": "the number of elements in a set or database table relationship",
+    "example": "The database defines a one-to-many ___ here."
+  },
+  {
+    "id": "ml_gen_532",
+    "word": "carrier",
+    "rank": 500,
+    "definition": "a company that provides mobile network service",
+    "example": "Her phone works with any major mobile ___."
+  },
+  {
+    "id": "ml_gen_533",
+    "word": "cipher",
+    "rank": 500,
+    "definition": "an algorithm used to encrypt or decrypt data",
+    "example": "The message was protected using a strong ___."
+  },
+  {
+    "id": "ml_gen_534",
+    "word": "clipboard",
+    "rank": 500,
+    "definition": "a temporary storage area for copied data",
+    "example": "Press control and C to copy text to the ___."
+  },
+  {
+    "id": "ml_gen_535",
+    "word": "config",
+    "rank": 500,
+    "definition": "short for configuration",
+    "example": "the settings of a system (___)"
+  },
+  {
+    "id": "ml_gen_536",
+    "word": "deduplication",
+    "rank": 500,
+    "definition": "the process of removing duplicate copies of data",
+    "example": "___ reduced the backup size significantly."
+  },
+  {
+    "id": "ml_gen_537",
+    "word": "deployment",
+    "rank": 500,
+    "definition": "the process of releasing software into use",
+    "example": "The new feature went live after a smooth ___."
+  },
+  {
+    "id": "ml_gen_538",
+    "word": "downtime",
+    "rank": 500,
+    "definition": "a period when a system is not operating",
+    "example": "The site experienced an hour of unplanned ___."
+  },
+  {
+    "id": "ml_gen_539",
+    "word": "encryption",
+    "rank": 500,
+    "definition": "see security sense above referring to converting data into a code",
+    "example": "All messages are protected by end-to-end ___."
+  },
+  {
+    "id": "ml_gen_540",
+    "word": "geolocation",
+    "rank": 500,
+    "definition": "the identification of a device's real-world location",
+    "example": "The app uses ___ to suggest nearby restaurants."
+  },
+  {
+    "id": "ml_gen_541",
+    "word": "hashing",
+    "rank": 500,
+    "definition": "see security sense above referring to converting data into a fixed value",
+    "example": "Passwords are stored using secure ___."
+  },
+  {
+    "id": "ml_gen_542",
+    "word": "identifier",
+    "rank": 500,
+    "definition": "a name or code used to uniquely mark something",
+    "example": "Each order has a unique ___ in the database."
+  },
+  {
+    "id": "ml_gen_543",
+    "word": "keystroke",
+    "rank": 500,
+    "definition": "a single press of a key on a keyboard",
+    "example": "The app tracks every ___ for accessibility testing."
+  },
+  {
+    "id": "ml_gen_544",
+    "word": "mirroring",
+    "rank": 500,
+    "definition": "see backup sense above referring to copying data to another location",
+    "example": "The server uses disk ___ for extra safety."
+  },
+  {
+    "id": "ml_gen_545",
+    "word": "netcode",
+    "rank": 500,
+    "definition": "the part of a game responsible for network communication",
+    "example": "Poor ___ caused lag during online matches."
+  },
+  {
+    "id": "ml_gen_546",
+    "word": "obfuscation",
+    "rank": 500,
+    "definition": "see security sense above referring to making code hard to read",
+    "example": "Developers use ___ to protect their source code."
+  },
+  {
+    "id": "ml_gen_547",
+    "word": "overclock",
+    "rank": 500,
+    "definition": "to run hardware faster than its standard rate",
+    "example": "Gamers sometimes ___ their processors for extra speed."
+  },
+  {
+    "id": "ml_gen_548",
+    "word": "persona",
+    "rank": 500,
+    "definition": "see design sense above referring to a fictional user profile",
+    "example": "Designers created a user ___ to guide the project."
+  },
+  {
+    "id": "ml_gen_549",
+    "word": "ransomware",
+    "rank": 500,
+    "definition": "malicious software that blocks access until payment is made",
+    "example": "The hospital's systems were hit by ___."
+  },
+  {
+    "id": "ml_gen_550",
+    "word": "readme",
+    "rank": 500,
+    "definition": "a text file explaining how to use a piece of software",
+    "example": "Check the ___ before installing the tool."
+  },
+  {
+    "id": "ml_gen_551",
+    "word": "refactoring",
+    "rank": 500,
+    "definition": "see code sense above referring to restructuring code without changing behavior",
+    "example": "The team spent a sprint on ___ old modules."
+  },
+  {
+    "id": "ml_gen_552",
+    "word": "rootkit",
+    "rank": 500,
+    "definition": "malicious software designed to hide its presence on a system",
+    "example": "Security researchers discovered a hidden ___."
+  },
+  {
+    "id": "ml_gen_553",
+    "word": "sandboxing",
+    "rank": 500,
+    "definition": "see security sense above referring to running code in isolation",
+    "example": "The app runs each plugin in its own ___."
+  },
+  {
+    "id": "ml_gen_554",
+    "word": "scaffolding",
+    "rank": 500,
+    "definition": "see structure sense above referring to a basic code structure to build on",
+    "example": "The framework generates ___ for new projects."
+  },
+  {
+    "id": "ml_gen_555",
+    "word": "spam",
+    "rank": 500,
+    "definition": "unwanted",
+    "example": "often repeated electronic messages (___)"
+  },
+  {
+    "id": "ml_gen_556",
+    "word": "spoofing",
+    "rank": 500,
+    "definition": "see security sense above referring to disguising a message's origin",
+    "example": "The attack used email ___ to trick employees."
+  },
+  {
+    "id": "ml_gen_557",
+    "word": "throttling",
+    "rank": 500,
+    "definition": "see limiting sense above referring to controlling the rate of a process",
+    "example": "The API applies ___ to prevent overuse."
+  },
+  {
+    "id": "ml_gen_558",
+    "word": "verbosity",
+    "rank": 500,
+    "definition": "see logging sense above referring to the amount of detail shown",
+    "example": "Developers can increase the log's ___ for debugging."
+  },
+  {
+    "id": "ml_gen_559",
+    "word": "wireframe",
+    "rank": 500,
+    "definition": "see design sense above referring to a basic visual layout",
+    "example": "The designer sketched a ___ before building the interface."
+  },
+  {
+    "id": "ml_gen_560",
+    "word": "abstraction layer",
+    "rank": 500,
+    "definition": "a layer of software that hides complex details from the user",
+    "example": "The driver acts as an ___ between the app and the hardware."
+  },
+  {
+    "id": "ml_gen_561",
+    "word": "accessor",
+    "rank": 500,
+    "definition": "a method used to read the value of a private variable",
+    "example": "The class provides an ___ for the user's name."
+  },
+  {
+    "id": "ml_gen_562",
+    "word": "adjacency",
+    "rank": 500,
+    "definition": "the property of being next to or connected with something",
+    "example": "The algorithm checks node ___ before continuing."
+  },
+  {
+    "id": "ml_gen_563",
+    "word": "aliasing",
+    "rank": 500,
+    "definition": "when two references point to the same underlying data",
+    "example": "Unexpected ___ can cause hard-to-find bugs."
+  },
+  {
+    "id": "ml_gen_564",
+    "word": "annotate",
+    "rank": 500,
+    "definition": "to add explanatory notes or labels to data",
+    "example": "Workers were hired to ___ thousands of training images."
+  },
+  {
+    "id": "ml_gen_565",
+    "word": "appendable",
+    "rank": 500,
+    "definition": "capable of having new data added to the end",
+    "example": "The log file is designed to be easily ___."
+  },
+  {
+    "id": "ml_gen_566",
+    "word": "arbitration bus",
+    "rank": 500,
+    "definition": "a communication channel used to resolve competing requests",
+    "example": "The system uses an ___ to manage device priority."
+  },
+  {
+    "id": "ml_gen_567",
+    "word": "artifact registry",
+    "rank": 500,
+    "definition": "a system for storing and versioning built software packages",
+    "example": "The team stores every release in the ___."
+  },
+  {
+    "id": "ml_gen_568",
+    "word": "asymmetric encryption",
+    "rank": 500,
+    "definition": "a method using separate public and private keys",
+    "example": "Most secure websites rely on ___ for initial connections."
+  },
+  {
+    "id": "ml_gen_569",
+    "word": "atomic operation",
+    "rank": 500,
+    "definition": "an action that completes fully or not at all",
+    "example": "Database transactions rely on ___s to avoid partial updates."
+  },
+  {
+    "id": "ml_gen_570",
+    "word": "attestation",
+    "rank": 500,
+    "definition": "a formal confirmation that something is true or verified",
+    "example": "The device sends an ___ to prove it hasn't been modified."
+  },
+  {
+    "id": "ml_gen_571",
+    "word": "audit trail",
+    "rank": 500,
+    "definition": "a record showing who did what and when in a system",
+    "example": "The finance team reviewed the ___ after the error."
+  },
+  {
+    "id": "ml_gen_572",
+    "word": "autoscaler",
+    "rank": 500,
+    "definition": "a system component that adjusts server capacity automatically",
+    "example": "The ___ added new instances during the traffic spike."
+  },
+  {
+    "id": "ml_gen_573",
+    "word": "backfill",
+    "rank": 500,
+    "definition": "to fill in missing historical data after the fact",
+    "example": "Engineers had to ___ several months of missing records."
+  },
+  {
+    "id": "ml_gen_574",
+    "word": "batch job",
+    "rank": 500,
+    "definition": "a task that processes a group of items together rather than one at a time",
+    "example": "The nightly ___ updates every customer record."
+  },
+  {
+    "id": "ml_gen_575",
+    "word": "benchmarking",
+    "rank": 500,
+    "definition": "the process of comparing performance against a standard",
+    "example": "The team ran ___ tests on the new database engine."
+  },
+  {
+    "id": "ml_gen_576",
+    "word": "bit flip",
+    "rank": 500,
+    "definition": "an unintended change of a single binary digit",
+    "example": "Cosmic rays can occasionally cause a ___ in memory."
+  },
+  {
+    "id": "ml_gen_577",
+    "word": "blackbox testing",
+    "rank": 500,
+    "definition": "testing software without knowledge of its internal structure",
+    "example": "The QA team performed ___ on the new release."
+  },
+  {
+    "id": "ml_gen_578",
+    "word": "boilerplate",
+    "rank": 500,
+    "definition": "standard code repeated in many places with little variation",
+    "example": "Frameworks help reduce the amount of ___ developers write."
+  },
+  {
+    "id": "ml_gen_579",
+    "word": "bottleneck",
+    "rank": 500,
+    "definition": "a point in a system that limits overall performance",
+    "example": "The database query became the main ___ in the app."
+  },
+  {
+    "id": "ml_gen_580",
+    "word": "bounding box",
+    "rank": 500,
+    "definition": "a rectangle marking the location of an object in an image",
+    "example": "The model draws a ___ around each detected car."
+  },
+  {
+    "id": "ml_gen_581",
+    "word": "branching factor",
+    "rank": 500,
+    "definition": "the number of children at each node in a search tree",
+    "example": "A high ___ makes the search space grow very quickly."
+  },
+  {
+    "id": "ml_gen_582",
+    "word": "brute force",
+    "rank": 500,
+    "definition": "a method that tries every possible solution",
+    "example": "The program used ___ to crack the simple password."
+  },
+  {
+    "id": "ml_gen_583",
+    "word": "buffer overflow",
+    "rank": 500,
+    "definition": "an error where data exceeds the memory space allocated for it",
+    "example": "The bug allowed a classic ___ attack."
+  },
+  {
+    "id": "ml_gen_584",
+    "word": "build pipeline",
+    "rank": 500,
+    "definition": "a sequence of automated steps that compile and test code",
+    "example": "Every commit triggers the ___ automatically."
+  },
+  {
+    "id": "ml_gen_585",
+    "word": "caching layer",
+    "rank": 500,
+    "definition": "a component that stores frequently used data for fast access",
+    "example": "Adding a ___ reduced database load significantly."
+  },
+  {
+    "id": "ml_gen_586",
+    "word": "canary release",
+    "rank": 500,
+    "definition": "releasing a change to a small subset of users first",
+    "example": "The team used a ___ to test the update safely."
+  },
+  {
+    "id": "ml_gen_587",
+    "word": "capacity planning",
+    "rank": 500,
+    "definition": "the process of estimating future resource needs",
+    "example": "___ helped the team avoid running out of server space."
+  },
+  {
+    "id": "ml_gen_588",
+    "word": "categorical variable",
+    "rank": 500,
+    "definition": "a variable that takes on a limited set of distinct values",
+    "example": "Gender and country are common ___s in surveys."
+  },
+  {
+    "id": "ml_gen_589",
+    "word": "certificate authority",
+    "rank": 500,
+    "definition": "an organization that issues digital security certificates",
+    "example": "Browsers trust websites verified by a known ___."
+  },
+  {
+    "id": "ml_gen_590",
+    "word": "changelog",
+    "rank": 500,
+    "definition": "a record of changes made to a software project",
+    "example": "Check the ___ before updating to the new version."
+  },
+  {
+    "id": "ml_gen_591",
+    "word": "checkpointing",
+    "rank": 500,
+    "definition": "saving the current state of a program so it can resume later",
+    "example": "Long training jobs rely on ___ in case of failure."
+  },
+  {
+    "id": "ml_gen_592",
+    "word": "churn rate",
+    "rank": 500,
+    "definition": "the percentage of customers who stop using a service",
+    "example": "The company worked hard to reduce its monthly ___."
+  },
+  {
+    "id": "ml_gen_593",
+    "word": "client-server model",
+    "rank": 500,
+    "definition": "an architecture where clients request services from a central server",
+    "example": "Most websites still use a basic ___."
+  },
+  {
+    "id": "ml_gen_594",
+    "word": "cold start",
+    "rank": 500,
+    "definition": "a delay caused by starting a system from an inactive state",
+    "example": "Serverless functions can suffer from ___ latency."
+  },
+  {
+    "id": "ml_gen_595",
+    "word": "compile time",
+    "rank": 500,
+    "definition": "the period during which source code is translated into machine code",
+    "example": "The error was caught at ___ rather than while running."
+  },
+  {
+    "id": "ml_gen_596",
+    "word": "composability",
+    "rank": 500,
+    "definition": "the ability to combine simple components into larger systems",
+    "example": "Good software design values ___ over complexity."
+  },
+  {
+    "id": "ml_gen_597",
+    "word": "concurrency control",
+    "rank": 500,
+    "definition": "techniques used to manage simultaneous access to data",
+    "example": "The database uses locks as a form of ___."
+  },
+  {
+    "id": "ml_gen_598",
+    "word": "configuration drift",
+    "rank": 500,
+    "definition": "when systems gradually diverge from their intended setup",
+    "example": "Regular audits help prevent ___ across servers."
+  },
+  {
+    "id": "ml_gen_599",
+    "word": "consistency model",
+    "rank": 500,
+    "definition": "a set of rules describing how data updates become visible",
+    "example": "Different databases follow different ___s."
+  },
+  {
+    "id": "ml_gen_600",
+    "word": "containerize",
+    "rank": 500,
+    "definition": "to package software and its dependencies into a container",
+    "example": "The team decided to ___ the entire application."
+  },
+  {
+    "id": "ml_gen_601",
+    "word": "context switch",
+    "rank": 500,
+    "definition": "the process of storing and restoring a process's state",
+    "example": "Frequent ___es can slow down a busy processor."
+  },
+  {
+    "id": "ml_gen_602",
+    "word": "continuous integration",
+    "rank": 500,
+    "definition": "a practice of frequently merging and testing code changes",
+    "example": "The team adopted ___ to catch bugs earlier."
+  },
+  {
+    "id": "ml_gen_603",
+    "word": "convolutional layer",
+    "rank": 500,
+    "definition": "a layer in a neural network that detects patterns in images",
+    "example": "Each ___ extracts different visual features."
+  },
+  {
+    "id": "ml_gen_604",
+    "word": "cost function",
+    "rank": 500,
+    "definition": "a formula that measures how far a model's predictions are from correct",
+    "example": "Training aims to minimize the ___."
+  },
+  {
+    "id": "ml_gen_605",
+    "word": "data lake",
+    "rank": 500,
+    "definition": "a large storage system that holds raw, unstructured data",
+    "example": "The company built a ___ to store all incoming data."
+  },
+  {
+    "id": "ml_gen_606",
+    "word": "data pipeline",
+    "rank": 500,
+    "definition": "a series of steps that move and transform data automatically",
+    "example": "The new ___ processes millions of records daily."
+  },
+  {
+    "id": "ml_gen_607",
+    "word": "data warehouse",
+    "rank": 500,
+    "definition": "a system used to store and analyze large amounts of structured data",
+    "example": "Reports are generated directly from the ___."
+  },
+  {
+    "id": "ml_gen_608",
+    "word": "deadlock detection",
+    "rank": 500,
+    "definition": "a technique for identifying when processes are stuck waiting",
+    "example": "The database includes automatic ___ to recover quickly."
+  },
+  {
+    "id": "ml_gen_609",
+    "word": "declarative",
+    "rank": 500,
+    "definition": "describing what a program should accomplish rather than how",
+    "example": "SQL is a good example of a ___ language."
+  },
+  {
+    "id": "ml_gen_610",
+    "word": "default gateway",
+    "rank": 500,
+    "definition": "the device that routes traffic leaving a local network",
+    "example": "Every computer on the network needs a ___ address."
+  },
+  {
+    "id": "ml_gen_611",
+    "word": "denial of service",
+    "rank": 500,
+    "definition": "an attack that overwhelms a system to make it unavailable",
+    "example": "The website was hit by a large ___ attack."
+  },
+  {
+    "id": "ml_gen_612",
+    "word": "dependency injection",
+    "rank": 500,
+    "definition": "a technique for supplying an object's dependencies from outside",
+    "example": "The framework relies heavily on ___."
+  },
+  {
+    "id": "ml_gen_613",
+    "word": "deployment pipeline",
+    "rank": 500,
+    "definition": "an automated process for releasing software to production",
+    "example": "Every change passes through the ___ before release."
+  },
+  {
+    "id": "ml_gen_614",
+    "word": "deserialization",
+    "rank": 500,
+    "definition": "converting stored or transmitted data back into an object",
+    "example": "Unsafe ___ can create serious security risks."
+  },
+  {
+    "id": "ml_gen_615",
+    "word": "digital twin",
+    "rank": 500,
+    "definition": "a virtual model that mirrors a real physical system",
+    "example": "Engineers use a ___ to test changes before applying them."
+  },
+  {
+    "id": "ml_gen_616",
+    "word": "dimensionality reduction",
+    "rank": 500,
+    "definition": "a technique for simplifying data by reducing its number of features",
+    "example": "___ helped the model train much faster."
+  },
+  {
+    "id": "ml_gen_617",
+    "word": "disk latency",
+    "rank": 500,
+    "definition": "the delay before a storage device responds to a request",
+    "example": "High ___ made the application feel slow."
+  },
+  {
+    "id": "ml_gen_618",
+    "word": "domain-driven design",
+    "rank": 500,
+    "definition": "an approach that models software around business concepts",
+    "example": "The team adopted ___ for the new platform."
+  },
+  {
+    "id": "ml_gen_619",
+    "word": "edge computing",
+    "rank": 500,
+    "definition": "processing data near where it is generated rather than centrally",
+    "example": "___ reduces delay for real-time applications."
+  },
+  {
+    "id": "ml_gen_620",
+    "word": "elastic scaling",
+    "rank": 500,
+    "definition": "automatically adjusting resources to match demand",
+    "example": "The cloud service offers ___ during busy periods."
+  },
+  {
+    "id": "ml_gen_621",
+    "word": "encoding scheme",
+    "rank": 500,
+    "definition": "a specific method used to represent data",
+    "example": "UTF-8 is the most common text ___ today."
+  },
+  {
+    "id": "ml_gen_622",
+    "word": "end-to-end testing",
+    "rank": 500,
+    "definition": "testing an entire application flow from start to finish",
+    "example": "The team runs ___ before every major release."
+  },
+  {
+    "id": "ml_gen_623",
+    "word": "ensemble learning",
+    "rank": 500,
+    "definition": "combining multiple models to improve overall predictions",
+    "example": "___ often performs better than any single model."
+  },
+  {
+    "id": "ml_gen_624",
+    "word": "event loop",
+    "rank": 500,
+    "definition": "a programming construct that waits for and dispatches events",
+    "example": "JavaScript relies heavily on an ___."
+  },
+  {
+    "id": "ml_gen_625",
+    "word": "eventual consistency",
+    "rank": 500,
+    "definition": "a guarantee that data will become consistent over time",
+    "example": "Many distributed systems accept ___ for better performance."
+  },
+  {
+    "id": "ml_gen_626",
+    "word": "exception handling",
+    "rank": 500,
+    "definition": "code designed to respond to errors during execution",
+    "example": "Proper ___ prevents the app from crashing unexpectedly."
+  },
+  {
+    "id": "ml_gen_627",
+    "word": "false positive",
+    "rank": 500,
+    "definition": "an incorrect result indicating something is true when it is not",
+    "example": "The spam filter produced too many ___s."
+  },
+  {
+    "id": "ml_gen_628",
+    "word": "feature flag",
+    "rank": 500,
+    "definition": "a setting that turns a feature on or off without new code",
+    "example": "The team used a ___ to test the change safely."
+  },
+  {
+    "id": "ml_gen_629",
+    "word": "federation",
+    "rank": 500,
+    "definition": "a system where independent services cooperate under shared rules",
+    "example": "The identity system relies on ___ across companies."
+  },
+  {
+    "id": "ml_gen_630",
+    "word": "fine-tuning",
+    "rank": 500,
+    "definition": "adjusting a pretrained model slightly for a specific task",
+    "example": "They performed ___ on a small custom dataset."
+  },
+  {
+    "id": "ml_gen_631",
+    "word": "firewall rule",
+    "rank": 500,
+    "definition": "a specific instruction controlling network traffic",
+    "example": "A new ___ blocked the suspicious connection."
+  },
+  {
+    "id": "ml_gen_632",
+    "word": "flaky test",
+    "rank": 500,
+    "definition": "a test that sometimes passes and sometimes fails without changes",
+    "example": "The team spent hours fixing a single ___."
+  },
+  {
+    "id": "ml_gen_633",
+    "word": "garbage collection",
+    "rank": 500,
+    "definition": "automatic memory management that frees unused memory",
+    "example": "Most modern languages include automatic ___."
+  },
+  {
+    "id": "ml_gen_634",
+    "word": "graceful degradation",
+    "rank": 500,
+    "definition": "a system's ability to keep working, at reduced quality, during failure",
+    "example": "The app was designed for ___ during outages."
+  },
+  {
+    "id": "ml_gen_635",
+    "word": "graph database",
+    "rank": 500,
+    "definition": "a database designed to store and query connected data",
+    "example": "Social networks often use a ___ internally."
+  },
+  {
+    "id": "ml_gen_636",
+    "word": "hash collision",
+    "rank": 500,
+    "definition": "when two different inputs produce the same hash value",
+    "example": "A ___ can weaken the security of a system."
+  },
+  {
+    "id": "ml_gen_637",
+    "word": "health check",
+    "rank": 500,
+    "definition": "an automated test confirming a service is running correctly",
+    "example": "The load balancer runs a ___ every few seconds."
+  },
+  {
+    "id": "ml_gen_638",
+    "word": "heap overflow",
+    "rank": 500,
+    "definition": "an error caused by writing beyond allocated heap memory",
+    "example": "The crash was traced back to a ___ bug."
+  },
+  {
+    "id": "ml_gen_639",
+    "word": "horizontal scaling",
+    "rank": 500,
+    "definition": "increasing capacity by adding more machines",
+    "example": "The company chose ___ over buying a larger server."
+  },
+  {
+    "id": "ml_gen_640",
+    "word": "hot reload",
+    "rank": 500,
+    "definition": "updating running code without restarting the application",
+    "example": "___ makes development much faster."
+  },
+  {
+    "id": "ml_gen_641",
+    "word": "hyperparameter tuning",
+    "rank": 500,
+    "definition": "the process of finding the best settings for a model",
+    "example": "___ improved the model's accuracy significantly."
+  },
+  {
+    "id": "ml_gen_642",
+    "word": "idempotency key",
+    "rank": 500,
+    "definition": "a unique value used to prevent duplicate operations",
+    "example": "The payment API requires an ___ for every request."
+  },
+  {
+    "id": "ml_gen_643",
+    "word": "immutable infrastructure",
+    "rank": 500,
+    "definition": "a system where servers are replaced rather than modified",
+    "example": "The team adopted ___ to reduce configuration errors."
+  },
+  {
+    "id": "ml_gen_644",
+    "word": "inference engine",
+    "rank": 500,
+    "definition": "the part of a system that applies a model to new data",
+    "example": "The ___ runs predictions in real time."
+  },
+  {
+    "id": "ml_gen_645",
+    "word": "ingestion pipeline",
+    "rank": 500,
+    "definition": "a system that collects and imports incoming data",
+    "example": "The ___ handles millions of events per hour."
+  },
+  {
+    "id": "ml_gen_646",
+    "word": "integration test",
+    "rank": 500,
+    "definition": "a test checking how multiple components work together",
+    "example": "The build failed during the ___ stage."
+  },
+  {
+    "id": "ml_gen_647",
+    "word": "job scheduler",
+    "rank": 500,
+    "definition": "software that plans when tasks should run",
+    "example": "The ___ triggers reports every night."
+  },
+  {
+    "id": "ml_gen_648",
+    "word": "key-value store",
+    "rank": 500,
+    "definition": "a simple database that maps unique keys to values",
+    "example": "The app uses a ___ for fast lookups."
+  },
+  {
+    "id": "ml_gen_649",
+    "word": "latency spike",
+    "rank": 500,
+    "definition": "a sudden and temporary increase in response delay",
+    "example": "Engineers investigated a strange ___ overnight."
+  },
+  {
+    "id": "ml_gen_650",
+    "word": "lazy loading",
+    "rank": 500,
+    "definition": "delaying the loading of resources until they are needed",
+    "example": "___ helps the website load faster initially."
+  },
+  {
+    "id": "ml_gen_651",
+    "word": "load testing",
+    "rank": 500,
+    "definition": "testing how a system performs under heavy demand",
+    "example": "The team ran ___ before the product launch."
+  },
+  {
+    "id": "ml_gen_652",
+    "word": "log rotation",
+    "rank": 500,
+    "definition": "the practice of archiving and clearing old log files regularly",
+    "example": "___ prevents the disk from filling up."
+  },
+  {
+    "id": "ml_gen_653",
+    "word": "long polling",
+    "rank": 500,
+    "definition": "a technique where a client waits for the server to respond with new data",
+    "example": "The chat app originally used ___ before switching to sockets."
+  },
+  {
+    "id": "ml_gen_654",
+    "word": "memory leak",
+    "rank": 500,
+    "definition": "a bug where a program fails to release unused memory",
+    "example": "The app slowed down due to a ___."
+  },
+  {
+    "id": "ml_gen_655",
+    "word": "message broker",
+    "rank": 500,
+    "definition": "software that manages the sending of messages between systems",
+    "example": "The company uses a ___ to connect its microservices."
+  },
+  {
+    "id": "ml_gen_656",
+    "word": "metadata store",
+    "rank": 500,
+    "definition": "a system that keeps information describing other data",
+    "example": "The ___ tracks every dataset's schema."
+  },
+  {
+    "id": "ml_gen_657",
+    "word": "microbenchmark",
+    "rank": 500,
+    "definition": "a small, focused performance test of a specific operation",
+    "example": "Developers ran a ___ to compare two functions."
+  },
+  {
+    "id": "ml_gen_658",
+    "word": "mock object",
+    "rank": 500,
+    "definition": "a fake object used in tests to simulate real behavior",
+    "example": "The test relies on a ___ instead of a real database."
+  },
+  {
+    "id": "ml_gen_659",
+    "word": "multitenancy",
+    "rank": 500,
+    "definition": "a design where one system serves multiple separate customers",
+    "example": "The platform was built with ___ from the start."
+  },
+  {
+    "id": "ml_gen_660",
+    "word": "mutation testing",
+    "rank": 500,
+    "definition": "a technique that checks test quality by introducing small bugs",
+    "example": "___ revealed several weak spots in the test suite."
+  },
+  {
+    "id": "ml_gen_661",
+    "word": "namespace collision",
+    "rank": 500,
+    "definition": "when two identifiers accidentally share the same name",
+    "example": "A ___ caused the import to fail unexpectedly."
+  },
+  {
+    "id": "ml_gen_662",
+    "word": "network partition",
+    "rank": 500,
+    "definition": "a failure that splits a network into disconnected parts",
+    "example": "The system must handle a ___ gracefully."
+  },
+  {
+    "id": "ml_gen_663",
+    "word": "noisy neighbor",
+    "rank": 500,
+    "definition": "a workload that unfairly consumes shared resources",
+    "example": "A ___ slowed down every other app on the server."
+  },
+  {
+    "id": "ml_gen_664",
+    "word": "observability platform",
+    "rank": 500,
+    "definition": "a tool for monitoring logs, metrics, and traces together",
+    "example": "The team relies on an ___ to debug production issues."
+  },
+  {
+    "id": "ml_gen_665",
+    "word": "offline-first",
+    "rank": 500,
+    "definition": "designing an app to work without a network connection first",
+    "example": "The note-taking app was built ___."
+  },
+  {
+    "id": "ml_gen_666",
+    "word": "opcode injection",
+    "rank": 500,
+    "definition": "inserting malicious low-level instructions into a program",
+    "example": "The vulnerability allowed a form of ___."
+  },
+  {
+    "id": "ml_gen_667",
+    "word": "optimistic locking",
+    "rank": 500,
+    "definition": "a concurrency method assuming conflicts are rare",
+    "example": "The database uses ___ to improve performance."
+  },
+  {
+    "id": "ml_gen_668",
+    "word": "orchestration layer",
+    "rank": 500,
+    "definition": "a system that coordinates multiple services or tasks",
+    "example": "The ___ schedules all the microservices."
+  },
+  {
+    "id": "ml_gen_669",
+    "word": "overprovisioning",
+    "rank": 500,
+    "definition": "allocating more resources than are currently needed",
+    "example": "___ wastes money but avoids sudden shortages."
+  },
+  {
+    "id": "ml_gen_670",
+    "word": "package manager",
+    "rank": 500,
+    "definition": "a tool that installs and manages software dependencies",
+    "example": "Developers rely on a ___ to install libraries."
+  },
+  {
+    "id": "ml_gen_671",
+    "word": "parallelization",
+    "rank": 500,
+    "definition": "dividing a task into parts that run at the same time",
+    "example": "___ cut the processing time in half."
+  },
+  {
+    "id": "ml_gen_672",
+    "word": "partial failure",
+    "rank": 500,
+    "definition": "a situation where part of a distributed system fails",
+    "example": "The service must tolerate ___ without crashing entirely."
+  },
+  {
+    "id": "ml_gen_673",
+    "word": "payload encryption",
+    "rank": 500,
+    "definition": "encrypting the actual data sent in a message",
+    "example": "All API requests use ___ for security."
+  },
+  {
+    "id": "ml_gen_674",
+    "word": "performance profiler",
+    "rank": 500,
+    "definition": "a tool that measures where a program spends its time",
+    "example": "The ___ pointed to a slow database call."
+  },
+  {
+    "id": "ml_gen_675",
+    "word": "pessimistic locking",
+    "rank": 500,
+    "definition": "a concurrency method that locks data to prevent conflicts",
+    "example": "The system uses ___ for critical financial updates."
+  },
+  {
+    "id": "ml_gen_676",
+    "word": "pod autoscaling",
+    "rank": 500,
+    "definition": "automatically adjusting the number of running containers",
+    "example": "___ kept the service stable during the traffic surge."
+  },
+  {
+    "id": "ml_gen_677",
+    "word": "polling interval",
+    "rank": 500,
+    "definition": "the amount of time between repeated checks for updates",
+    "example": "They reduced the ___ to get faster notifications."
+  },
+  {
+    "id": "ml_gen_678",
+    "word": "prefetch cache",
+    "rank": 500,
+    "definition": "a cache that loads data before it is actually requested",
+    "example": "The browser's ___ speeds up page navigation."
+  },
+  {
+    "id": "ml_gen_679",
+    "word": "race window",
+    "rank": 500,
+    "definition": "the brief period during which a race condition can occur",
+    "example": "Developers closed the ___ with a proper lock."
+  },
+  {
+    "id": "ml_gen_680",
+    "word": "rate limit",
+    "rank": 500,
+    "definition": "a restriction on how many requests can be made in a period",
+    "example": "The API enforces a strict ___ per user."
+  },
+  {
+    "id": "ml_gen_681",
+    "word": "read replica",
+    "rank": 500,
+    "definition": "a copy of a database used to handle read requests",
+    "example": "The app sends reports to a ___ to reduce load."
+  },
+  {
+    "id": "ml_gen_682",
+    "word": "reconciliation job",
+    "rank": 500,
+    "definition": "a process that checks and fixes data inconsistencies",
+    "example": "The nightly ___ compares two systems' records."
+  },
+  {
+    "id": "ml_gen_683",
+    "word": "regression test",
+    "rank": 500,
+    "definition": "a test ensuring old features still work after changes",
+    "example": "The bug reappeared because a ___ was missing."
+  },
+  {
+    "id": "ml_gen_684",
+    "word": "resource contention",
+    "rank": 500,
+    "definition": "competition between processes for the same limited resource",
+    "example": "Slow performance was caused by ___ on the disk."
+  },
+  {
+    "id": "ml_gen_685",
+    "word": "retry policy",
+    "rank": 500,
+    "definition": "rules defining how a failed operation should be attempted again",
+    "example": "The client uses a ___ with increasing delays."
+  },
+  {
+    "id": "ml_gen_686",
+    "word": "rolling deployment",
+    "rank": 500,
+    "definition": "gradually updating servers one at a time",
+    "example": "The team prefers ___ over updating everything at once."
+  },
+  {
+    "id": "ml_gen_687",
+    "word": "sandbox environment",
+    "rank": 500,
+    "definition": "an isolated space for testing without affecting real systems",
+    "example": "Developers test new code in a ___ first."
+  },
+  {
+    "id": "ml_gen_688",
+    "word": "schema migration",
+    "rank": 500,
+    "definition": "a controlled change to a database's structure",
+    "example": "The team ran a ___ to add the new column."
+  },
+  {
+    "id": "ml_gen_689",
+    "word": "serverless",
+    "rank": 500,
+    "definition": "a cloud model where developers don't manage the underlying servers",
+    "example": "The app runs entirely on a ___ platform."
+  },
+  {
+    "id": "ml_gen_690",
+    "word": "service mesh",
+    "rank": 500,
+    "definition": "a layer that manages communication between microservices",
+    "example": "The ___ handles retries and security automatically."
+  },
+  {
+    "id": "ml_gen_691",
+    "word": "session token",
+    "rank": 500,
+    "definition": "a temporary code used to identify a logged-in user",
+    "example": "The app stores a ___ after successful login."
+  },
+  {
+    "id": "ml_gen_692",
+    "word": "shadow deployment",
+    "rank": 500,
+    "definition": "running new code alongside production without affecting users",
+    "example": "They tested the model using a ___ first."
+  },
+  {
+    "id": "ml_gen_693",
+    "word": "sidecar pattern",
+    "rank": 500,
+    "definition": "attaching a helper process alongside a main application container",
+    "example": "Logging is handled through a ___ container."
+  },
+  {
+    "id": "ml_gen_694",
+    "word": "single point of failure",
+    "rank": 500,
+    "definition": "a part of a system whose failure would stop the whole system",
+    "example": "The old server was a serious ___."
+  },
+  {
+    "id": "ml_gen_695",
+    "word": "soft delete",
+    "rank": 500,
+    "definition": "marking data as removed without actually erasing it",
+    "example": "The app uses a ___ so records can be restored later."
+  },
+  {
+    "id": "ml_gen_696",
+    "word": "source of truth",
+    "rank": 500,
+    "definition": "the authoritative location where correct data is stored",
+    "example": "The main database is the system's ___."
+  },
+  {
+    "id": "ml_gen_697",
+    "word": "stack trace",
+    "rank": 500,
+    "definition": "a report showing the sequence of function calls leading to an error",
+    "example": "The ___ pointed directly to the faulty line."
+  },
+  {
+    "id": "ml_gen_698",
+    "word": "state machine",
+    "rank": 500,
+    "definition": "a model describing a system's possible states and transitions",
+    "example": "The order process is modeled as a ___."
+  },
+  {
+    "id": "ml_gen_699",
+    "word": "static analysis",
+    "rank": 500,
+    "definition": "examining code for errors without actually running it",
+    "example": "___ caught the bug before the tests even ran."
+  },
+  {
+    "id": "ml_gen_700",
+    "word": "sticky session",
+    "rank": 500,
+    "definition": "a setup where a user's requests always go to the same server",
+    "example": "The load balancer uses ___s for this feature."
+  },
+  {
+    "id": "ml_gen_701",
+    "word": "strangler pattern",
+    "rank": 500,
+    "definition": "gradually replacing an old system by routing traffic to a new one",
+    "example": "The team used the ___ to migrate slowly."
+  },
+  {
+    "id": "ml_gen_702",
+    "word": "stream processing",
+    "rank": 500,
+    "definition": "analyzing data continuously as it arrives",
+    "example": "___ allows the dashboard to update in real time."
+  },
+  {
+    "id": "ml_gen_703",
+    "word": "synthetic monitoring",
+    "rank": 500,
+    "definition": "testing a system using simulated user activity",
+    "example": "___ alerts the team before real users notice problems."
+  },
+  {
+    "id": "ml_gen_704",
+    "word": "tail latency",
+    "rank": 500,
+    "definition": "the response time experienced by the slowest requests",
+    "example": "Reducing ___ improved the overall user experience."
+  },
+  {
+    "id": "ml_gen_705",
+    "word": "technical debt",
+    "rank": 500,
+    "definition": "the future cost caused by choosing a quick solution now",
+    "example": "The team spent a sprint paying down ___."
+  },
+  {
+    "id": "ml_gen_706",
+    "word": "tenant isolation",
+    "rank": 500,
+    "definition": "keeping different customers' data and resources separate",
+    "example": "Strong ___ is critical for a multitenant platform."
+  },
+  {
+    "id": "ml_gen_707",
+    "word": "thread pool",
+    "rank": 500,
+    "definition": "a group of reusable threads used to run tasks efficiently",
+    "example": "The server manages a ___ to handle requests."
+  },
+  {
+    "id": "ml_gen_708",
+    "word": "throughput ceiling",
+    "rank": 500,
+    "definition": "the maximum rate a system can sustainably handle",
+    "example": "The service hit its ___ during the big sale."
+  },
+  {
+    "id": "ml_gen_709",
+    "word": "time-to-live",
+    "rank": 500,
+    "definition": "the length of time data remains valid before expiring",
+    "example": "Each cached item has a short ___."
+  },
+  {
+    "id": "ml_gen_710",
+    "word": "token bucket",
+    "rank": 500,
+    "definition": "an algorithm used to control the rate of actions",
+    "example": "The API uses a ___ to smooth out traffic bursts."
+  },
+  {
+    "id": "ml_gen_711",
+    "word": "traffic shaping",
+    "rank": 500,
+    "definition": "controlling the flow of network data to manage bandwidth",
+    "example": "___ prevents one user from overwhelming the network."
+  },
+  {
+    "id": "ml_gen_712",
+    "word": "transactional integrity",
+    "rank": 500,
+    "definition": "ensuring database operations complete fully and correctly",
+    "example": "The bank relies on strict ___ for every transfer."
+  },
+  {
+    "id": "ml_gen_713",
+    "word": "type inference",
+    "rank": 500,
+    "definition": "automatically determining the data type of a value",
+    "example": "Modern languages rely heavily on ___."
+  },
+  {
+    "id": "ml_gen_714",
+    "word": "unit economics",
+    "rank": 500,
+    "definition": "the direct revenue and costs of a single business unit",
+    "example": "Investors wanted to see the app's ___ first."
+  },
+  {
+    "id": "ml_gen_715",
+    "word": "vendor lock-in",
+    "rank": 500,
+    "definition": "dependency on one supplier that makes switching difficult",
+    "example": "The company worried about ___ with its cloud provider."
+  },
+  {
+    "id": "ml_gen_716",
+    "word": "version skew",
+    "rank": 500,
+    "definition": "when different parts of a system run mismatched versions",
+    "example": "___ caused unexpected errors between services."
+  },
+  {
+    "id": "ml_gen_717",
+    "word": "visual regression",
+    "rank": 500,
+    "definition": "a test checking whether the interface's appearance has changed unexpectedly",
+    "example": "___ testing caught the broken layout early."
+  },
+  {
+    "id": "ml_gen_718",
+    "word": "warm cache",
+    "rank": 500,
+    "definition": "a cache already filled with useful data, ready for fast access",
+    "example": "Restarting with a ___ avoided the usual slowdown."
+  },
+  {
+    "id": "ml_gen_719",
+    "word": "watermarking",
+    "rank": 500,
+    "definition": "embedding hidden information into digital content",
+    "example": "The company uses ___ to protect its images."
+  },
+  {
+    "id": "ml_gen_720",
+    "word": "zero-day",
+    "rank": 500,
+    "definition": "a software vulnerability unknown to the vendor",
+    "example": "The attack exploited a previously unknown ___."
+  },
+  {
+    "id": "ml_gen_721",
+    "word": "access token",
+    "rank": 500,
+    "definition": "a piece of data used to authorize a request without a password",
+    "example": "The app stores an ___ after the user logs in."
+  },
+  {
+    "id": "ml_gen_722",
+    "word": "acyclic graph",
+    "rank": 500,
+    "definition": "a graph structure containing no closed loops",
+    "example": "Task dependencies are often modeled as a directed ___."
+  },
+  {
+    "id": "ml_gen_723",
+    "word": "backoff strategy",
+    "rank": 500,
+    "definition": "a technique that increases wait time between retries",
+    "example": "The client uses an exponential ___ after each failure."
+  },
+  {
+    "id": "ml_gen_724",
+    "word": "bare metal",
+    "rank": 500,
+    "definition": "hardware running without a virtualization layer",
+    "example": "The company moved some workloads back to ___ servers."
+  },
+  {
+    "id": "ml_gen_725",
+    "word": "binary search",
+    "rank": 500,
+    "definition": "an efficient algorithm for finding an item in a sorted list",
+    "example": "The function uses ___ instead of checking every item."
+  },
+  {
+    "id": "ml_gen_726",
+    "word": "blue-green deployment",
+    "rank": 500,
+    "definition": "a release strategy using two identical environments",
+    "example": "They used ___ to switch traffic instantly to the new version."
+  },
+  {
+    "id": "ml_gen_727",
+    "word": "canary analysis",
+    "rank": 500,
+    "definition": "automatically comparing metrics between old and new releases",
+    "example": "___ flagged a problem before most users noticed."
+  },
+  {
+    "id": "ml_gen_728",
+    "word": "chaos engineering",
+    "rank": 500,
+    "definition": "intentionally causing failures to test system resilience",
+    "example": "The team runs ___ experiments every quarter."
+  },
+  {
+    "id": "ml_gen_729",
+    "word": "circuit breaker",
+    "rank": 500,
+    "definition": "a pattern that stops calls to a failing service temporarily",
+    "example": "The ___ opened after too many failed requests."
+  },
+  {
+    "id": "ml_gen_730",
+    "word": "cold storage",
+    "rank": 500,
+    "definition": "inexpensive storage meant for rarely accessed data",
+    "example": "Old backups are moved to ___ after a year."
+  },
+  {
+    "id": "ml_gen_731",
+    "word": "command line interface",
+    "rank": 500,
+    "definition": "a text-based way of interacting with a computer",
+    "example": "Many developers still prefer the ___ for daily tasks."
+  },
+  {
+    "id": "ml_gen_732",
+    "word": "compile-time error",
+    "rank": 500,
+    "definition": "a mistake detected before the program runs",
+    "example": "A missing bracket caused a ___ this time."
+  },
+  {
+    "id": "ml_gen_733",
+    "word": "connection pooling",
+    "rank": 500,
+    "definition": "reusing database connections instead of creating new ones",
+    "example": "___ reduced the load on the database significantly."
+  },
+  {
+    "id": "ml_gen_734",
+    "word": "data drift",
+    "rank": 500,
+    "definition": "a gradual change in the statistical properties of input data",
+    "example": "The model's accuracy dropped due to ___ over time."
+  },
+  {
+    "id": "ml_gen_735",
+    "word": "dead letter queue",
+    "rank": 500,
+    "definition": "a place where failed messages are stored for later review",
+    "example": "Unprocessed orders are sent to a ___ for inspection."
+  },
+  {
+    "id": "ml_gen_736",
+    "word": "declarative pipeline",
+    "rank": 500,
+    "definition": "a build process defined by describing the desired outcome",
+    "example": "The team rewrote their build as a ___."
+  },
+  {
+    "id": "ml_gen_737",
+    "word": "edge case",
+    "rank": 500,
+    "definition": "an unusual situation that occurs only at extreme values",
+    "example": "The bug only appeared in a rare ___."
+  },
+  {
+    "id": "ml_gen_738",
+    "word": "elastic search index",
+    "rank": 500,
+    "definition": "a data structure optimized for fast text search",
+    "example": "Product search runs against an ___."
+  },
+  {
+    "id": "ml_gen_739",
+    "word": "exponential backoff",
+    "rank": 500,
+    "definition": "gradually increasing delay between repeated attempts",
+    "example": "The client uses ___ to avoid overwhelming the server."
+  },
+  {
+    "id": "ml_gen_740",
+    "word": "fan-in",
+    "rank": 500,
+    "definition": "combining multiple inputs into a single output",
+    "example": "The pipeline uses a ___ step to merge results."
+  },
+  {
+    "id": "ml_gen_741",
+    "word": "fan-out",
+    "rank": 500,
+    "definition": "distributing one input to multiple destinations",
+    "example": "The message queue performs a ___ to several services."
+  },
+  {
+    "id": "ml_gen_742",
+    "word": "feature store",
+    "rank": 500,
+    "definition": "a centralized place to store and share model features",
+    "example": "Data scientists pull inputs from a shared ___."
+  },
+  {
+    "id": "ml_gen_743",
+    "word": "graph traversal",
+    "rank": 500,
+    "definition": "the process of visiting nodes in a graph in some order",
+    "example": "The algorithm relies on efficient ___."
+  },
+  {
+    "id": "ml_gen_744",
+    "word": "green threading",
+    "rank": 500,
+    "definition": "lightweight threads managed by software rather than the operating system",
+    "example": "The language uses ___ for high concurrency."
+  },
+  {
+    "id": "ml_gen_745",
+    "word": "hash table",
+    "rank": 500,
+    "definition": "a data structure that maps keys to values for fast lookup",
+    "example": "The dictionary is implemented using a ___ internally."
+  },
+  {
+    "id": "ml_gen_746",
+    "word": "horizontal partitioning",
+    "rank": 500,
+    "definition": "splitting a database table's rows across multiple servers",
+    "example": "___ helped the database handle more traffic."
+  },
+  {
+    "id": "ml_gen_747",
+    "word": "hot path",
+    "rank": 500,
+    "definition": "the most frequently executed part of a program",
+    "example": "Optimizing the ___ improved overall performance."
+  },
+  {
+    "id": "ml_gen_748",
+    "word": "immutable object",
+    "rank": 500,
+    "definition": "an object whose state cannot be changed after creation",
+    "example": "Strings in many languages are ___s."
+  },
+  {
+    "id": "ml_gen_749",
+    "word": "inference latency",
+    "rank": 500,
+    "definition": "the time it takes a model to produce a prediction",
+    "example": "Reducing ___ was critical for the real-time feature."
+  },
+  {
+    "id": "ml_gen_750",
+    "word": "job queue",
+    "rank": 500,
+    "definition": "a list of tasks waiting to be processed",
+    "example": "New uploads are added to the background ___."
+  },
+  {
+    "id": "ml_gen_751",
+    "word": "kill switch",
+    "rank": 500,
+    "definition": "a mechanism to immediately stop a system or feature",
+    "example": "Engineers added a ___ in case the rollout failed."
+  },
+  {
+    "id": "ml_gen_752",
+    "word": "last mile delivery",
+    "rank": 500,
+    "definition": "the final step of getting data or a package to its destination",
+    "example": "The team focused on improving ___ performance."
+  },
+  {
+    "id": "ml_gen_753",
+    "word": "lazy evaluation",
+    "rank": 500,
+    "definition": "delaying computation until the result is actually needed",
+    "example": "The language relies on ___ for efficiency."
+  },
+  {
+    "id": "ml_gen_754",
+    "word": "linear scalability",
+    "rank": 500,
+    "definition": "performance that increases proportionally with added resources",
+    "example": "The system was designed for near ___."
+  },
+  {
+    "id": "ml_gen_755",
+    "word": "live migration",
+    "rank": 500,
+    "definition": "moving a running virtual machine without downtime",
+    "example": "The team performed a ___ during peak hours."
+  },
+  {
+    "id": "ml_gen_756",
+    "word": "log aggregation",
+    "rank": 500,
+    "definition": "collecting logs from many sources into one place",
+    "example": "___ made it easier to search across services."
+  },
+  {
+    "id": "ml_gen_757",
+    "word": "lookahead buffer",
+    "rank": 500,
+    "definition": "memory used to preview upcoming data before processing it",
+    "example": "The compressor uses a ___ to find repeated patterns."
+  },
+  {
+    "id": "ml_gen_758",
+    "word": "mean time to recovery",
+    "rank": 500,
+    "definition": "the average time needed to restore a system after failure",
+    "example": "The team worked to reduce their ___."
+  },
+  {
+    "id": "ml_gen_759",
+    "word": "memory footprint",
+    "rank": 500,
+    "definition": "the amount of memory a program uses while running",
+    "example": "Developers reduced the app's ___ significantly."
+  },
+  {
+    "id": "ml_gen_760",
+    "word": "mesh network",
+    "rank": 500,
+    "definition": "a network where devices connect directly to many others",
+    "example": "The smart home uses a ___ for better coverage."
+  },
+  {
+    "id": "ml_gen_761",
+    "word": "model drift",
+    "rank": 500,
+    "definition": "a decline in a model's accuracy as real-world data changes",
+    "example": "Monitoring helps detect ___ early."
+  },
+  {
+    "id": "ml_gen_762",
+    "word": "multi-armed bandit",
+    "rank": 500,
+    "definition": "an algorithm balancing exploration and exploitation of options",
+    "example": "The website uses a ___ to test button colors."
+  },
+  {
+    "id": "ml_gen_763",
+    "word": "network topology",
+    "rank": 500,
+    "definition": "the arrangement of devices and connections in a network",
+    "example": "The company redesigned its network ___."
+  },
+  {
+    "id": "ml_gen_764",
+    "word": "object pooling",
+    "rank": 500,
+    "definition": "reusing a fixed set of objects instead of creating new ones",
+    "example": "Games often use ___ to avoid memory allocation delays."
+  },
+  {
+    "id": "ml_gen_765",
+    "word": "offline queue",
+    "rank": 500,
+    "definition": "a list of actions saved locally until a connection is restored",
+    "example": "The app stores changes in an ___ while offline."
+  },
+  {
+    "id": "ml_gen_766",
+    "word": "onboarding flow",
+    "rank": 500,
+    "definition": "the sequence of steps guiding a new user through setup",
+    "example": "They redesigned the ___ to reduce drop-off."
+  },
+  {
+    "id": "ml_gen_767",
+    "word": "orphaned resource",
+    "rank": 500,
+    "definition": "a cloud resource left running without a clear owner",
+    "example": "Audits found several ___s wasting money."
+  },
+  {
+    "id": "ml_gen_768",
+    "word": "out-of-band signaling",
+    "rank": 500,
+    "definition": "sending control information separately from the main data",
+    "example": "The protocol uses ___ for error messages."
+  },
+  {
+    "id": "ml_gen_769",
+    "word": "page fault",
+    "rank": 500,
+    "definition": "an event triggered when requested memory is not immediately available",
+    "example": "Frequent ___s can slow down a program significantly."
+  },
+  {
+    "id": "ml_gen_770",
+    "word": "partition tolerance",
+    "rank": 500,
+    "definition": "a system's ability to keep working despite network splits",
+    "example": "Distributed systems must consider ___ carefully."
+  },
+  {
+    "id": "ml_gen_771",
+    "word": "pixel density",
+    "rank": 500,
+    "definition": "the number of pixels packed into a given screen area",
+    "example": "Higher ___ produces sharper images."
+  },
+  {
+    "id": "ml_gen_772",
+    "word": "poison message",
+    "rank": 500,
+    "definition": "a message that repeatedly causes processing to fail",
+    "example": "The queue moved the ___ aside for manual review."
+  },
+  {
+    "id": "ml_gen_773",
+    "word": "predictive scaling",
+    "rank": 500,
+    "definition": "adjusting resources in advance based on expected demand",
+    "example": "___ prepared the servers before the holiday rush."
+  },
+  {
+    "id": "ml_gen_774",
+    "word": "protocol buffer",
+    "rank": 500,
+    "definition": "a compact format for structured data serialization",
+    "example": "The service exchanges data using a ___."
+  },
+  {
+    "id": "ml_gen_775",
+    "word": "query planner",
+    "rank": 500,
+    "definition": "a component that decides how to execute a database query",
+    "example": "The ___ chose an inefficient path for that query."
+  },
+  {
+    "id": "ml_gen_776",
+    "word": "rate throttling",
+    "rank": 500,
+    "definition": "intentionally slowing requests to prevent overload",
+    "example": "___ protects the server during traffic spikes."
+  },
+  {
+    "id": "ml_gen_777",
+    "word": "read-through cache",
+    "rank": 500,
+    "definition": "a cache that automatically loads missing data from the source",
+    "example": "The ___ simplified the application's code."
+  },
+  {
+    "id": "ml_gen_778",
+    "word": "replica lag",
+    "rank": 500,
+    "definition": "the delay between a primary database and its copies",
+    "example": "High ___ caused some users to see outdated data."
+  },
+  {
+    "id": "ml_gen_779",
+    "word": "request coalescing",
+    "rank": 500,
+    "definition": "combining multiple identical requests into one",
+    "example": "___ reduced unnecessary load on the backend."
+  },
+  {
+    "id": "ml_gen_780",
+    "word": "resource leak",
+    "rank": 500,
+    "definition": "a failure to release a resource after it is no longer needed",
+    "example": "The crash was traced to a file handle ___."
+  },
+  {
+    "id": "ml_gen_781",
+    "word": "retry storm",
+    "rank": 500,
+    "definition": "a surge of repeated requests overwhelming a recovering system",
+    "example": "A ___ made the outage even worse."
+  },
+  {
+    "id": "ml_gen_782",
+    "word": "rollback strategy",
+    "rank": 500,
+    "definition": "a plan for reverting a change if something goes wrong",
+    "example": "Every deployment includes a clear ___."
+  },
+  {
+    "id": "ml_gen_783",
+    "word": "sampling rate",
+    "rank": 500,
+    "definition": "how frequently data points are measured or recorded",
+    "example": "Increasing the ___ improved the sensor's accuracy."
+  },
+  {
+    "id": "ml_gen_784",
+    "word": "schema validation",
+    "rank": 500,
+    "definition": "checking that data matches an expected structure",
+    "example": "___ rejected the malformed request automatically."
+  },
+  {
+    "id": "ml_gen_785",
+    "word": "shared nothing architecture",
+    "rank": 500,
+    "definition": "a design where each node operates independently without shared resources",
+    "example": "The database uses a ___ for easy scaling."
+  },
+  {
+    "id": "ml_gen_786",
+    "word": "sliding window",
+    "rank": 500,
+    "definition": "a technique that processes data within a moving range",
+    "example": "The algorithm uses a ___ to detect recent trends."
+  },
+  {
+    "id": "ml_gen_787",
+    "word": "soft launch",
+    "rank": 500,
+    "definition": "releasing a product quietly to a limited audience first",
+    "example": "The company did a ___ before the full release."
+  },
+  {
+    "id": "ml_gen_788",
+    "word": "spike testing",
+    "rank": 500,
+    "definition": "testing how a system handles a sudden surge in load",
+    "example": "___ revealed a weakness in the checkout system."
+  },
+  {
+    "id": "ml_gen_789",
+    "word": "stale data",
+    "rank": 500,
+    "definition": "information that is out of date compared to its source",
+    "example": "The dashboard sometimes shows slightly ___."
+  },
+  {
+    "id": "ml_gen_790",
+    "word": "state synchronization",
+    "rank": 500,
+    "definition": "keeping data consistent across multiple systems or devices",
+    "example": "___ ensures every device shows the same information."
+  },
+  {
+    "id": "ml_gen_791",
+    "word": "storage tiering",
+    "rank": 500,
+    "definition": "organizing data across different storage types by cost and speed",
+    "example": "___ keeps frequently used files on faster disks."
+  },
+  {
+    "id": "ml_gen_792",
+    "word": "synthetic data",
+    "rank": 500,
+    "definition": "artificially generated data used for testing or training",
+    "example": "Researchers used ___ to protect user privacy."
+  },
+  {
+    "id": "ml_gen_793",
+    "word": "tail call optimization",
+    "rank": 500,
+    "definition": "a technique that reuses stack frames for certain recursive calls",
+    "example": "The language performs ___ automatically."
+  },
+  {
+    "id": "ml_gen_794",
+    "word": "telemetry pipeline",
+    "rank": 500,
+    "definition": "a system that collects and processes monitoring data",
+    "example": "The ___ sends metrics to the dashboard in real time."
+  },
+  {
+    "id": "ml_gen_795",
+    "word": "thundering herd",
+    "rank": 500,
+    "definition": "many processes waking up at once and overwhelming a resource",
+    "example": "Caching helped prevent a ___ on the database."
+  },
+  {
+    "id": "ml_gen_796",
+    "word": "traffic mirroring",
+    "rank": 500,
+    "definition": "copying live traffic to a separate system for testing",
+    "example": "___ let them test the new service safely."
+  },
+  {
+    "id": "ml_gen_797",
+    "word": "warm standby",
+    "rank": 500,
+    "definition": "a backup system kept ready to take over quickly",
+    "example": "The company keeps a ___ in a different region."
+  },
+  {
+    "id": "ml_gen_798",
+    "word": "write-ahead log",
+    "rank": 500,
+    "definition": "a record of changes made before they are applied to storage",
+    "example": "The database uses a ___ to recover from crashes."
+  },
+  {
+    "id": "ml_gen_799",
+    "word": "zero downtime",
+    "rank": 500,
+    "definition": "a deployment process that avoids any service interruption",
+    "example": "The team achieved ___ during the migration."
+  }
+]
