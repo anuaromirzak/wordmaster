@@ -3,7 +3,7 @@
 // сөйтіп қосымша интернетсіз де ашыла алады (нағыз Android қосымшасына
 // жақындататын PWA/TWA талабы).
 
-const CACHE_NAME = 'wordmaster-v2';
+const CACHE_NAME = 'wordmaster-v3';
 const APP_SHELL = [
   './',
   './index.html',
@@ -12,7 +12,8 @@ const APP_SHELL = [
   './icons/icon-512.png',
   './icons/icon-512-maskable.png',
   './data/manifest.json',
-  './data/words/TOP1000.json',
+  './data/words/A1.json',
+  './data/words/A2.json',
   './data/words/B1.json',
   './data/words/B2.json',
   './data/words/C1.json',
