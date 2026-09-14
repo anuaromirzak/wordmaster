@@ -10,7 +10,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-<meta name="theme-color" content="#4f46e5" id="themeColorMeta">
+<meta name="theme-color" content="#0d9488" id="themeColorMeta">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="WordMaster">
@@ -61,6 +61,7 @@
         <button data-mode="normal" class="quiz-mode-btn shrink-0 px-3.5 py-1.5 rounded-full text-xs font-semibold border transition bg-indigo-600 border-indigo-600 text-white">🧠 Жалпы тест</button>
         <button data-mode="nuance" class="quiz-mode-btn shrink-0 px-3.5 py-1.5 rounded-full text-xs font-semibold border transition bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400">🎯 Nuance Challenge</button>
         <button data-mode="collocations" class="quiz-mode-btn shrink-0 px-3.5 py-1.5 rounded-full text-xs font-semibold border transition bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400">🔗 Collocations</button>
+        <button data-mode="phrasalverbs" class="quiz-mode-btn shrink-0 px-3.5 py-1.5 rounded-full text-xs font-semibold border transition bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400">🧩 Phrasal Verbs</button>
       </div>
 
       <div id="normalQuizWrap">
@@ -77,6 +78,7 @@
             <span class="font-semibold text-lg" id="revealWord"></span>
             <button id="speakBtn" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center">🔊</button>
           </div>
+          <p id="revealSynonyms" class="hidden text-xs text-slate-400 dark:text-slate-500 mt-1.5"></p>
         </div>
 
         <div id="optionsGrid" class="grid grid-cols-1 gap-2.5 mb-4"></div>
@@ -126,6 +128,29 @@
         </div>
 
         <button id="collocationsNextBtn" class="hidden w-full py-3.5 rounded-2xl bg-indigo-600 text-white font-semibold active:scale-[0.98] transition shadow-sm shadow-indigo-600/20">Келесі тіркес →</button>
+      </div>
+
+      <!-- PHRASAL VERBS -->
+      <div id="phrasalVerbsQuizWrap" class="hidden">
+        <div class="rounded-3xl bg-white dark:bg-slate-900 shadow-sm border border-slate-200 dark:border-slate-800 p-5 mb-4 popin" id="phrasalVerbsQuizCard">
+          <div class="flex items-center justify-between mb-3">
+            <span id="phrasalVerbsBadge" class="text-xs px-2.5 py-1 rounded-full bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-300 font-medium">🧩 Phrasal Verbs</span>
+            <span id="phrasalVerbsProgressLabel" class="text-xs text-slate-400"></span>
+          </div>
+          <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">Дұрыс бөлшекті (particle) таңдаңыз</p>
+          <p id="phrasalVerbsContextText" class="text-[15px] leading-snug font-medium"></p>
+        </div>
+
+        <div id="phrasalVerbsOptionsGrid" class="grid grid-cols-2 gap-2.5 mb-4"></div>
+
+        <div id="phrasalVerbsExplainCard" class="hidden rounded-3xl bg-white dark:bg-slate-900 shadow-sm border border-slate-200 dark:border-slate-800 p-5 mb-4 popin">
+          <p class="text-xs uppercase tracking-wide text-slate-400 mb-2">Толық фразалық етістік (Phrasal verb)</p>
+          <p id="phrasalVerbsExplainPhrase" class="font-semibold text-lg mb-1"></p>
+          <p id="phrasalVerbsExplainMeaning" class="text-sm text-slate-600 dark:text-slate-300 mb-2"></p>
+          <p id="phrasalVerbsExplainExample" class="text-sm italic text-slate-500 dark:text-slate-400"></p>
+        </div>
+
+        <button id="phrasalVerbsNextBtn" class="hidden w-full py-3.5 rounded-2xl bg-indigo-600 text-white font-semibold active:scale-[0.98] transition shadow-sm shadow-indigo-600/20">Келесі етістік →</button>
       </div>
     </section>
 
@@ -195,6 +220,10 @@
         <div class="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
           <p class="text-xs text-slate-400 mb-1">🔗 Collocations дәлдігі</p>
           <p id="statCollocationAccuracy" class="text-2xl font-bold">—</p>
+        </div>
+        <div class="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
+          <p class="text-xs text-slate-400 mb-1">🧩 Phrasal Verbs дәлдігі</p>
+          <p id="statPhrasalVerbAccuracy" class="text-2xl font-bold">—</p>
         </div>
       </div>
       <button id="resetProgressBtn" class="w-full py-3 rounded-2xl bg-rose-50 dark:bg-rose-500/10 text-rose-600 dark:text-rose-300 font-semibold">Прогресті тазалау</button>
@@ -280,10 +309,15 @@
         <button id="readerFontUp" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-bold flex items-center justify-center">A+</button>
       </div>
     </div>
-    <div class="flex-1 overflow-y-auto">
+    <div id="readerScrollArea" class="flex-1 overflow-y-auto">
       <div class="max-w-md mx-auto w-full px-5 py-6">
         <p id="readerContent" class="leading-loose text-lg"></p>
       </div>
+    </div>
+    <div id="readerPagerBar" class="hidden shrink-0 flex items-center justify-between gap-3 px-4 py-3 border-t border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-950/90 backdrop-blur">
+      <button id="readerPrevPageBtn" class="px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-sm font-semibold disabled:opacity-30">← Алдыңғы</button>
+      <span id="readerPageLabel" class="text-xs text-slate-400 shrink-0"></span>
+      <button id="readerNextPageBtn" class="px-4 py-2 rounded-xl bg-indigo-600 text-white text-sm font-semibold disabled:opacity-30">Келесі →</button>
     </div>
   </div>
 
@@ -368,6 +402,7 @@
 
   var FALLBACK_CONFUSING_WORDS = {"sets": [{"id": "cw_goal_aim_target_objective", "topic": "goal · aim · target · objective", "words": [{"word": "goal", "nuance": "A result you personally want to achieve, often long-term or life-related — the broadest and most everyday of these four words.", "example": "Her ___ is to become a fully qualified doctor.", "whenToUse": "Use for personal ambitions, life plans, or general things someone wants to accomplish."}, {"word": "aim", "nuance": "The specific purpose behind an action — often the stated intention of a plan, essay, or short project.", "example": "The ___ of this study is to test a new teaching method.", "whenToUse": "Use when explaining the specific purpose of a plan, study, or piece of writing."}, {"word": "target", "nuance": "A specific, often numerical result to reach by a set deadline — common in business, sales, and sport.", "example": "The sales team missed its ___ for the third month in a row.", "whenToUse": "Use for measurable, often numeric goals with a deadline, like sales figures or scores."}, {"word": "objective", "nuance": "A precise, usually short-term step that supports a bigger goal — common in formal, business, or military language.", "example": "Our main ___ this quarter is to reduce customer complaints by 20%.", "whenToUse": "Use in formal or business contexts for a specific milestone within a larger plan."}]}, {"id": "cw_affect_effect", "topic": "affect vs effect", "words": [{"word": "affect", "nuance": "To influence or change something — almost always used as a verb.", "example": "Loud noise can ___ your ability to concentrate.", "whenToUse": "Use as a verb meaning 'to influence' (Loud noise affects concentration)."}, {"word": "effect", "nuance": "A result or consequence caused by something — almost always used as a noun.", "example": "Doctors are still studying the ___ of the new drug.", "whenToUse": "Use as a noun meaning 'a result' (the effect of the drug). Rarely a verb meaning 'to bring about'."}]}, {"id": "cw_see_look_watch", "topic": "see · look · watch", "words": [{"word": "see", "nuance": "To notice something with your eyes without deliberate effort — often unintentional perception.", "example": "I ___ a bird sitting on the fence.", "whenToUse": "Use for things that simply enter your field of vision, without you trying to look."}, {"word": "look", "nuance": "To deliberately direct your eyes toward something for a moment.", "example": "___ at the board, please.", "whenToUse": "Use for a brief, intentional glance, or when giving an instruction to direct someone's attention."}, {"word": "watch", "nuance": "To look at something moving or changing for a period of time, with sustained attention.", "example": "We ___ a movie every Friday night.", "whenToUse": "Use for something in motion or that unfolds over time, like TV, sport, or a performance."}]}, {"id": "cw_say_tell_speak_talk", "topic": "say · tell · speak · talk", "words": [{"word": "say", "nuance": "To produce words — the focus is on the words themselves, not who they were said to.", "example": "She didn't ___ a word during the meeting.", "whenToUse": "Use when focusing on the words spoken, usually without naming a listener (say something)."}, {"word": "tell", "nuance": "To give information to a specific person — this verb almost always needs a listener as its object.", "example": "Can you ___ me the way to the station?", "whenToUse": "Use when you name who receives the information: tell + person (tell me, tell him)."}, {"word": "speak", "nuance": "To use your voice to communicate, often about language ability or formal, one-way communication.", "example": "She can ___ three languages fluently.", "whenToUse": "Use for language ability, or more formal communication such as speaking in public."}, {"word": "talk", "nuance": "To have a conversation with someone — usually informal and two-directional.", "example": "We ___ on the phone every evening.", "whenToUse": "Use for informal, back-and-forth conversations between two or more people."}]}, {"id": "cw_borrow_lend", "topic": "borrow vs lend", "words": [{"word": "borrow", "nuance": "To take something temporarily from someone else, intending to return it.", "example": "Can I ___ your pen for a second?", "whenToUse": "Use when you are the one receiving the item temporarily (I borrow from you)."}, {"word": "lend", "nuance": "To give something to someone else temporarily, expecting it back.", "example": "Could you ___ me some money until Friday?", "whenToUse": "Use when you are the one giving the item temporarily (you lend to me)."}]}, {"id": "cw_make_do", "topic": "make vs do", "words": [{"word": "make", "nuance": "To create or produce something physical, new, or creative.", "example": "My grandmother used to ___ her own bread.", "whenToUse": "Use when the result is a new object, product, or creation (make bread, make a plan)."}, {"word": "do", "nuance": "To perform an action, task, or activity — especially general, routine, or unspecified ones.", "example": "I need to ___ my homework before dinner.", "whenToUse": "Use for actions, chores, and tasks that don't create a new physical thing (do homework, do the dishes)."}]}, {"id": "cw_bring_take", "topic": "bring vs take", "words": [{"word": "bring", "nuance": "To carry something toward the speaker's current location, or toward the place being discussed.", "example": "Please ___ your umbrella when you come over tonight.", "whenToUse": "Use when the movement is toward the speaker or toward the place being talked about."}, {"word": "take", "nuance": "To carry something away from the speaker's current location, toward another place.", "example": "Don't forget to ___ your keys when you leave.", "whenToUse": "Use when the movement is away from the speaker, toward a different place."}]}, {"id": "cw_economic_economical", "topic": "economic vs economical", "words": [{"word": "economic", "nuance": "Relating to the economy, trade, or the study of economics in general.", "example": "The government announced new ___ reforms.", "whenToUse": "Use for topics about a country's economy, finance, or economics as a subject."}, {"word": "economical", "nuance": "Careful with money or resources; not wasteful.", "example": "This small car is very ___ on fuel.", "whenToUse": "Use to describe something, or someone, that saves money or avoids waste."}]}, {"id": "cw_historic_historical", "topic": "historic vs historical", "words": [{"word": "historic", "nuance": "Famous or important in history — describes a genuinely significant, remarkable event.", "example": "The signing of the treaty was a truly ___ moment.", "whenToUse": "Use for events of great importance that are likely to be remembered."}, {"word": "historical", "nuance": "Simply relating to history or the past, whether important or not.", "example": "She's writing a ___ novel set in the 1800s.", "whenToUse": "Use for anything related to the past or to history as a subject in general."}]}, {"id": "cw_salary_wage_income", "topic": "salary vs wage vs income", "words": [{"word": "salary", "nuance": "A fixed regular payment, usually paid monthly or yearly, typically for professional or office work.", "example": "Her ___ is paid directly into her bank account every month.", "whenToUse": "Use for fixed, regular pay tied to a job title or contract, usually skilled or office work."}, {"word": "wage", "nuance": "Payment calculated by the hour or by the amount of work done, common in manual or part-time jobs.", "example": "The factory workers are paid an hourly ___.", "whenToUse": "Use for pay calculated by hours worked or output, often in manual or casual jobs."}, {"word": "income", "nuance": "The broadest term — all the money a person or household receives from any source, not just a job.", "example": "Their household ___ includes both salaries and rental payments.", "whenToUse": "Use as the general, umbrella term covering all money received (salary, wages, investments, etc.)."}]}, {"id": "cw_custom_habit", "topic": "custom vs habit", "words": [{"word": "custom", "nuance": "A traditional practice shared by a whole group, community, or culture.", "example": "It's a local ___ to remove your shoes before entering a house.", "whenToUse": "Use for shared traditions belonging to a culture, country, or community."}, {"word": "habit", "nuance": "A repeated behavior belonging to one individual person, often done automatically.", "example": "Biting your nails is a hard ___ to break.", "whenToUse": "Use for a personal, repeated behavior that one individual has, not a shared tradition."}]}, {"id": "cw_ensure_assure_insure", "topic": "ensure vs assure vs insure", "words": [{"word": "ensure", "nuance": "To make certain that something happens or is the case.", "example": "Please ___ that all doors are locked before you leave.", "whenToUse": "Use when making an action or outcome certain (ensure a result)."}, {"word": "assure", "nuance": "To tell someone confidently that something is true, in order to remove their doubts.", "example": "The doctor ___d the patient that the surgery was low-risk.", "whenToUse": "Use when reassuring a person, always followed by the person being reassured (assure someone)."}, {"word": "insure", "nuance": "To arrange financial compensation in case of loss, damage, illness, or death, usually via an insurance company.", "example": "It's wise to ___ your car against theft and accidents.", "whenToUse": "Use only in the financial/insurance sense, for property, health, or life protection."}]}, {"id": "cw_classic_classical", "topic": "classic vs classical", "words": [{"word": "classic", "nuance": "Widely recognized as being of the highest quality, or a typical, well-known example of something.", "example": "This film is a ___ example of 1980s adventure cinema.", "whenToUse": "Use for something outstanding, timeless, or a perfect typical example of its kind."}, {"word": "classical", "nuance": "Relating to ancient Greek/Roman culture, or to a traditional, formal style — especially in music and art.", "example": "She studied ___ music at the conservatory for ten years.", "whenToUse": "Use for traditional Western art music, or anything connected to ancient Greece and Rome."}]}, {"id": "cw_sensible_sensitive", "topic": "sensible vs sensitive", "words": [{"word": "sensible", "nuance": "Showing good, practical judgment — making wise, reasonable decisions.", "example": "It was ___ of her to save some money every month.", "whenToUse": "Use for practical, wise, reasonable decisions or behavior."}, {"word": "sensitive", "nuance": "Easily affected by, or quick to notice and react to, feelings, situations, or physical stimuli.", "example": "He's quite ___ about comments regarding his work.", "whenToUse": "Use for emotional delicacy, or physical/topical things that need careful, gentle handling."}]}, {"id": "cw_lose_loose", "topic": "lose vs loose", "words": [{"word": "lose", "nuance": "A verb meaning to no longer have something, or to fail to win.", "example": "If you don't back up your files, you might ___ all your data.", "whenToUse": "Use as a verb for losing an object, a game, or an ability (lose keys, lose a match)."}, {"word": "loose", "nuance": "An adjective describing something not tightly fixed, fitted, or attached.", "example": "These trousers are too ___ around the waist.", "whenToUse": "Use as an adjective describing clothing, screws, knots, or anything not firmly attached."}]}, {"id": "cw_principal_principle", "topic": "principal vs principle", "words": [{"word": "principal", "nuance": "The most important thing or person, or the head of a school (noun/adjective).", "example": "The ___ reason for the delay was bad weather.", "whenToUse": "Use for 'main/most important' or for the head of a school (remember: pal = principal)."}, {"word": "principle", "nuance": "A fundamental rule, belief, or truth that guides behavior or a system.", "example": "Honesty is one of her most important ___s.", "whenToUse": "Use for a moral rule, scientific law, or fundamental belief."}]}, {"id": "cw_stationary_stationery", "topic": "stationary vs stationery", "words": [{"word": "stationary", "nuance": "Not moving; staying in one place.", "example": "The traffic was completely ___ for almost an hour.", "whenToUse": "Use as an adjective meaning 'not moving' (a stationary vehicle, a stationary bike)."}, {"word": "stationery", "nuance": "Writing materials such as paper, pens, and envelopes.", "example": "She bought some new ___ for the office: pens, paper, and folders.", "whenToUse": "Use as a noun for paper, pens, and other writing/office supplies (remember: -ery like 'letters')."}]}, {"id": "cw_complement_compliment", "topic": "complement vs compliment", "words": [{"word": "complement", "nuance": "Something that completes or perfectly goes together with something else, making it better.", "example": "This wine is a perfect ___ to the fish dish.", "whenToUse": "Use when one thing completes or enhances another (a complementary pair)."}, {"word": "compliment", "nuance": "A polite expression of praise or admiration for someone.", "example": "He paid her a nice ___ on her new haircut.", "whenToUse": "Use for praise or an admiring remark given to a person."}]}, {"id": "cw_continual_continuous", "topic": "continual vs continuous", "words": [{"word": "continual", "nuance": "Happening again and again, frequently repeated, but with pauses or breaks in between.", "example": "The meeting was interrupted by ___ phone calls.", "whenToUse": "Use for something repeated often, with gaps or interruptions in between occurrences."}, {"word": "continuous", "nuance": "Happening without any interruption or break, going on non-stop.", "example": "The machine has been running ___ly for 12 hours straight.", "whenToUse": "Use for something that never stops or pauses, an unbroken process."}]}, {"id": "cw_imply_infer", "topic": "imply vs infer", "words": [{"word": "imply", "nuance": "To suggest something indirectly without stating it openly — done by the speaker/writer.", "example": "Her tone seemed to ___ that she disagreed with the plan.", "whenToUse": "Use for the person making the suggestion (the speaker implies)."}, {"word": "infer", "nuance": "To reach a conclusion based on evidence or reasoning — done by the listener/reader.", "example": "From his silence, we could ___ that something was wrong.", "whenToUse": "Use for the person drawing the conclusion (the listener infers)."}]}, {"id": "cw_adapt_adopt", "topic": "adapt vs adopt", "words": [{"word": "adapt", "nuance": "To change something, or yourself, to suit new conditions.", "example": "It took the new employee a few weeks to ___ to the company culture.", "whenToUse": "Use when something or someone changes to fit a new situation."}, {"word": "adopt", "nuance": "To choose to take up or start using something (a plan, a method, a child) as your own, without changing it.", "example": "The company decided to ___ a new marketing strategy.", "whenToUse": "Use when choosing or accepting something as your own, unchanged (adopt a policy, adopt a child)."}]}, {"id": "cw_rise_raise", "topic": "rise vs raise", "words": [{"word": "rise", "nuance": "An intransitive verb — something goes up by itself, with no object.", "example": "Prices tend to ___ during the holiday season.", "whenToUse": "Use when the subject itself moves upward, with no direct object (prices rise, the sun rises)."}, {"word": "raise", "nuance": "A transitive verb — someone lifts or increases something else; always needs an object.", "example": "The company decided to ___ salaries by five percent.", "whenToUse": "Use when someone/something acts on an object to lift or increase it (raise your hand, raise prices)."}]}, {"id": "cw_amount_number", "topic": "amount vs number", "words": [{"word": "amount", "nuance": "Used with uncountable nouns, referring to a quantity of something that isn't counted in individual units.", "example": "A large ___ of water was wasted during the leak.", "whenToUse": "Use before uncountable nouns (an amount of water, money, time, information)."}, {"word": "number", "nuance": "Used with countable nouns, referring to individual, separately countable items.", "example": "A growing ___ of students are choosing online courses.", "whenToUse": "Use before countable, plural nouns (a number of students, cars, ideas)."}]}, {"id": "cw_fewer_less", "topic": "fewer vs less", "words": [{"word": "fewer", "nuance": "Used with plural, countable nouns to mean 'a smaller number of'.", "example": "There are ___ mistakes in this report than in the last one.", "whenToUse": "Use before countable plural nouns (fewer mistakes, fewer people, fewer cars)."}, {"word": "less", "nuance": "Used with uncountable, singular nouns to mean 'a smaller amount of'.", "example": "I try to eat ___ sugar than I used to.", "whenToUse": "Use before uncountable or singular nouns (less sugar, less time, less money)."}]}, {"id": "cw_remember_remind", "topic": "remember vs remind", "words": [{"word": "remember", "nuance": "To recall information from your own memory, without anyone's help.", "example": "I can't ___ where I put my keys this morning.", "whenToUse": "Use when someone recalls something themselves, from their own memory."}, {"word": "remind", "nuance": "To make someone else remember something, or to cause a memory to come back — always involves another person or trigger.", "example": "Can you ___ me to call the dentist tomorrow?", "whenToUse": "Use when one person/thing causes another person to remember (remind someone of/to do something)."}]}]};
   var FALLBACK_COLLOCATIONS = {"collocations": [{"id": "col_lead_to", "phrase": "lead to", "particle": "to", "meaning": "To result in or cause something, usually a consequence.", "example": "Poor decisions led ___ failure.", "options": ["to", "for", "with", "in"]}, {"id": "col_depend_on", "phrase": "depend on", "particle": "on", "meaning": "To rely on someone or something as necessary for support or a result.", "example": "Success often depends ___ hard work.", "options": ["on", "in", "for", "with"]}, {"id": "col_result_in", "phrase": "result in", "particle": "in", "meaning": "To have something as a consequence or outcome.", "example": "The negotiations resulted ___ a new agreement.", "options": ["in", "to", "with", "from"]}, {"id": "col_rely_on", "phrase": "rely on", "particle": "on", "meaning": "To trust or depend on someone or something with confidence.", "example": "You can always rely ___ her for good advice.", "options": ["on", "in", "to", "with"]}, {"id": "col_account_for", "phrase": "account for", "particle": "for", "meaning": "To explain or give a reason for something; also, to make up a part or proportion of something.", "example": "Bad weather can account ___ the delay.", "options": ["for", "of", "with", "to"]}, {"id": "col_cope_with", "phrase": "cope with", "particle": "with", "meaning": "To deal successfully with a difficult situation.", "example": "It's not easy to cope ___ so much stress.", "options": ["with", "to", "for", "of"]}, {"id": "col_consist_of", "phrase": "consist of", "particle": "of", "meaning": "To be made up of or composed of particular parts.", "example": "The committee consists ___ ten members.", "options": ["of", "in", "with", "from"]}, {"id": "col_deal_with", "phrase": "deal with", "particle": "with", "meaning": "To take action to solve a problem, or to handle a situation or person.", "example": "The manager had to deal ___ several complaints today.", "options": ["with", "of", "to", "for"]}, {"id": "col_focus_on", "phrase": "focus on", "particle": "on", "meaning": "To give most of your attention to one particular thing.", "example": "Let's focus ___ the most important issue first.", "options": ["on", "in", "to", "at"]}, {"id": "col_insist_on", "phrase": "insist on", "particle": "on", "meaning": "To demand something firmly, refusing to accept another option.", "example": "She insisted ___ paying for the meal herself.", "options": ["on", "in", "for", "with"]}, {"id": "col_believe_in", "phrase": "believe in", "particle": "in", "meaning": "To be convinced that something exists, or to have faith or trust in someone's ability.", "example": "I really believe ___ you — you can do this.", "options": ["in", "on", "at", "for"]}, {"id": "col_apply_for", "phrase": "apply for", "particle": "for", "meaning": "To make a formal request for something, such as a job or a permit.", "example": "He decided to apply ___ the marketing position.", "options": ["for", "to", "on", "in"]}, {"id": "col_benefit_from", "phrase": "benefit from", "particle": "from", "meaning": "To be helped or improved by something.", "example": "Many students benefit ___ extra practice before exams.", "options": ["from", "of", "with", "by"]}, {"id": "col_suffer_from", "phrase": "suffer from", "particle": "from", "meaning": "To be affected by an illness or a negative condition over time.", "example": "She has been suffering ___ headaches all week.", "options": ["from", "of", "with", "by"]}, {"id": "col_participate_in", "phrase": "participate in", "particle": "in", "meaning": "To take part in an activity or event.", "example": "All employees are encouraged to participate ___ the training program.", "options": ["in", "on", "at", "with"]}, {"id": "col_succeed_in", "phrase": "succeed in", "particle": "in", "meaning": "To achieve the result you were trying to achieve.", "example": "He finally succeeded ___ passing the driving test.", "options": ["in", "at", "with", "on"]}, {"id": "col_specialize_in", "phrase": "specialize in", "particle": "in", "meaning": "To focus your work or study on one particular subject or area.", "example": "This law firm specializes ___ international trade disputes.", "options": ["in", "on", "at", "with"]}, {"id": "col_comment_on", "phrase": "comment on", "particle": "on", "meaning": "To express an opinion or observation about something.", "example": "The critics didn't comment ___ the ending of the film.", "options": ["on", "in", "at", "for"]}, {"id": "col_concentrate_on", "phrase": "concentrate on", "particle": "on", "meaning": "To direct all your effort or attention toward one thing.", "example": "Try to concentrate ___ your breathing to relax.", "options": ["on", "in", "at", "to"]}, {"id": "col_contribute_to", "phrase": "contribute to", "particle": "to", "meaning": "To give something, such as money, effort, or ideas, that helps achieve a result.", "example": "Everyone on the team contributed ___ the project's success.", "options": ["to", "for", "with", "in"]}, {"id": "col_react_to", "phrase": "react to", "particle": "to", "meaning": "To behave or respond in a particular way because of something that happens.", "example": "It's hard to predict how people will react ___ the news.", "options": ["to", "on", "with", "for"]}, {"id": "col_respond_to", "phrase": "respond to", "particle": "to", "meaning": "To reply or act in answer to something.", "example": "The company was slow to respond ___ customer complaints.", "options": ["to", "with", "on", "for"]}, {"id": "col_adapt_to", "phrase": "adapt to", "particle": "to", "meaning": "To change your behavior to suit a new situation or environment.", "example": "It took her a while to adapt ___ the new schedule.", "options": ["to", "with", "for", "in"]}, {"id": "col_differ_from", "phrase": "differ from", "particle": "from", "meaning": "To be different from or unlike something else.", "example": "His opinion differs ___ mine on this issue.", "options": ["from", "with", "to", "of"]}, {"id": "col_agree_with", "phrase": "agree with", "particle": "with", "meaning": "To have the same opinion as someone, or to think something is right.", "example": "I completely agree ___ your decision.", "options": ["with", "to", "on", "for"]}, {"id": "col_compete_with", "phrase": "compete with", "particle": "with", "meaning": "To try to be more successful than another person or company in the same activity.", "example": "Small shops struggle to compete ___ big supermarkets.", "options": ["with", "to", "in", "for"]}, {"id": "col_invest_in", "phrase": "invest in", "particle": "in", "meaning": "To put money, time, or effort into something, expecting a future benefit.", "example": "The company plans to invest ___ new technology next year.", "options": ["in", "on", "for", "with"]}, {"id": "col_approve_of", "phrase": "approve of", "particle": "of", "meaning": "To think that someone or something is good, acceptable, or suitable.", "example": "Her parents didn't approve ___ her career choice at first.", "options": ["of", "on", "for", "with"]}, {"id": "col_object_to", "phrase": "object to", "particle": "to", "meaning": "To express disagreement or opposition to something.", "example": "Several residents objected ___ the new construction project.", "options": ["to", "on", "for", "with"]}, {"id": "col_wait_for", "phrase": "wait for", "particle": "for", "meaning": "To stay in a place or remain ready until someone or something arrives, or until something happens.", "example": "We waited ___ the bus for almost an hour.", "options": ["for", "to", "on", "at"]}]};
+  var FALLBACK_PHRASAL_VERBS = {"phrasalVerbs": [{"id": "pv_give_up", "phrase": "give up", "particle": "up", "meaning": "To stop trying to do something, or to quit a habit.", "example": "He decided to give ___ smoking after years of trying.", "options": ["up", "down", "off", "away"]}, {"id": "pv_look_after", "phrase": "look after", "particle": "after", "meaning": "To take care of someone or something.", "example": "She has to look ___ her little brother while their parents are away.", "options": ["after", "for", "into", "up"]}, {"id": "pv_run_into", "phrase": "run into", "particle": "into", "meaning": "To meet someone unexpectedly, or to encounter a problem.", "example": "I ran ___ an old classmate at the supermarket yesterday.", "options": ["into", "over", "through", "across"]}, {"id": "pv_carry_out", "phrase": "carry out", "particle": "out", "meaning": "To perform or complete a task, plan, or experiment.", "example": "The scientists carried ___ several experiments before publishing the results.", "options": ["out", "on", "up", "through"]}, {"id": "pv_come_across", "phrase": "come across", "particle": "across", "meaning": "To find or meet something or someone by chance.", "example": "While cleaning the attic, she came ___ some old family photographs.", "options": ["across", "into", "over", "through"]}, {"id": "pv_put_off", "phrase": "put off", "particle": "off", "meaning": "To postpone or delay something.", "example": "They decided to put ___ the meeting until next week.", "options": ["off", "on", "out", "away"]}, {"id": "pv_turn_down", "phrase": "turn down", "particle": "down", "meaning": "To reject an offer or request, or to lower the volume.", "example": "She turned ___ the job offer because the salary was too low.", "options": ["down", "up", "off", "out"]}, {"id": "pv_show_up", "phrase": "show up", "particle": "up", "meaning": "To arrive somewhere, especially unexpectedly or late.", "example": "He didn't show ___ for the meeting and never explained why.", "options": ["up", "off", "out", "in"]}, {"id": "pv_break_down", "phrase": "break down", "particle": "down", "meaning": "To stop functioning, or to lose emotional control.", "example": "Her car broke ___ on the highway during the storm.", "options": ["down", "up", "off", "out"]}, {"id": "pv_break_up", "phrase": "break up", "particle": "up", "meaning": "To end a romantic relationship, or to separate into pieces.", "example": "They broke ___ after being together for three years.", "options": ["up", "down", "off", "apart"]}, {"id": "pv_bring_up", "phrase": "bring up", "particle": "up", "meaning": "To mention a topic, or to raise a child.", "example": "I didn't want to bring ___ the subject of money at dinner.", "options": ["up", "on", "about", "forward"]}, {"id": "pv_call_off", "phrase": "call off", "particle": "off", "meaning": "To cancel a planned event.", "example": "The organizers had to call ___ the outdoor concert due to rain.", "options": ["off", "down", "out", "up"]}, {"id": "pv_carry_on", "phrase": "carry on", "particle": "on", "meaning": "To continue doing something.", "example": "Despite the interruption, the teacher carried ___ with the lesson.", "options": ["on", "out", "up", "through"]}, {"id": "pv_check_in", "phrase": "check in", "particle": "in", "meaning": "To register your arrival at a hotel or airport.", "example": "We need to check ___ at the airport two hours before the flight.", "options": ["in", "on", "up", "out"]}, {"id": "pv_check_out", "phrase": "check out", "particle": "out", "meaning": "To leave a hotel after paying, or to examine something.", "example": "Guests must check ___ of the hotel by eleven in the morning.", "options": ["out", "in", "up", "off"]}, {"id": "pv_drop_off", "phrase": "drop off", "particle": "off", "meaning": "To deliver someone or something, or to fall asleep.", "example": "Can you drop ___ these documents at the office on your way home?", "options": ["off", "out", "down", "in"]}, {"id": "pv_fall_apart", "phrase": "fall apart", "particle": "apart", "meaning": "To break into pieces, or to become very upset or disorganized.", "example": "The old chair finally fell ___ after years of use.", "options": ["apart", "down", "off", "out"]}, {"id": "pv_figure_out", "phrase": "figure out", "particle": "out", "meaning": "To understand or solve something after thinking about it.", "example": "It took her a while to figure ___ how the new software worked.", "options": ["out", "up", "in", "on"]}, {"id": "pv_find_out", "phrase": "find out", "particle": "out", "meaning": "To discover a piece of information.", "example": "She was shocked to find ___ that the store had closed permanently.", "options": ["out", "up", "in", "off"]}, {"id": "pv_get_away", "phrase": "get away", "particle": "away", "meaning": "To escape or leave a place, especially for a vacation.", "example": "They wanted to get ___ from the city for the weekend.", "options": ["away", "off", "out", "up"]}, {"id": "pv_get_over", "phrase": "get over", "particle": "over", "meaning": "To recover from an illness, disappointment, or difficult experience.", "example": "It took him months to get ___ the loss of his job.", "options": ["over", "through", "off", "up"]}, {"id": "pv_give_away", "phrase": "give away", "particle": "away", "meaning": "To give something for free, or to reveal a secret.", "example": "She decided to give ___ her old clothes to charity.", "options": ["away", "up", "off", "out"]}, {"id": "pv_give_back", "phrase": "give back", "particle": "back", "meaning": "To return something to its owner.", "example": "He forgot to give ___ the book he borrowed from the library.", "options": ["back", "up", "off", "over"]}, {"id": "pv_go_on", "phrase": "go on", "particle": "on", "meaning": "To continue, or to happen.", "example": "The argument went ___ for almost an hour before they calmed down.", "options": ["on", "over", "through", "up"]}, {"id": "pv_grow_up", "phrase": "grow up", "particle": "up", "meaning": "To become an adult; to mature.", "example": "She grew ___ in a small village near the mountains.", "options": ["up", "on", "out", "into"]}, {"id": "pv_hand_in", "phrase": "hand in", "particle": "in", "meaning": "To submit a piece of work or a document.", "example": "Students must hand ___ their essays by Friday afternoon.", "options": ["in", "out", "over", "up"]}, {"id": "pv_hang_out", "phrase": "hang out", "particle": "out", "meaning": "To spend time relaxing or socializing.", "example": "We usually hang ___ at the cafe after school.", "options": ["out", "up", "in", "on"]}, {"id": "pv_hold_on", "phrase": "hold on", "particle": "on", "meaning": "To wait for a short time.", "example": "Could you hold ___ for a moment while I check the schedule?", "options": ["on", "up", "off", "out"]}, {"id": "pv_keep_up", "phrase": "keep up", "particle": "up", "meaning": "To maintain the same pace or standard as someone or something else.", "example": "She had to run fast to keep ___ with the rest of the group.", "options": ["up", "on", "off", "out"]}, {"id": "pv_let_down", "phrase": "let down", "particle": "down", "meaning": "To disappoint someone by failing to do what was expected.", "example": "He felt terrible for letting ___ his teammates during the final game.", "options": ["down", "up", "off", "out"]}, {"id": "pv_log_in", "phrase": "log in", "particle": "in", "meaning": "To access a computer system or account using a password.", "example": "You need to log ___ before you can view your account details.", "options": ["in", "on", "up", "out"]}, {"id": "pv_look_into", "phrase": "look into", "particle": "into", "meaning": "To investigate or examine something carefully.", "example": "The police agreed to look ___ the strange disappearance.", "options": ["into", "after", "up", "through"]}, {"id": "pv_look_up", "phrase": "look up", "particle": "up", "meaning": "To search for information, especially in a reference source.", "example": "She looked ___ the meaning of the word in a dictionary.", "options": ["up", "after", "into", "on"]}, {"id": "pv_make_up", "phrase": "make up", "particle": "up", "meaning": "To invent a story or excuse, or to reconcile after an argument.", "example": "He made ___ an excuse for being late to work.", "options": ["up", "out", "over", "on"]}, {"id": "pv_move_in", "phrase": "move in", "particle": "in", "meaning": "To begin living in a new home.", "example": "They plan to move ___ to their new apartment next month.", "options": ["in", "on", "up", "out"]}, {"id": "pv_move_on", "phrase": "move on", "particle": "on", "meaning": "To proceed to a new activity or stage after finishing another.", "example": "It's time to move ___ and stop dwelling on the past.", "options": ["on", "up", "over", "out"]}, {"id": "pv_pass_out", "phrase": "pass out", "particle": "out", "meaning": "To lose consciousness; to faint.", "example": "The heat was so intense that one of the runners passed ___.", "options": ["out", "away", "off", "up"]}, {"id": "pv_pick_up", "phrase": "pick up", "particle": "up", "meaning": "To collect someone or something, or to learn a skill casually.", "example": "Can you pick ___ some milk on your way home?", "options": ["up", "out", "on", "over"]}, {"id": "pv_point_out", "phrase": "point out", "particle": "out", "meaning": "To indicate or draw attention to something.", "example": "The guide pointed ___ several interesting landmarks along the tour.", "options": ["out", "up", "at", "on"]}, {"id": "pv_put_away", "phrase": "put away", "particle": "away", "meaning": "To place something in its proper storage location.", "example": "Please put ___ your toys before dinner.", "options": ["away", "up", "out", "back"]}, {"id": "pv_run_out", "phrase": "run out", "particle": "out", "meaning": "To use up a supply of something completely.", "example": "They ran ___ of coffee halfway through the meeting.", "options": ["out", "away", "up", "off"]}, {"id": "pv_set_up", "phrase": "set up", "particle": "up", "meaning": "To establish or arrange something, such as a business or event.", "example": "It took them a year to set ___ the new charity.", "options": ["up", "on", "out", "off"]}, {"id": "pv_settle_down", "phrase": "settle down", "particle": "down", "meaning": "To become calm, or to start living a stable life.", "example": "After years of traveling, she finally settled ___ in a small town.", "options": ["down", "up", "in", "into"]}, {"id": "pv_show_off", "phrase": "show off", "particle": "off", "meaning": "To display something proudly in order to impress others.", "example": "He loves to show ___ his new car to everyone he meets.", "options": ["off", "up", "out", "on"]}, {"id": "pv_sort_out", "phrase": "sort out", "particle": "out", "meaning": "To resolve a problem or organize something properly.", "example": "It took the team all day to sort ___ the scheduling conflict.", "options": ["out", "up", "on", "off"]}, {"id": "pv_speak_up", "phrase": "speak up", "particle": "up", "meaning": "To talk more loudly, or to express an opinion confidently.", "example": "She finally spoke ___ about the unfair treatment at work.", "options": ["up", "out", "on", "off"]}, {"id": "pv_stand_out", "phrase": "stand out", "particle": "out", "meaning": "To be noticeably different from or better than others.", "example": "Her unique design really made the poster stand ___.", "options": ["out", "up", "off", "apart"]}, {"id": "pv_take_after", "phrase": "take after", "particle": "after", "meaning": "To resemble a parent or relative in appearance or character.", "example": "Everyone says she takes ___ her grandmother.", "options": ["after", "on", "up", "over"]}, {"id": "pv_take_off", "phrase": "take off", "particle": "off", "meaning": "To remove clothing, or for a plane to leave the ground.", "example": "The plane will take ___ in about twenty minutes.", "options": ["off", "up", "out", "away"]}, {"id": "pv_take_over", "phrase": "take over", "particle": "over", "meaning": "To assume control of something.", "example": "The new manager will take ___ the department next month.", "options": ["over", "on", "up", "out"]}, {"id": "pv_throw_away", "phrase": "throw away", "particle": "away", "meaning": "To discard something as rubbish.", "example": "She threw ___ the broken umbrella after the storm.", "options": ["away", "up", "out", "off"]}, {"id": "pv_turn_into", "phrase": "turn into", "particle": "into", "meaning": "To become or change into something different.", "example": "The old warehouse was turned ___ a modern art gallery.", "options": ["into", "on", "over", "up"]}, {"id": "pv_wake_up", "phrase": "wake up", "particle": "up", "meaning": "To stop sleeping and become conscious.", "example": "He woke ___ early to catch the first train.", "options": ["up", "on", "out", "off"]}, {"id": "pv_work_out", "phrase": "work out", "particle": "out", "meaning": "To exercise, or to solve or succeed in the end.", "example": "She works ___ at the gym three times a week.", "options": ["out", "up", "on", "off"]}, {"id": "pv_write_down", "phrase": "write down", "particle": "down", "meaning": "To record information in written form.", "example": "Please write ___ your phone number before you leave.", "options": ["down", "up", "out", "off"]}]};
 
   /* ---------------- STORAGE ---------------- */
   var LS = {
@@ -380,7 +415,8 @@
     customBooks: 'wm_custom_books',
     readerFont: 'wm_reader_font',
     nuanceStats: 'wm_nuance_stats',
-    collocationStats: 'wm_collocation_stats'
+    collocationStats: 'wm_collocation_stats',
+    phrasalVerbStats: 'wm_phrasalverb_stats'
   };
 
   function load(key, fallback){
@@ -398,6 +434,7 @@
   var customBooks = load(LS.customBooks, []);
   var nuanceStats = load(LS.nuanceStats, {correct:0, total:0});
   var collocationStats = load(LS.collocationStats, {correct:0, total:0});
+  var phrasalVerbStats = load(LS.phrasalVerbStats, {correct:0, total:0});
 
   function persistAll(){
     save(LS.custom, customWords);
@@ -593,11 +630,31 @@
       });
   }
 
+  /* ---------------- PHRASAL VERBS ----------------
+     Жеке data/phrasal_verbs.json файлынан жүктеледі. Дәл сол fetch/fallback
+     конвенциясы бойынша: желіден алынбаса, FALLBACK_PHRASAL_VERBS қолданылады. */
+  var phrasalVerbs = [];
+
+  function loadPhrasalVerbs(){
+    fetch('data/phrasal_verbs.json', { cache: 'no-store' })
+      .then(function(res){
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      })
+      .then(function(data){
+        phrasalVerbs = (data && data.phrasalVerbs && data.phrasalVerbs.length) ? data.phrasalVerbs : (FALLBACK_PHRASAL_VERBS.phrasalVerbs || []);
+      })
+      .catch(function(){
+        phrasalVerbs = FALLBACK_PHRASAL_VERBS.phrasalVerbs || [];
+      });
+  }
+
   function initApp(){
     $('#errorOverlay').classList.add('hidden');
     $('#loadingOverlay').classList.remove('hidden');
     loadConfusingWords();
     loadCollocations();
+    loadPhrasalVerbs();
 
     fetch('data/manifest.json', { cache: 'no-store' })
       .then(function(res){
@@ -671,6 +728,7 @@
       $('#exampleText').textContent = 'Жоғарыдан кемінде бір деңгей таңдаңыз.';
       $('#revealRow').classList.add('hidden');
       $('#revealRow').classList.remove('flex');
+      $('#revealSynonyms').classList.add('hidden');
       $('#nextBtn').classList.add('hidden');
       $('#optionsGrid').innerHTML = '';
       return;
@@ -684,6 +742,7 @@
     renderClickableText($('#exampleText'), blankSentence(currentWord));
     $('#revealRow').classList.add('hidden');
     $('#revealRow').classList.remove('flex');
+    $('#revealSynonyms').classList.add('hidden');
     $('#nextBtn').classList.add('hidden');
 
     var opts = buildOptions(currentWord);
@@ -735,6 +794,13 @@
     rr.classList.remove('hidden');
     rr.classList.add('flex');
     $('#revealWord').textContent = currentWord.word;
+    var synEl = $('#revealSynonyms');
+    if (currentWord.synonyms && currentWord.synonyms.length){
+      synEl.textContent = 'Синонимдер: ' + currentWord.synonyms.join(', ');
+      synEl.classList.remove('hidden');
+    } else {
+      synEl.classList.add('hidden');
+    }
     $('#nextBtn').classList.remove('hidden');
 
     renderHeaderStats();
@@ -912,11 +978,84 @@
     if (!$('#statsSection').classList.contains('hidden')) renderStatsSection();
   }
 
+  /* ---------------- PHRASAL VERBS CHALLENGE ---------------- */
+  var currentPhrasalVerb = null;
+  var lastPhrasalVerbId = null;
+  var phrasalVerbAnswered = false;
+
+  function pickNextPhrasalVerb(){
+    if (!phrasalVerbs.length) return null;
+    var choice, attempts = 0;
+    do {
+      choice = phrasalVerbs[Math.floor(Math.random() * phrasalVerbs.length)];
+      attempts++;
+    } while (choice.id === lastPhrasalVerbId && attempts < 8 && phrasalVerbs.length > 1);
+    return choice;
+  }
+
+  function loadNextPhrasalVerbQuestion(){
+    currentPhrasalVerb = pickNextPhrasalVerb();
+    phrasalVerbAnswered = false;
+    $('#phrasalVerbsExplainCard').classList.add('hidden');
+    $('#phrasalVerbsNextBtn').classList.add('hidden');
+
+    if (!currentPhrasalVerb){
+      $('#phrasalVerbsProgressLabel').textContent = '';
+      $('#phrasalVerbsContextText').textContent = 'Деректер әлі жүктелмеді, сәл күте тұрыңыз...';
+      $('#phrasalVerbsOptionsGrid').innerHTML = '';
+      return;
+    }
+    lastPhrasalVerbId = currentPhrasalVerb.id;
+
+    $('#phrasalVerbsProgressLabel').textContent = 'Phrasal verb #' + (phrasalVerbStats.total + 1);
+    renderClickableText($('#phrasalVerbsContextText'), currentPhrasalVerb.example.replace(/_{2,}|___/g, '_____'));
+
+    var opts = shuffle(currentPhrasalVerb.options.slice());
+    var grid = $('#phrasalVerbsOptionsGrid');
+    grid.innerHTML = opts.map(function(o){
+      return '<button data-particle="' + escapeHtml(o) + '" class="phrasalverb-option-btn text-center px-4 py-3.5 rounded-2xl border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 font-semibold active:scale-[0.98] transition">' + escapeHtml(o) + '</button>';
+    }).join('');
+    $all('.phrasalverb-option-btn').forEach(function(btn){ btn.addEventListener('click', onSelectPhrasalVerbOption); });
+  }
+
+  function onSelectPhrasalVerbOption(e){
+    if (phrasalVerbAnswered) return;
+    phrasalVerbAnswered = true;
+    var btn = e.currentTarget;
+    var chosen = btn.getAttribute('data-particle');
+    var correct = chosen === currentPhrasalVerb.particle;
+
+    $all('.phrasalverb-option-btn').forEach(function(b){
+      b.classList.add('pointer-events-none');
+      if (b.getAttribute('data-particle') === currentPhrasalVerb.particle){
+        b.classList.remove('bg-white','dark:bg-slate-900');
+        b.classList.add('border-emerald-500','bg-emerald-50','dark:bg-emerald-500/10','text-emerald-700','dark:text-emerald-300');
+      } else if (b === btn){
+        b.classList.remove('bg-white','dark:bg-slate-900');
+        b.classList.add('border-rose-500','bg-rose-50','dark:bg-rose-500/10','text-rose-700','dark:text-rose-300','shake');
+      } else {
+        b.classList.add('opacity-40');
+      }
+    });
+
+    phrasalVerbStats.total++;
+    if (correct) phrasalVerbStats.correct++;
+    save(LS.phrasalVerbStats, phrasalVerbStats);
+
+    $('#phrasalVerbsExplainPhrase').textContent = '"' + currentPhrasalVerb.phrase + '"';
+    $('#phrasalVerbsExplainMeaning').textContent = currentPhrasalVerb.meaning;
+    $('#phrasalVerbsExplainExample').textContent = currentPhrasalVerb.example.replace('___', currentPhrasalVerb.particle);
+    $('#phrasalVerbsExplainCard').classList.remove('hidden');
+    $('#phrasalVerbsNextBtn').classList.remove('hidden');
+    if (!$('#statsSection').classList.contains('hidden')) renderStatsSection();
+  }
+
   function setQuizMode(mode){
     quizMode = mode;
     $('#normalQuizWrap').classList.toggle('hidden', mode !== 'normal');
     $('#nuanceQuizWrap').classList.toggle('hidden', mode !== 'nuance');
     $('#collocationsQuizWrap').classList.toggle('hidden', mode !== 'collocations');
+    $('#phrasalVerbsQuizWrap').classList.toggle('hidden', mode !== 'phrasalverbs');
     $('#levelFilterBar').classList.toggle('hidden', mode !== 'normal');
     $all('.quiz-mode-btn').forEach(function(btn){
       var active = btn.getAttribute('data-mode') === mode;
@@ -932,12 +1071,14 @@
     });
     if (mode === 'nuance' && !currentNuanceSet) loadNextNuanceQuestion();
     if (mode === 'collocations' && !currentCollocation) loadNextCollocationQuestion();
+    if (mode === 'phrasalverbs' && !currentPhrasalVerb) loadNextPhrasalVerbQuestion();
   }
   $all('.quiz-mode-btn').forEach(function(btn){
     btn.addEventListener('click', function(){ setQuizMode(btn.getAttribute('data-mode')); });
   });
   $('#nuanceNextBtn').addEventListener('click', loadNextNuanceQuestion);
   $('#collocationsNextBtn').addEventListener('click', loadNextCollocationQuestion);
+  $('#phrasalVerbsNextBtn').addEventListener('click', loadNextPhrasalVerbQuestion);
 
   /* ---------------- HEADER / STATS ---------------- */
   function renderHeaderStats(){
@@ -958,6 +1099,7 @@
     $('#statTotalWords').textContent = filteredWords().length;
     $('#statNuanceAccuracy').textContent = nuanceStats.total ? Math.round((nuanceStats.correct / nuanceStats.total) * 100) + '%' : '—';
     $('#statCollocationAccuracy').textContent = collocationStats.total ? Math.round((collocationStats.correct / collocationStats.total) * 100) + '%' : '—';
+    $('#statPhrasalVerbAccuracy').textContent = phrasalVerbStats.total ? Math.round((phrasalVerbStats.correct / phrasalVerbStats.total) * 100) + '%' : '—';
   }
 
   /* ---------------- REVIEW ---------------- */
@@ -986,6 +1128,7 @@
         '<div class="review-body hidden mt-2 pt-2 border-t border-slate-100 dark:border-slate-800 text-sm text-slate-600 dark:text-slate-300">' +
           '<p class="mb-1">' + w.definition + '</p>' +
           '<p class="italic mb-2">' + blankSentence(w).replace('_____', w.word) + '</p>' +
+          (w.synonyms && w.synonyms.length ? '<p class="text-xs text-slate-400 mb-2">Синонимдер: ' + w.synonyms.join(', ') + '</p>' : '') +
           '<button class="review-speak text-xs px-3 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800" data-word="' + w.word.replace(/"/g,'&quot;') + '">🔊 Тыңда</button>' +
         '</div>' +
       '</div>';
@@ -1097,9 +1240,11 @@
     learned = new Set();
     nuanceStats = {correct:0, total:0};
     collocationStats = {correct:0, total:0};
+    phrasalVerbStats = {correct:0, total:0};
     persistAll();
     save(LS.nuanceStats, nuanceStats);
     save(LS.collocationStats, collocationStats);
+    save(LS.phrasalVerbStats, phrasalVerbStats);
     renderHeaderStats();
     renderStatsSection();
     renderReview();
@@ -1177,6 +1322,121 @@
       emoji: '🕯️',
       cover: 'from-indigo-500 to-teal-600',
       text: "The carriage arrived at Ashcombe Manor just as the last grey light was fading from the sky, and Miss Eleanor Whitfield stepped down onto the gravel with her trunk clutched firmly in both hands. No servant came to greet her, though a single candle burned steadily in an upstairs window, as if the house itself were watching her approach. She had been engaged as governess to the two Ashcombe children on the strength of a brief letter and a modest recommendation, and now, standing before the ivy-covered stone, she wondered whether either had been sufficient. The housekeeper who finally answered the door was a stout, unsmiling woman who introduced herself only as Mrs. Pryce and led her, without a word of welcome, down a corridor lined with portraits whose eyes seemed to follow every step. In the parlour, a modest fire struggled against the draught from an ill-fitting window, and Eleanor drew her shawl tighter about her shoulders. Mrs. Pryce informed her, in a tone that discouraged any reply, that the master of the house dined alone and was not to be disturbed under any circumstance. Eleanor merely nodded, though privately she resolved that a house so determined to guard its silence must, sooner or later, reveal exactly what it was hiding."
+    },
+    {
+      id: 'bk_sci1',
+      title: 'The Invisible Army: How Vaccines Work',
+      author: 'N. Baiturova',
+      genre: 'Science',
+      pages: 96,
+      emoji: '🧬',
+      cover: 'from-cyan-500 to-blue-600',
+      text: "The human body is constantly under attack from viruses and bacteria, yet most of the time we barely notice. This is largely thanks to the immune system, an intricate network of cells that recognizes and destroys foreign invaders. Vaccines work by teaching this system to recognize a specific threat before the real danger ever arrives. Instead of injecting a person with a full-strength virus, scientists introduce a weakened, inactivated, or partial version, just enough for the immune system to build a memory of it. When immune cells encounter this harmless sample, they produce antibodies, small proteins shaped precisely to latch onto the intruder and mark it for destruction. Some of these cells then become memory cells, patrolling the bloodstream for years, sometimes decades, ready to react instantly if the real pathogen ever appears. This is why a vaccinated person who is later exposed to a disease often shows no symptoms at all: their body recognizes the threat and eliminates it before it can multiply and cause harm. Modern vaccine development has expanded well beyond weakened viruses. Some vaccines now use only a single protein fragment from a pathogen, while newer technologies deliver genetic instructions that tell the body's own cells to produce that fragment themselves. Despite these advances, one principle has remained constant since the very first vaccines: prevention through preparation."
+    },
+    {
+      id: 'bk_hist1',
+      title: 'Caravans of the Silk Road',
+      author: 'T. Seitkali',
+      genre: 'History',
+      pages: 210,
+      emoji: '🐫',
+      cover: 'from-amber-600 to-yellow-700',
+      text: "Long before airplanes or container ships, a vast network of trade routes connected China to the Mediterranean, stretching across deserts, mountains, and grassy steppes. Historians call this network the Silk Road, though silk was only one of many goods that traveled along it. Merchants carried spices, precious stones, paper, and glassware in both directions, while ideas, religions, and inventions moved just as freely as merchandise. A trader rarely journeyed the entire route alone. Instead, goods passed from caravan to caravan, each group covering a manageable stretch before handing its cargo to the next. Camels, prized for their endurance in harsh desert climates, could carry heavy loads for days without water, making them essential to the trade. Along the route, oasis towns grew into wealthy centers of commerce, offering food, shelter, and markets where merchants from wildly different cultures could exchange goods and language. Samarkand and Kashgar became famous not only for trade but also for the mixing of art, architecture, and scholarship that resulted from centuries of contact between East and West. By the fifteenth century, sea routes had begun to replace many overland paths, offering faster and cheaper transport for bulk goods. Yet the Silk Road's legacy endured far beyond its economic role, leaving behind a lasting exchange of ideas."
+    },
+    {
+      id: 'bk_mys1',
+      title: 'The Missing Manuscript',
+      author: 'S. Meirbek',
+      genre: 'Mystery',
+      pages: 132,
+      emoji: '🔍',
+      cover: 'from-slate-700 to-gray-900',
+      text: "The library had been locked for three days when Inspector Voss finally received permission to examine the missing manuscript's empty display case. Nothing about the room suggested forced entry, no broken glass, no disturbed dust, not even a scuff mark on the polished floor. Only the guest book offered a clue: the final entry, signed in careful cursive, belonged to a visitor no one on staff could recall admitting. Voss studied the shelves surrounding the case, noting how precisely each remaining volume had been returned to its place, spines perfectly aligned. Whoever had taken the manuscript clearly knew the room, and knew it well enough to leave everything else exactly as it should be. She questioned the night librarian first, a nervous young man who insisted he had never left his desk, though his account of the evening seemed strangely rehearsed. Something about his insistence on a single detail, that he had, without fail, checked the case at midnight, struck her as oddly specific for a routine he claimed to have performed a hundred times before. She returned to the case itself and crouched beside it, running a gloved finger along the lock. There, barely visible, was a thin scratch that didn't match the rest of the lock's usual wear. Someone had opened it before, quietly, and put it back together well enough to fool a casual glance. Voss allowed herself a small, private smile. The manuscript hadn't vanished into thin air after all."
+    },
+    {
+      id: 'bk_psych1',
+      title: 'The Habit Loop',
+      author: 'D. Nurlanova',
+      genre: 'Psychology',
+      pages: 178,
+      emoji: '🧠',
+      cover: 'from-purple-500 to-indigo-700',
+      text: "Every habit, no matter how simple, follows the same underlying pattern. Psychologists often describe it as a loop made of three parts: a cue, a routine, and a reward. The cue is a trigger, a time of day, a certain location, an emotional state, that tells your brain to go into automatic mode. The routine is the behavior itself, which can be physical, mental, or emotional. The reward is what your brain receives afterward, the small payoff that convinces it the loop is worth remembering next time. Once this loop repeats often enough, the behavior becomes so automatic that the conscious mind barely participates. This explains why habits can feel almost impossible to control through willpower alone: by the time you notice the routine happening, the cue has already set the whole loop in motion. Researchers have found that habits are rarely deleted outright. Instead, old neural pathways remain in the brain, dormant but ready to reactivate under stress or fatigue, which is why a habit someone thought they had broken years earlier can suddenly resurface during a difficult week. The most effective way to change a habit is not to fight the cue or the reward, but to replace the routine while keeping the other two elements the same. If stress at work reliably triggers a craving for sugary snacks, and the true reward is relief rather than taste, a short walk can sometimes deliver the same relief without the sugar."
+    },
+    {
+      id: 'bk_trav1',
+      title: 'Two Weeks Along the Danube',
+      author: 'A. Yerlanova',
+      genre: 'Travel',
+      pages: 154,
+      emoji: '🧳',
+      cover: 'from-teal-500 to-emerald-600',
+      text: "I had imagined the Danube as a single, continuous river, the same shade of blue from Germany to the Black Sea. Within the first three days of paddling downstream, I realized how wrong that assumption had been. Near its source, the river moved fast and clear over smooth stones, narrow enough in places that I could hear conversations from both banks at once. By the time it reached Austria, it had widened into something far calmer, sliding past vineyards and small towns with church bells that seemed to mark every hour of the journey. Hungary changed the river's character again. The banks flattened into wide plains, and the current slowed just enough that fishermen could stand waist-deep for hours, apparently unbothered by passing kayaks. In Budapest, the river split the city so cleanly in two that the contrast between its hilly western side and flat eastern side felt almost deliberate. Further along, in Serbia, the Danube carved through a dramatic gorge, its cliffs rising so steeply on either side that my small boat felt like a toy floating through a canyon built for giants. Locals along this stretch spoke of the river the way some people speak of an old relative: with a mixture of affection, respect, and mild complaint about how unpredictable it could be after heavy rain. By the time I reached the delta, where the Danube finally dissolved into hundreds of quiet channels before meeting the Black Sea, I understood that I hadn't followed one river at all, but many."
+    },
+    {
+      id: 'bk_env1',
+      title: 'The Ocean\'s Silent Crisis',
+      author: 'N. Baiturova',
+      genre: 'Environment',
+      pages: 88,
+      emoji: '🌊',
+      cover: 'from-blue-600 to-slate-800',
+      text: "Every year, an estimated eight million tons of plastic enter the world's oceans, a figure so large that it is difficult to picture in any meaningful way. Much of it starts on land, carried by rivers, storm drains, and wind before it ever reaches the sea. Once in the water, plastic rarely disappears. Instead, sunlight and waves slowly break it into smaller and smaller pieces, called microplastics, that can remain in the ocean for centuries. These fragments are now found almost everywhere scientists have looked: in deep ocean trenches, in Arctic ice, and even inside the bodies of fish that end up on dinner plates around the world. Larger pieces of plastic pose an equally serious threat to marine life. Sea turtles sometimes mistake floating plastic bags for jellyfish, one of their preferred meals, while seabirds have been found with stomachs full of bottle caps and fragments they cannot digest. Fishing nets abandoned or lost at sea, known as ghost nets, continue trapping and killing fish and other animals long after fishermen have moved on. Ocean currents gather floating debris into enormous, slow-moving collections, the largest of which is now estimated to cover an area larger than many countries. Scientists increasingly argue that the most effective solutions lie upstream, reducing how much plastic is produced long before it ever reaches a river, let alone the sea."
+    },
+    /* ---- ТОЛЫҚ КЛАССИКАЛЫҚ РОМАНДАР (public domain, Project Gutenberg) ----
+       Бұлардың мәтіні index.html ішінде емес, бөлек data/books/*.txt
+       файлдарында сақталады және кітап ашылғанда ғана жүктеледі (lazy load,
+       openReader() функциясын қараңыз) — толық роман мәтіні өте үлкен
+       болғандықтан (жүздеген мың таңба). */
+    {
+      id: 'bk_crusoe',
+      title: 'Robinson Crusoe',
+      author: 'Daniel Defoe',
+      genre: 'Classic Fiction',
+      pages: 297,
+      emoji: '🏝️',
+      cover: 'from-cyan-600 to-blue-800',
+      textFile: 'data/books/robinson_crusoe.txt'
+    },
+    {
+      id: 'bk_alice',
+      title: 'Alice\'s Adventures in Wonderland',
+      author: 'Lewis Carroll',
+      genre: 'Classic Fiction',
+      pages: 96,
+      emoji: '🐇',
+      cover: 'from-fuchsia-500 to-purple-700',
+      textFile: 'data/books/alice_in_wonderland.txt'
+    },
+    {
+      id: 'bk_sherlock',
+      title: 'The Adventures of Sherlock Holmes',
+      author: 'Arthur Conan Doyle',
+      genre: 'Mystery',
+      pages: 307,
+      emoji: '🔍',
+      cover: 'from-slate-700 to-slate-900',
+      textFile: 'data/books/sherlock_holmes.txt'
+    },
+    {
+      id: 'bk_tomsawyer',
+      title: 'The Adventures of Tom Sawyer',
+      author: 'Mark Twain',
+      genre: 'Classic Fiction',
+      pages: 244,
+      emoji: '🛶',
+      cover: 'from-yellow-500 to-amber-700',
+      textFile: 'data/books/tom_sawyer.txt'
+    },
+    {
+      id: 'bk_pride',
+      title: 'Pride and Prejudice',
+      author: 'Jane Austen',
+      genre: 'Classic Fiction',
+      pages: 279,
+      emoji: '💌',
+      cover: 'from-rose-500 to-red-700',
+      textFile: 'data/books/pride_and_prejudice.txt'
     }
   ];
 
@@ -1312,7 +1572,39 @@
     'reveal': 'To make something previously hidden or secret known.',
     'sufficient': 'Enough for a particular purpose.',
     'dined': 'Ate dinner, especially in a formal setting.',
-    'tone': 'The general character or attitude of something, especially as expressed through voice or manner.'
+    'tone': 'The general character or attitude of something, especially as expressed through voice or manner.',
+    'intricate': 'Very complicated or detailed in structure.',
+    'invaders': 'People or things that enter a place to attack or take it over.',
+    'antibodies': 'Proteins made by the immune system to identify and neutralize harmful invaders.',
+    'pathogen': 'A bacterium, virus, or other microorganism that can cause disease.',
+    'patrolling': 'Moving regularly around an area to check or guard it.',
+    'stretching': 'Extending over a distance or period of time.',
+    'endurance': 'The ability to withstand hardship or exertion over a long time.',
+    'oasis': 'A fertile spot in a desert where water is found.',
+    'scholarship': 'Academic study and learning, or a body of knowledge in a field.',
+    'overland': 'Traveling across land rather than by sea or air.',
+    'legacy': 'Something handed down from the past, especially long-lasting effects.',
+    'aligned': 'Arranged in a straight line or in correct relative positions.',
+    'rehearsed': 'Practiced in advance, or sounding overly prepared and unnatural.',
+    'insistence': 'The quality of demanding something firmly and repeatedly.',
+    'vanished': 'Disappeared suddenly and completely.',
+    'trigger': 'An event or thing that causes something else to happen.',
+    'willpower': 'Control exerted to do something or to restrain an unwanted impulse.',
+    'dormant': 'Temporarily inactive, but capable of becoming active again.',
+    'fatigue': 'Extreme tiredness resulting from physical or mental effort.',
+    'craving': 'A powerful desire for something.',
+    'continuous': 'Happening or existing without interruption.',
+    'paddling': 'Moving through water using a paddle or the hands and feet.',
+    'vineyards': 'Areas of land planted with grapevines, used to produce wine.',
+    'gorge': 'A narrow valley between hills or mountains, often with a river.',
+    'unpredictable': 'Not able to be known or foreseen in advance.',
+    'channels': 'Narrow stretches of water connecting larger bodies of water.',
+    'estimated': 'Roughly calculated or judged based on available information.',
+    'trenches': 'Long, narrow, deep depressions, especially on the ocean floor.',
+    'marine': 'Relating to the sea or found in the sea.',
+    'abandoned': 'Given up completely; left behind and no longer used.',
+    'debris': 'Scattered fragments of something broken or discarded.',
+    'upstream': 'Toward the source of a river, or earlier in a process.'
   };
 
   /* ---------------- LIBRARY: state ---------------- */
@@ -1333,7 +1625,7 @@
   }
 
   function renderGenreFilter(){
-    var genres = ['All', 'Tech & AI', 'Business', 'Fiction', 'Self-development'];
+    var genres = ['All', 'Tech & AI', 'Business', 'Fiction', 'Self-development', 'Science', 'History', 'Mystery', 'Psychology', 'Travel', 'Environment'];
     var labels = { 'All': 'Барлығы' };
     $('#genreFilterRow').innerHTML = genres.map(function(g){
       var active = libraryGenre === g;
@@ -1441,8 +1733,62 @@
 
   // Кітап мәтіні ашылғанда бір рет есептелетін сөз жиілігі картасы
   // (frequency map): { "goal": 3, "the": 12, ... }. Тек ағымдағы кітап
-  // үшін ғана, Reader жабылғанда тазаланады.
+  // үшін ғана, Reader жабылғанда тазаланады. Толық мәтін бойынша есептеледі
+  // (беттеуге қарамастан), сондықтан "Occurs N times in this book" дұрыс болады.
   var currentBookFreq = null;
+
+  // ---------------- READER ПАГИНАЦИЯСЫ ----------------
+  // Толық роман (жүздеген мың таңба) бір бетте тұтас шықса, әр сөз үшін
+  // жеке <span> жасалатын renderClickableText DOM-ды тым үлкейтіп, телефонда
+  // баяулатады/қатырады. Сондықтан мәтінді абзацтар шекарасын бұзбай ~320
+  // сөзден тұратын "беттерге" бөліп, тек ағымдағы бет қана render етіледі —
+  // нағыз кітап парақтарын аударғандай сезім (PDF-тегі 200-300 бет сияқты).
+  var READER_WORDS_PER_PAGE = 320;
+  var currentReaderPages = [];
+  var currentReaderPageIndex = 0;
+
+  function paginateText(text){
+    var paras = text.split(/\n\s*\n/).map(function(p){ return p.trim(); }).filter(Boolean);
+    if (!paras.length) return text ? [text] : [];
+    var pages = [], buf = [], wc = 0;
+    paras.forEach(function(p){
+      var pWords = p.split(/\s+/).filter(Boolean).length;
+      if (wc > 0 && wc + pWords > READER_WORDS_PER_PAGE){
+        pages.push(buf.join('\n\n'));
+        buf = []; wc = 0;
+      }
+      buf.push(p);
+      wc += pWords;
+    });
+    if (buf.length) pages.push(buf.join('\n\n'));
+    return pages.length ? pages : [text];
+  }
+
+  function showReaderPage(idx){
+    if (!currentReaderPages.length) return;
+    idx = Math.max(0, Math.min(idx, currentReaderPages.length - 1));
+    currentReaderPageIndex = idx;
+    renderReaderText(currentReaderPages[idx]);
+    var scrollArea = $('#readerScrollArea');
+    if (scrollArea) scrollArea.scrollTop = 0;
+    var pagerBar = $('#readerPagerBar');
+    if (currentReaderPages.length > 1){
+      pagerBar.classList.remove('hidden');
+      $('#readerPageLabel').textContent = 'Бет ' + (idx + 1) + ' / ' + currentReaderPages.length;
+      $('#readerPrevPageBtn').disabled = idx === 0;
+      $('#readerNextPageBtn').disabled = idx === currentReaderPages.length - 1;
+    } else {
+      pagerBar.classList.add('hidden');
+    }
+  }
+
+  function loadReaderText(text){
+    currentBookFreq = computeWordFreq(text);
+    currentReaderPages = paginateText(text);
+    showReaderPage(0);
+    applyReaderFont();
+  }
+
   function computeWordFreq(text){
     var freq = {};
     if (!text) return freq;
@@ -1466,17 +1812,53 @@
     if (!currentReaderBook) return;
     $('#readerTitle').textContent = currentReaderBook.title;
     $('#readerAuthor').textContent = currentReaderBook.author + ' · ' + currentReaderBook.pages + ' бет';
-    renderReaderText(currentReaderBook.text);
-    currentBookFreq = computeWordFreq(currentReaderBook.text);
-    applyReaderFont();
     $('#readerOverlay').classList.remove('hidden');
+    $('#readerPagerBar').classList.add('hidden');
+
+    if (currentReaderBook.text){
+      // Мәтін index.html ішінде тікелей тұр (қысқа демо-кітаптар) немесе
+      // бұрын жүктеліп кэштелген (толық кітаптар) — бірден көрсетеміз.
+      loadReaderText(currentReaderBook.text);
+      return;
+    }
+
+    if (currentReaderBook.textFile){
+      // Толық ұзын кітаптар (мыс. Robinson Crusoe) бөлек data/books/*.txt
+      // файлында сақталады және тек ашылған сәтте жүктеледі (lazy load) —
+      // осылайша index.html шағын әрі жылдам жүктелетін күйде қалады.
+      var bookId = id;
+      $('#readerContent').innerHTML = '<p class="text-center text-slate-400 py-10">Кітап жүктелуде...</p>';
+      fetch(currentReaderBook.textFile, { cache: 'no-store' })
+        .then(function(res){
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          return res.text();
+        })
+        .then(function(txt){
+          // Пайдаланушы жүктеу кезінде оқырманды жауып, басқа кітап ашса,
+          // ескірген нәтиже экранға шықпасын.
+          if (!currentReaderBook || currentReaderBook.id !== bookId) return;
+          currentReaderBook.text = txt; // келесі ашуда қайта жүктемеу үшін кэштейміз
+          loadReaderText(txt);
+        })
+        .catch(function(){
+          if (!currentReaderBook || currentReaderBook.id !== bookId) return;
+          $('#readerContent').innerHTML = '<p class="text-center text-slate-400 py-10">Кітап мәтінін жүктеу мүмкін болмады. Интернетті тексеріп, қайта көріңіз.</p>';
+        });
+      return;
+    }
+
+    $('#readerContent').innerHTML = '<p class="text-center text-slate-400 py-10">Бұл кітаптың мәтіні табылмады.</p>';
   }
   function closeReader(){
     $('#readerOverlay').classList.add('hidden');
     currentBookFreq = null;
+    currentReaderPages = [];
+    currentReaderPageIndex = 0;
   }
 
   $('#closeReaderBtn').addEventListener('click', closeReader);
+  $('#readerPrevPageBtn').addEventListener('click', function(){ showReaderPage(currentReaderPageIndex - 1); });
+  $('#readerNextPageBtn').addEventListener('click', function(){ showReaderPage(currentReaderPageIndex + 1); });
   $('#readerFontUp').addEventListener('click', function(){
     if (readerFontLevel < READER_FONT_SIZES.length - 1){ readerFontLevel++; applyReaderFont(); }
   });
@@ -1531,6 +1913,17 @@
     var w = allLoadedWords().find(function(x){ return x.word.toLowerCase() === word.toLowerCase(); });
     if (w) return w.definition;
     if (LIBRARY_DICTIONARY[word.toLowerCase()]) return LIBRARY_DICTIONARY[word.toLowerCase()];
+    // Дәл сәйкестік табылмаса, сөздің морфологиялық нұсқаларын (көпше түрі,
+    // етістік жалғаулары және т.б., мыс. "centuries" → "century") тексереміз —
+    // осылайша сөздік қор шағын болып көрінбейді, тек сөз түрі басқаша болады.
+    var variants = wordFormVariants(word);
+    for (var i = 0; i < variants.length; i++){
+      var v = variants[i];
+      if (v === word.toLowerCase()) continue;
+      var wv = allLoadedWords().find(function(x){ return x.word.toLowerCase() === v; });
+      if (wv) return wv.definition;
+      if (LIBRARY_DICTIONARY[v]) return LIBRARY_DICTIONARY[v];
+    }
     var cw = lookupConfusingWord(word);
     if (cw) return cw.nuance + ' ' + cw.whenToUse;
     var col = lookupCollocation(word);
@@ -1692,7 +2085,7 @@
     document.documentElement.classList.toggle('dark', mode === 'dark');
     $('#themeBtn').textContent = mode === 'dark' ? '☀️' : '🌙';
     var meta = document.getElementById('themeColorMeta');
-    if (meta) meta.setAttribute('content', mode === 'dark' ? '#0f172a' : '#4f46e5');
+    if (meta) meta.setAttribute('content', mode === 'dark' ? '#0f172a' : '#0d9488');
     save(LS.theme, mode);
   }
   var savedTheme = load(LS.theme, null);
